@@ -3,7 +3,7 @@ services:
   frontend:
     image: REPLACE-FRONTEND-IMAGE
     ports:
-      - "8080:8080"
+      - "80:8080"
     environment:
       SERVICES_PORT: "8080"
       DT_APPLICATIONID: "frontend"
