@@ -107,23 +107,7 @@ pipeline {
         }
 
         stage('Performance Test') {
-            recordDynatraceCustomSession(
-				envId: 'Dynatrace Demo Environment', 
-				tagMatchRules: [[
-					meTypes: [[meType: 'ENVIRONMENT']], 
-					tags: [[
-						context: 'CONTEXTLESS', 
-						key: 'app', 
-						value: 'keptn-order'
-					]]
-				]], 
-				
-				testCase: 'loadtest',
-				timeframeStart: ${TEST_START}000, 
-				timeframeStop: ${TEST_END}000
-			) {
-				// some block
-			}
+			recordDynatraceCustomSession envId: 'Dynatrace Demo Environment', tagMatchRules: [[meTypes: [[meType: 'ENVIRONMENT']], tags: [[context: 'CONTEXTLESS', key: 'app', value: 'ketn-order']]]], testCase: 'loadtest', timeframeStart: ${TEST_START}000, timeframeStop: ${TEST_END}000
         }
 		stage('Reporting') {
 			perfSigDynatraceReports envId: 'Dynatrace Demo Environment', nonFunctionalFailure: 2, specFile: 'specfile.json'
