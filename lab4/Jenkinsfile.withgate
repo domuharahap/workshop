@@ -23,10 +23,10 @@ pipeline {
         VALIDATION_FILE = "helper-scripts/validate-service-levels.sh"
 
         // build the docker image name using tag value passed as parameters
-        frontendimage = "dtdemos/keptn-orders-front-end:${params.frontend_version}"
-        orderserviceimage = "dtdemos/keptn-orders-order-service:${params.order_service_version}"
-        customerserviceimage = "dtdemos/keptn-orders-customer-service:${params.customer_service_version}"
-        catalogserviceimage = "dtdemos/keptn-orders-catalog-service:${params.catalog_service_version}"
+        frontendimage = "dtdemos/dt-orders-front-end:${params.frontend_version}"
+        orderserviceimage = "dtdemos/dt-orders-order-service:${params.order_service_version}"
+        customerserviceimage = "dtdemos/dt-orders-customer-service:${params.customer_service_version}"
+        catalogserviceimage = "dtdemos/dt-orders-catalog-service:${params.catalog_service_version}"
     }
     stages {
         stage('configure-docker-compose-file') {
