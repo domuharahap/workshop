@@ -68,30 +68,32 @@ pipeline {
         }
 
         stage('Push Dynatrace Deployment Event') {
-            createDynatraceDeploymentEvent(
-				customProperties: [
-					[
-						key: 'JenkinsUrl', 
-						value: '${env.JOB_URL}'
+			steps {
+				createDynatraceDeploymentEvent(
+					customProperties: [
+						[
+							key: 'JenkinsUrl', 
+							value: '${env.JOB_URL}'
+						], 
+						[
+							key: 'BuildUrl', 
+							value: '${env.BUILD_URL}'
+						], 
+						[key: 'GitCommit', value: '${env.GIT_COMMIT}'], 
+						[key: 'deploymentVersion', value: '${DEPLOY_VERSION}']
 					], 
-					[
-						key: 'BuildUrl', 
-						value: '${env.BUILD_URL}'
-					], 
-					[key: 'GitCommit', value: '${env.GIT_COMMIT}'], 
-					[key: 'deploymentVersion', value: '${DEPLOY_VERSION}']
-				], 
-				envId: 'Dynatrace Demo Environment', 
-				tagMatchRules: [[
-					meTypes: [[meType: 'ENVIRONMENT']], 
-					tags: [[
-						context: 'CONTEXTLESS', 
-						key: 'app', 
-						value: 'keptn-orders'
+					envId: 'Dynatrace Demo Environment', 
+					tagMatchRules: [[
+						meTypes: [[meType: 'ENVIRONMENT']], 
+						tags: [[
+							context: 'CONTEXTLESS', 
+							key: 'app', 
+							value: 'keptn-orders'
+						]]
 					]]
-				]]
-			) {
-				// some block
+				) {
+					// some block
+				}
 			}
         }
 
@@ -107,10 +109,14 @@ pipeline {
         }
 
         stage('Performance Test') {
-			recordDynatraceCustomSession envId: 'Dynatrace Demo Environment', tagMatchRules: [[meTypes: [[meType: 'ENVIRONMENT']], tags: [[context: 'CONTEXTLESS', key: 'app', value: 'ketn-order']]]], testCase: 'loadtest', timeframeStart: "${TEST_START}000", timeframeStop: "${TEST_END}000"
-        }
+			steps {
+				recordDynatraceCustomSession envId: 'Dynatrace Demo Environment', tagMatchRules: [[meTypes: [[meType: 'ENVIRONMENT']], tags: [[context: 'CONTEXTLESS', key: 'app', value: 'ketn-order']]]], testCase: 'loadtest', timeframeStart: "${TEST_START}000", timeframeStop: "${TEST_END}000"
+			}
+		}
 		stage('Reporting') {
-			perfSigDynatraceReports envId: 'Dynatrace Demo Environment', nonFunctionalFailure: 2, specFile: 'specfile.json'
+			steps {
+				perfSigDynatraceReports envId: 'Dynatrace Demo Environment', nonFunctionalFailure: 2, specFile: 'specfile.json'
+			}
 		}
     }
 }
