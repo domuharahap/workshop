@@ -81,7 +81,7 @@ pipeline {
 					[key: 'GitCommit', value: '${env.GIT_COMMIT}'], 
 					[key: 'deploymentVersion', value: '${DEPLOY_VERSION}']
 				], 
-				envId: 'Dynatrace server', 
+				envId: 'Dynatrace Demo Environment', 
 				tagMatchRules: [[
 					meTypes: [[meType: 'ENVIRONMENT']], 
 					tags: [[
