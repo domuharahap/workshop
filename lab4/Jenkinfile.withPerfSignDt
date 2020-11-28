@@ -103,7 +103,7 @@ pipeline {
 		
 		stage('Dynatrace Quality Gate'){
             steps {
-                perfSigDynatraceReports envId: 'Dynatrace Demo Environment', nonFunctionalFailure: 2, specFile: '/lab4/specfile.json'
+                perfSigDynatraceReports envId: 'Dynatrace Demo Environment', nonFunctionalFailure: 2, specFile: './lab4/specfile.json'
             }
         }
     }
