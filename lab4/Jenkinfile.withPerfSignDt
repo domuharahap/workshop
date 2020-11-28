@@ -58,26 +58,6 @@ pipeline {
             }
         }
 
-        stage('docker-down') {
-            steps {
-    	        step([$class: 'DockerComposeBuilder', dockerComposeFile: "${DOCKER_COMPOSE_FILE}", option: [$class: 'StopAllServices'], useCustomDockerComposeFile: true])
-            }
-        }
-        
-        stage('docker-compose-up') {
-            steps {
-                step([$class: 'DockerComposeBuilder', dockerComposeFile: "${DOCKER_COMPOSE_FILE}", option: [$class: 'StartAllServices'], useCustomDockerComposeFile: true])
-            }
-        }
-
-        stage('wait-till-ready') {
-            steps {
-                script {
-                    sh "${WAIT_TILL_READY_FILE}"
-                }
-            }
-        }
-
         stage('Push Dynatrace Deployment Event') {
 			steps {
 				createDynatraceDeploymentEvent(
@@ -97,7 +77,29 @@ pipeline {
 		
         stage('Performance Test') {
 			steps {
-				recordDynatraceCustomSession envId: 'Dynatrace Demo Environment',  tagMatchRules: tagMatchRules, testCase: 'loadtest'
+				recordDynatraceCustomSession(envId: 'Dynatrace Demo Environment',  tagMatchRules: tagMatchRules, testCase: 'loadtest')
+				{
+					container('jmeter') {
+						script {
+						  def status = executeJMeter ( 
+							scriptName: "jmeter/front-end_load.jmx",
+							resultsDir: "PerfCheck_${BUILD_NUMBER}",
+							serverUrl: "localhost", 
+							serverPort: 80,
+							checkPath: '/',
+							vuCount: 5,
+							loopCount: 500,
+							LTN: "PerfCheck_${BUILD_NUMBER}",
+							funcValidation: false,
+							avgRtValidation: 4000
+						  )
+						  if (status != 0) {
+							currentBuild.result = 'FAILED'
+							error "Performance check failed."
+						  }
+						}
+					}
+				}
 			}
 		}
 		
