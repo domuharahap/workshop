@@ -57,7 +57,27 @@ pipeline {
                 }
             }
         }
+		
+		stage('docker-down') {
+            steps {
+    	        step([$class: 'DockerComposeBuilder', dockerComposeFile: "${DOCKER_COMPOSE_FILE}", option: [$class: 'StopAllServices'], useCustomDockerComposeFile: true])
+            }
+        }
+        
+        stage('docker-compose-up') {
+            steps {
+                step([$class: 'DockerComposeBuilder', dockerComposeFile: "${DOCKER_COMPOSE_FILE}", option: [$class: 'StartAllServices'], useCustomDockerComposeFile: true])
+            }
+        }
 
+        stage('wait-till-ready') {
+            steps {
+                script {
+                    sh "${WAIT_TILL_READY_FILE}"
+                }
+            }
+        }
+		
         stage('Push Dynatrace Deployment Event') {
 			steps {
 				createDynatraceDeploymentEvent(
@@ -86,6 +106,8 @@ pipeline {
 						echo "TEST_START: ${TEST_START}  TEST_END: ${TEST_END}"
 					}
 				}
+				echo "Waiting for a minute so data can be processed in Dynatrace"
+				sleep(60)
 			}
 		}
 		
