@@ -77,7 +77,6 @@ pipeline {
 						[key: 'GitCommit', value: '${env.GIT_COMMIT}'], 
 						[key: 'deploymentVersion', value: '${DEPLOY_VERSION}']
 					],
-					entityIds: [[$class: 'Service', entityId: 'SERVICE-B28FE70ECE238A2C']],
 					envId: 'Dynatrace Demo Environment', 
 					tagMatchRules: tagMatchRules
 				) {
@@ -88,7 +87,7 @@ pipeline {
 		
         stage('Performance Test') {
 			steps {
-				recordDynatraceSession(entityIds: [[$class: 'Service', entityId: 'SERVICE-B28FE70ECE238A2C']], envId: 'Dynatrace Demo Environment',  tagMatchRules: tagMatchRules, testCase: 'loadtest')
+				recordDynatraceSession(envId: 'Dynatrace Demo Environment',  tagMatchRules: tagMatchRules, testCase: 'loadtest')
 				{
 					script {
 						TEST_START = sh(script: 'echo "$(date -u +%s)"', returnStdout: true).trim()
