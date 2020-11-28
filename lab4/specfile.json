@@ -12,7 +12,7 @@
 		    "aggregation" : "avg",
 		    "tags" : "[Environment]app:keptn-orders,service:frontend",
 		    "upperSevere" : 5.0,
-		    "upperWarning" : 0.0
+		    "upperWarning" : 0.5
 		},
 		{
 			"timeseriesId": "com.dynatrace.builtin:docker.container.cpu",
