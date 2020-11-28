@@ -1,7 +1,7 @@
 def tagMatchRules = [
   [
     meTypes: [
-      [meType: 'SERVICE']
+      [meType: 'ENVIRONMENT']
     ],
     tags : [
       [context: 'CONTEXTLESS', key: 'app', value: 'keptn-orders']
@@ -82,14 +82,8 @@ pipeline {
 			steps {
 				createDynatraceDeploymentEvent(
 					customProperties: [
-						[
-							key: 'JenkinsUrl', 
-							value: '${env.JOB_URL}'
-						], 
-						[
-							key: 'BuildUrl', 
-							value: '${env.BUILD_URL}'
-						], 
+						[key: 'JenkinsUrl', value: '${env.JOB_URL}'], 
+						[key: 'BuildUrl', value: '${env.BUILD_URL}'], 
 						[key: 'GitCommit', value: '${env.GIT_COMMIT}'], 
 						[key: 'deploymentVersion', value: '${DEPLOY_VERSION}']
 					], 
