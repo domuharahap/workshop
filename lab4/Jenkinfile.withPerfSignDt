@@ -31,7 +31,7 @@ pipeline {
         frontendimage = "dtdemos/dt-orders-frontend:${params.frontend_version}"
     }
     stages {
-        stage('configure-docker-compose-file') {
+        stage('Deployment configuration') {
             steps {
                 script {
                     echo "============================================="
@@ -49,19 +49,19 @@ pipeline {
             }
         }
 		
-		stage('docker-down') {
+		stage('Plan Release') {
             steps {
     	        step([$class: 'DockerComposeBuilder', dockerComposeFile: "${DOCKER_COMPOSE_FILE}", option: [$class: 'StopAllServices'], useCustomDockerComposeFile: true])
             }
         }
         
-        stage('docker-compose-up') {
+        stage('Deploy on Staging') {
             steps {
                 step([$class: 'DockerComposeBuilder', dockerComposeFile: "${DOCKER_COMPOSE_FILE}", option: [$class: 'StartAllServices'], useCustomDockerComposeFile: true])
             }
         }
 
-        stage('wait-till-ready') {
+        stage('Wait Env Ready') {
             steps {
                 script {
                     sh "${WAIT_TILL_READY_FILE}"
@@ -86,7 +86,7 @@ pipeline {
 			}
         }
 		
-        stage('Performance Quality Gate') {
+        stage('Performance Test') {
 			steps {
 				recordDynatraceSession(envId: 'Dynatrace Demo Environment',  tagMatchRules: tagMatchRules, testCase: 'loadtest')
 				{
@@ -99,7 +99,10 @@ pipeline {
 				}
 				echo "Waiting for a minute so data can be processed in Dynatrace"
 				sleep(60)
-				
+			}
+		}
+		stage('Quality Gate') {
+			steps {
 				perfSigDynatraceReports envId: 'Dynatrace Demo Environment', nonFunctionalFailure: 2, specFile: './lab4/specfile.json'
 			}
 		}
