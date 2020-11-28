@@ -86,7 +86,7 @@ pipeline {
 			}
         }
 		
-        stage('Performance Test') {
+        stage('Performance Quality Gate') {
 			steps {
 				recordDynatraceSession(envId: 'Dynatrace Demo Environment',  tagMatchRules: tagMatchRules, testCase: 'loadtest')
 				{
