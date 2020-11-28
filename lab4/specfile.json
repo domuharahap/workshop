@@ -1,16 +1,10 @@
 {
 	"spec_version": "2.0",
-	"timeseries": [{
-			"timeseriesId": "com.dynatrace.builtin:service.responsetime",
-			"aggregation": "avg",
-			"tags": "[Environment]app:keptn-orders",
-			"upperWarning": 5000,
-			"upperSevere": 10000
-		},
+	"timeseries": [
 		{
 			"timeseriesId": "com.dynatrace.builtin:service.responsetime",
 			"aggregation": "avg",
-			"entityIds": "SERVICE-B28FE70ECE238A2C",
+			"tags": "service:frontend",
 			"upperWarning": 5000,
 			"upperSevere": 8000
 		},
