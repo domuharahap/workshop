@@ -77,7 +77,7 @@ pipeline {
 		
         stage('Performance Test') {
 			steps {
-				recordDynatraceCustomSession(envId: 'Dynatrace Demo Environment',  tagMatchRules: tagMatchRules, testCase: 'loadtest')
+				recordDynatraceSession(envId: 'Dynatrace Demo Environment',  tagMatchRules: tagMatchRules, testCase: 'loadtest')
 				{
 					container('jmeter') {
 						script {
@@ -103,10 +103,10 @@ pipeline {
 			}
 		}
 		
-		stage('Reporting') {
-			steps {
-				perfSigDynatraceReports envId: 'Dynatrace Demo Environment', nonFunctionalFailure: 2, specFile: 'specfile.json'
-			}
-		}
+		stage('Dynatrace Quality Gate'){
+            steps {
+                perfSigDynatraceReports envId: 'Dynatrace Demo Environment', nonFunctionalFailure: 2, specFile: 'specfile.json'
+            }
+        }
     }
 }
