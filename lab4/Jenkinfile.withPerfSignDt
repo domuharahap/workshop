@@ -79,25 +79,11 @@ pipeline {
 			steps {
 				recordDynatraceSession(envId: 'Dynatrace Demo Environment',  tagMatchRules: tagMatchRules, testCase: 'loadtest')
 				{
-					container('jmeter') {
-						script {
-						  def status = executeJMeter ( 
-							scriptName: "jmeter/front-end_load.jmx",
-							resultsDir: "PerfCheck_${BUILD_NUMBER}",
-							serverUrl: "localhost", 
-							serverPort: 80,
-							checkPath: '/',
-							vuCount: 5,
-							loopCount: 500,
-							LTN: "PerfCheck_${BUILD_NUMBER}",
-							funcValidation: false,
-							avgRtValidation: 4000
-						  )
-						  if (status != 0) {
-							currentBuild.result = 'FAILED'
-							error "Performance check failed."
-						  }
-						}
+					script {
+						TEST_START = sh(script: 'echo "$(date -u +%s)"', returnStdout: true).trim()
+						sh "${LOAD_TEST_FILE} 120 ${env.BUILD_TAG}"
+						TEST_END = sh(script: 'echo "$(date -u +%s)"', returnStdout: true).trim()
+						echo "TEST_START: ${TEST_START}  TEST_END: ${TEST_END}"
 					}
 				}
 			}
@@ -105,6 +91,7 @@ pipeline {
 		
 		stage('Dynatrace Quality Gate'){
             steps {
+				perfSigDynatraceReports
                 perfSigDynatraceReports envId: 'Dynatrace Demo Environment', nonFunctionalFailure: 2, specFile: 'specfile.json'
             }
         }
