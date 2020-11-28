@@ -77,7 +77,6 @@ pipeline {
 						[key: 'GitCommit', value: '${env.GIT_COMMIT}'], 
 						[key: 'deploymentVersion', value: '${DEPLOY_VERSION}']
 					],
-					entityIds: [[$class: 'Service', entityId: 'SERVICE-B28FE70ECE238A2C']],
 					envId: 'Dynatrace Demo Environment', 
 					tagMatchRules: tagMatchRules
 				) {
