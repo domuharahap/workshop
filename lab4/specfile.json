@@ -3,14 +3,14 @@
 	"timeseries": [{
 			"timeseriesId": "com.dynatrace.builtin:service.responsetime",
 			"aggregation": "avg",
-			"tags": "Frontend",
+			"tags": "[Environment]app:keptn-orders",
 			"upperWarning": 5000,
 			"upperSevere": 10000
 		},
 		{
 			"timeseriesId": "com.dynatrace.builtin:service.responsetime",
 			"aggregation": "avg",
-			"entityIds": "SERVICE-65778F58A66834D8",
+			"entityIds": "SERVICE-B28FE70ECE238A2C",
 			"upperWarning": 5000,
 			"upperSevere": 8000
 		},
