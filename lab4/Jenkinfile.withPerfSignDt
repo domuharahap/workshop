@@ -24,7 +24,7 @@ pipeline {
         DOCKER_COMPOSE_TEMPLATE_FILE = "lab4/docker-compose-frontend.template"
         DOCKER_COMPOSE_FILE = "lab4/docker-compose-frontend.yaml"
         WAIT_TILL_READY_FILE = "helper-scripts/wait-till-ready.sh"
-        LOAD_TEST_FILE = "lab4/script/sendtraffic-frontend.sh"
+        LOAD_TEST_FILE = "lab4/scripts/sendtraffic-frontend.sh"
 
         // build the docker image name using tag value passed as parameters
         frontendimage = "dtdemos/dt-orders-frontend:${params.frontend_version}"
