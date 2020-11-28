@@ -1,7 +1,7 @@
 def tagMatchRules = [
   [
     meTypes: [
-      [meType: 'ENVIRONMENT']
+      [meType: 'SERVICE']
     ],
     tags : [
       [context: 'CONTEXTLESS', key: 'app', value: 'keptn-orders']
