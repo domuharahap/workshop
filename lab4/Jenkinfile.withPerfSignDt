@@ -99,13 +99,9 @@ pipeline {
 				}
 				echo "Waiting for a minute so data can be processed in Dynatrace"
 				sleep(60)
+				
+				perfSigDynatraceReports envId: 'Dynatrace Demo Environment', nonFunctionalFailure: 2, specFile: './lab4/specfile.json'
 			}
 		}
-		
-		stage('Dynatrace Quality Gate'){
-            steps {
-                perfSigDynatraceReports envId: 'Dynatrace Demo Environment', nonFunctionalFailure: 2, specFile: './lab4/specfile.json'
-            }
-        }
     }
 }
