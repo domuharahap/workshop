@@ -10,7 +10,7 @@
 		{
 		    "timeseriesId" : "com.dynatrace.builtin:service.failurerate",
 		    "aggregation" : "avg",
-		    "tags" : "app:front-end,environment:dev",
+		    "tags" : "[Environment]app:keptn-orders,service:frontend",
 		    "upperSevere" : 5.0,
 		    "upperWarning" : 0.0
 		},
