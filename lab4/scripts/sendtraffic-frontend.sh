@@ -21,7 +21,7 @@ else
 fi
 
 # verify ready application is up
-. ../../helper-scripts/wait-till-ready.sh
+. ../../../helper-scripts/wait-till-ready.sh
 
 ###################################################
 # set variables used by script
