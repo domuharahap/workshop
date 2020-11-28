@@ -79,50 +79,53 @@ pipeline {
         }
 
         stage('Push Dynatrace Deployment Event') {
-		steps {
-			createDynatraceDeploymentEvent(
-				customProperties: [
-					[
-						key: 'JenkinsUrl', 
-						value: '${env.JOB_URL}'
+			steps {
+				createDynatraceDeploymentEvent(
+					customProperties: [
+						[
+							key: 'JenkinsUrl', 
+							value: '${env.JOB_URL}'
+						], 
+						[
+							key: 'BuildUrl', 
+							value: '${env.BUILD_URL}'
+						], 
+						[key: 'GitCommit', value: '${env.GIT_COMMIT}'], 
+						[key: 'deploymentVersion', value: '${DEPLOY_VERSION}']
 					], 
-					[
-						key: 'BuildUrl', 
-						value: '${env.BUILD_URL}'
-					], 
-					[key: 'GitCommit', value: '${env.GIT_COMMIT}'], 
-					[key: 'deploymentVersion', value: '${DEPLOY_VERSION}']
-				], 
-				envId: 'Dynatrace Demo Environment', 
-				tagMatchRules: tagMatchRules
-			) {
-				// some block
+					envId: 'Dynatrace Demo Environment', 
+					tagMatchRules: tagMatchRules
+				) {
+					// some block
+				}
 			}
-		}
         }
-
+		
         stage('Performance Test') {
-		steps {
-			recordDynatraceCustomSession envId: 'Dynatrace Demo Environment', 
-			tagMatchRules: tagMatchRules, 
-			testCase: 'loadtest', 
-			timeframeStart: "${TEST_START}000", 
-			timeframeStop: "${TEST_END}000"
+			steps {
+				recordDynatraceCustomSession envId: 'Dynatrace Demo Environment', 
+				tagMatchRules: tagMatchRules, 
+				testCase: 'loadtest', 
+				timeframeStart: "${TEST_START}000", 
+				timeframeStop: "${TEST_END}000"
+			}
+
 		}
-			
-		steps {
-			script {
-			    TEST_START = sh(script: 'echo "$(date -u +%s)"', returnStdout: true).trim()
-			    sh "${LOAD_TEST_FILE} 120 ${env.BUILD_TAG}"
-			    TEST_END = sh(script: 'echo "$(date -u +%s)"', returnStdout: true).trim()
-			    echo "TEST_START: ${TEST_START}  TEST_END: ${TEST_END}"
+		stage('Testing) {			
+			steps {
+                script {
+                    TEST_START = sh(script: 'echo "$(date -u +%s)"', returnStdout: true).trim()
+                    sh "${LOAD_TEST_FILE} 120 ${env.BUILD_TAG}"
+                    TEST_END = sh(script: 'echo "$(date -u +%s)"', returnStdout: true).trim()
+                    echo "TEST_START: ${TEST_START}  TEST_END: ${TEST_END}"
+                }
+            }
+		}
+		
+		stage('Reporting') {
+			steps {
+				perfSigDynatraceReports envId: 'Dynatrace Demo Environment', nonFunctionalFailure: 2, specFile: 'specfile.json'
 			}
 		}
-	}
-	stage('Reporting') {
-		steps {
-			perfSigDynatraceReports envId: 'Dynatrace Demo Environment', nonFunctionalFailure: 2, specFile: 'specfile.json'
-		}
-	}
     }
 }
