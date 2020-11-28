@@ -25,8 +25,7 @@ pipeline {
         DOCKER_COMPOSE_FILE = "lab4/docker-compose-frontend.yaml"
         WAIT_TILL_READY_FILE = "helper-scripts/wait-till-ready-frontend.sh"
         LOAD_TEST_FILE = "lab4/scripts/sendtraffic-frontend.sh"
-	SPECFILE = "lab4/specfile.json"
-	
+
         // build the docker image name using tag value passed as parameters
         frontendimage = "dtdemos/dt-orders-frontend:${params.frontend_version}"
     }
@@ -104,7 +103,7 @@ pipeline {
 		
 		stage('Dynatrace Quality Gate'){
             steps {
-                perfSigDynatraceReports envId: 'Dynatrace Demo Environment', nonFunctionalFailure: 2, specFile: '${SPECFILE}'
+                perfSigDynatraceReports envId: 'Dynatrace Demo Environment', nonFunctionalFailure: 2, specFile: './lab4/specfile.json'
             }
         }
     }
