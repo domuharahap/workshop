@@ -42,7 +42,7 @@ pipeline {
                     sh "cp -f ${DOCKER_COMPOSE_TEMPLATE_FILE} ${DOCKER_COMPOSE_FILE}"
                     sh "sed -i 's#REPLACE-FRONTEND-IMAGE#${env.frontendimage}#g' ${DOCKER_COMPOSE_FILE}"
                     sh "cat ${DOCKER_COMPOSE_FILE}"
-					sh "chmod u+x ${LOAD_TEST_FILE}"
+					sh "chmod u+x ${LOAD_TEST_FILE} ${WAIT_TILL_READY_FILE}"
 					
                 }
             }
