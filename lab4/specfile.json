@@ -4,8 +4,8 @@
 			"timeseriesId": "com.dynatrace.builtin:service.responsetime",
 			"aggregation": "avg",
 			"tags": "[Environment]app:keptn-orders,service:frontend",
-			"upperWarning": 5000,
-			"upperSevere": 8000
+			"upperWarning": 3000,
+			"upperSevere": 5000
 		},
 		{
 		    "timeseriesId" : "com.dynatrace.builtin:service.failurerate",
@@ -17,8 +17,8 @@
 		{
 			"timeseriesId": "com.dynatrace.builtin:docker.container.cpu",
 			"aggregation": "avg",
-			"upperWarning": 50,
-			"upperSevere": 70
+			"upperWarning": 70,
+			"upperSevere": 90
 		}
 	]
 }
