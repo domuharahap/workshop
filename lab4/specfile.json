@@ -1,12 +1,18 @@
 {
 	"spec_version": "2.0",
-	"timeseries": [
-		{
+	"timeseries": [{
 			"timeseriesId": "com.dynatrace.builtin:service.responsetime",
 			"aggregation": "avg",
-			"tags": "service:frontend",
+			"tags": "[Environment]app:keptn-orders,service:frontend",
 			"upperWarning": 5000,
 			"upperSevere": 8000
+		},
+		{
+		    "timeseriesId" : "com.dynatrace.builtin:service.failurerate",
+		    "aggregation" : "avg",
+		    "tags" : "app:front-end,environment:dev",
+		    "upperSevere" : 5.0,
+		    "upperWarning" : 0.0
 		},
 		{
 			"timeseriesId": "com.dynatrace.builtin:docker.container.cpu",
