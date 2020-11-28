@@ -28,6 +28,7 @@ pipeline {
         DOCKER_COMPOSE_FILE = "lab4/docker-compose.yaml"
         WAIT_TILL_READY_FILE = "helper-scripts/wait-till-ready.sh"
         LOAD_TEST_FILE = "lab3/sendtraffic.sh"
+        VALIDATION_FILE = "helper-scripts/validate-service-levels.sh"
 
         // build the docker image name using tag value passed as parameters
         frontendimage = "dtdemos/dt-orders-frontend:${params.frontend_version}"
