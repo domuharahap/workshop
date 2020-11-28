@@ -105,18 +105,6 @@ pipeline {
 			steps {
 				recordDynatraceCustomSession envId: 'Dynatrace Demo Environment',  tagMatchRules: tagMatchRules, testCase: 'loadtest', timeframeStart: "${TEST_START}000", timeframeStop: "${TEST_END}000"
 			}
-
-		}
-		
-		stage('Testing) {
-			steps {
-                script {
-                    TEST_START = sh(script: 'echo "$(date -u +%s)"', returnStdout: true).trim()
-                    sh "${LOAD_TEST_FILE} 120 ${env.BUILD_TAG}"
-                    TEST_END = sh(script: 'echo "$(date -u +%s)"', returnStdout: true).trim()
-                    echo "TEST_START: ${TEST_START}  TEST_END: ${TEST_END}"
-                }
-            }
 		}
 		
 		stage('Reporting') {
