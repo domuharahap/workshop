@@ -103,7 +103,7 @@ pipeline {
 		
         stage('Performance Test') {
 			steps {
-				recordDynatraceCustomSession envId: 'Dynatrace Demo Environment',  tagMatchRules: tagMatchRules, testCase: 'loadtest', timeframeStart: "${TEST_START}000", timeframeStop: "${TEST_END}000"
+				recordDynatraceCustomSession envId: 'Dynatrace Demo Environment',  tagMatchRules: tagMatchRules, testCase: 'loadtest'
 			}
 		}
 		
