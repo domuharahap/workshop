@@ -79,6 +79,10 @@ Here is a diagram of the additional validation step and interactions with Dynatr
     cat Jenkinsfile.withgate
     ```
 
+1. Upgrade or manage Jenkins plugin.
+
+    <img src="images/managed-jenkins.png" >
+    
 1. Run the pipeline and review console log as it runs. This will deploy app, execute tests, and push events.  This time notice, new service level parameters.
 
     <img src="images/jenkins-gate-job.png" >
