@@ -52,15 +52,14 @@ The workshop VM instance is provisioned with an SSH web client tool.  Just open 
 
 The demo application runs using Docker Compose.  Docker Compose is a tool for defining and running multi-container Docker applications. With Compose, you use a YAML file to configure your application's services. See the [Application readme](../APPLICATION.md) for more details.
 
-1. Ensure you have the latest workshop scripts by doing a git pull
+1. Ensure you have the latest workshop scripts by doing a git clone/pull to update the latest code
 
     ```
+    sudo su
+    cd /home
 
-    cd ~/workshop
-    sudo git pull
-
-    cd ~/scripts
-    sudo git pull
+    git clone --branch uitm https://github.com/domuharahap/workshop.git
+    
     ```
 
 1. Review the docker-compose.yaml file used for the demo application
