@@ -56,7 +56,7 @@ The demo application runs using Docker Compose.  Docker Compose is a tool for de
 
     ```
     sudo su
-    cd /home
+    cd /root
 
     git clone --branch uitm https://github.com/domuharahap/workshop.git
     
