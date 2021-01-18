@@ -28,7 +28,7 @@ fi
 ###################################################
 
 # url to the order app
-url="http://$(curl -s http://checkip.amazonaws.com)"          
+url="http://localhost"          
 
 # Set Dynatrace Test Headers Values
 loadScriptName="loadtest.sh"
