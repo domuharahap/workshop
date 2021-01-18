@@ -39,6 +39,23 @@ Now open Jenkins in a browser and login with the credentials provided
 
 <img src="images/jenkins-login.png"  width="400">
 
+## Manage the plugin
+
+The plugin and version installed is no longer up to date, we have to do manual configure/upgrade the jenkins plugin to allow the pipeline running.
+
+1. Navigate to the ```Manage Jenkins``` section and click on the "Correct" button
+
+<img src="images/managed-jenkins.png" >
+
+1. Select all availalbe plugin and click on the "Download now and install after restart" button
+
+<img src="images/update-jenkins-plugin.png" >
+
+1. Install the pipeline plugin to enable the pipeline
+
+<img src="images/install-workflow-pipeline-plugin.png" >
+
+
 ## Run the pipeline
 
 The pipeline we have provided will deploy the application, execute tests, and push Dynatrace deployment and test events. Here is a diagram of the pipeline steps and interactions with Dynatrace.
@@ -78,10 +95,6 @@ Here is a diagram of the additional validation step and interactions with Dynatr
     cd ~/workshop/lab4
     cat Jenkinsfile.withgate
     ```
-
-1. Upgrade or manage Jenkins plugin.
-
-    <img src="images/managed-jenkins.png" >
     
 1. Run the pipeline and review console log as it runs. This will deploy app, execute tests, and push events.  This time notice, new service level parameters.
 
