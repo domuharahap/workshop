@@ -101,10 +101,6 @@ The demo application runs using Docker Compose.  Docker Compose is a tool for de
 
 1. Get the URL to the demo application by running this command:
 
-    ```
-    echo "http://$(curl -s http://checkip.amazonaws.com)"
-    ```
-
     It may take about a minute, but verify that you see version 1 for each service as shown here
 
     <img src="images/backend-versions.png" width="400">
