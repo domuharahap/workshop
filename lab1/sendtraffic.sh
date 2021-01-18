@@ -11,7 +11,7 @@ if [ $# -lt 1 ]
 then
   duration=120
 else
-  duration=$1 
+  duration=$1
 fi
 
 # verify ready application is up
@@ -22,7 +22,7 @@ fi
 ###################################################
 
 # url to the order app
-url="http://$(curl -s http://checkip.amazonaws.com)"          
+url="http://localhost"
 
 # Calculate how long this test maximum runs!
 thinktime=5  # default the think time
@@ -43,16 +43,16 @@ while [ $currTime -lt $endTime ];
 do
   currTime=`date +%s`
   echo "Loop Start: $(date +%H:%M:%S)"
-  
+
   testStepName=FrontendLanding
   echo "  calling TSN=$testStepName; $(curl -s "$url" -w "%{http_code}"  -o /dev/nul)"
 
   testStepName=CatalogSearchLanding
   echo "  calling TSN=$testStepName; $(curl -s "$url:8082/searchForm.html" -w "%{http_code}"  -o /dev/nul)"
-  
+
   testStepName=CatalogSearch
   echo "  calling TSN=$testStepName; $(curl -s "$url:8082/searchByName.html?query=iPod&submit=" -w "%{http_code}"  -o /dev/nul)"
-  
+
   testStepName=CatalogItemView
   echo "  calling TSN=$testStepName; $(curl -s "$url:8082/1.html" -w "%{http_code}"  -o /dev/nul)"
   echo "  calling TSN=$testStepName; $(curl -s "$url:8082/2.html" -w "%{http_code}"  -o /dev/nul)"
@@ -67,7 +67,7 @@ do
 
   testStepName=OrderAddLine
   echo "  calling TSN=$testStepName; $(curl -X POST -s "$url:8083/line" -w "%{http_code}"  -o /dev/nul)"
-  
+
   sleep $thinktime
 done;
 

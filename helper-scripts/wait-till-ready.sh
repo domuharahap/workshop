@@ -3,8 +3,8 @@
 attempt_counter=0
 max_attempts=14
 sleep_time=10
-#IP="$(curl -s http://checkip.amazonaws.com)"          
-IP="localhost" 
+#IP="$(curl -s http://checkip.amazonaws.com)"
+IP="localhost"
 
 wait_for_page() {
     echo "wait_for_page: $1"
