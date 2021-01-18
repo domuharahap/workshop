@@ -8,7 +8,6 @@ The workshop is broken into a set of mini-labs that are meant to be followed seq
 * [lab2](./lab2/README.md) – Dynatrace features for performance analysis and automation
 * [lab3](./lab3/README.md) – Dynatrace API for automation
 * [lab4](./lab4/README.md) – Automated performance test and analysis within a CI/CD pipeline 
-* [lab5](./lab5/README.md) – Advanced performance test automation using Neoload
 
 The workshop labs will all use an order processing application that has been designed with built-in performance issues.  The demo application and these problems are described [here](APPLICATION.md)
 
