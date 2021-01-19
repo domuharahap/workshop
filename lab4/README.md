@@ -19,7 +19,7 @@ The picture below shows what we will complete in this lab.
 The lab has a script that will install Jenkins and configure it with the plugin, jobs, and global variables that the jobs expect. To install Jenkins, just run these commands.
 
 ```
-cd ~/scripts
+cd ~/workshop/scripts
 sudo ./deploy-jenkins.sh
 ```
 

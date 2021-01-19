@@ -47,7 +47,7 @@ Some of the lab provide scripts require the Dynatrace URL and API.  To save you 
 1. Run the script to provide your values
 
     ```
-    cd ~/scripts
+    cd ~/workshop/scripts
     sudo ./enter-script-inputs.sh
     ```
 
