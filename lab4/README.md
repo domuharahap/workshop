@@ -52,17 +52,26 @@ Now open Jenkins in a browser and login with the credentials provided
 
 The plugin and version installed is no longer up to date, we have to do manual configure/upgrade the jenkins plugin to allow the pipeline running.
 
-1. Navigate to the ```Manage Jenkins``` section and click on the "Correct" button
+1. Navigate to the ```Manage Jenkins``` section and click on the "Manage Plugin" button and Select "Available Tabs"
+
+Search for "Workflow-agregator" and check
 
 <img src="images/managed-jenkins.png" >
 
-1. Select all availalbe plugin and click on the "Download now and install after restart" button
+Search for "docker Build" and check
 
-<img src="images/update-jenkins-plugin.png" >
+<img src="images/install-workflow-pipeline-plugin-dockers-latest.png" >
 
-1. Install the pipeline plugin to enable the pipeline
+Search for "docker Lates" and check
 
-<img src="images/install-workflow-pipeline-plugin.png" >
+<img src="images/install-workflow-pipeline-plugin-dockers-latest.png" >
+
+Search for "Performance Signature" and check
+
+<img src="images/install-dynatrace-performance-signature-plugin.png" >
+
+
+1. Click on the "Download now and install after restart" button
 
 
 ## Run the pipeline
