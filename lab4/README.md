@@ -54,21 +54,21 @@ The plugin and version installed is no longer up to date, we have to do manual c
 
 1. Navigate to the ```Manage Jenkins``` section and click on the "Manage Plugin" button and Select "Available Tabs"
 
-Search for "Workflow-agregator" and check
+    Search for "Workflow-agregator" and check
 
-<img src="images/managed-jenkins.png" >
+    <img src="images/install-workflow-pipeline-plugin.png" >
 
-Search for "docker Build" and check
+    Search for "docker Build" and check
 
-<img src="images/install-workflow-pipeline-plugin-dockers-latest.png" >
+    <img src="images/install-workflow-pipeline-plugin-dockers-latest.png" >
 
-Search for "docker Lates" and check
+    Search for "docker Lates" and check
 
-<img src="images/install-workflow-pipeline-plugin-dockers-latest.png" >
+    <img src="images/install-workflow-pipeline-plugin-dockers-latest.png" >
 
-Search for "Performance Signature" and check
+    Search for "Performance Signature" and check
 
-<img src="images/install-dynatrace-performance-signature-plugin.png" >
+    <img src="images/install-dynatrace-performance-signature-plugin.png" >
 
 
 1. Click on the "Download now and install after restart" button
