@@ -14,6 +14,15 @@ The picture below shows what we will complete in this lab.
 
 <img src="images/lab4.png" >
 
+## Update the git repository 
+
+Run below command to update the git repository existed.
+
+```
+cd ~/workshop/
+git pull
+```
+
 ## Jenkins server setup
 
 The lab has a script that will install Jenkins and configure it with the plugin, jobs, and global variables that the jobs expect. To install Jenkins, just run these commands.
