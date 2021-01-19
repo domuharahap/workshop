@@ -1,0 +1,7 @@
+{
+    "githubOrg": "GITHUB_ORG_PLACEHOLDER",
+    "dynatraceTenant": "DT_TENANT_PLACEHOLDER",
+    "dynatraceTenantUrl": "DT_TENANT_URL_PLACEHOLDER",
+    "dynatraceApiToken": "DT_API_TOKEN_PLACEHOLDER",
+    "nlwebapikey": "NL_WEB_API_KEY_PLACEHOLDER"
+}

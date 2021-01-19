@@ -1,0 +1,95 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-definition plugin="workflow-job@2.36">
+  <actions>
+    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobAction plugin="pipeline-model-definition@1.5.0"/>
+    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction plugin="pipeline-model-definition@1.5.0">
+      <jobProperties/>
+      <triggers/>
+      <parameters>
+        <string>catalog_service_version</string>
+        <string>customer_service_version</string>
+        <string>order_service_version</string>
+        <string>frontend_version</string>
+      </parameters>
+      <options/>
+    </org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction>
+  </actions>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <hudson.model.ParametersDefinitionProperty>
+      <parameterDefinitions>
+        <hudson.model.ChoiceParameterDefinition>
+          <name>frontend_version</name>
+          <description>1 = Normal behavior</description>
+          <choices>
+            <string>1</string>
+          </choices>
+        </hudson.model.ChoiceParameterDefinition>
+        <hudson.model.ChoiceParameterDefinition>
+          <name>order_service_version</name>
+          <description>1 = Normal behavior. 2 = 50% exception for /line URL and and n+1 back-end calls for /form.html</description>
+          <choices>
+            <string>1</string>
+            <string>2</string>
+          </choices>
+        </hudson.model.ChoiceParameterDefinition>
+        <hudson.model.ChoiceParameterDefinition>
+          <name>customer_service_version</name>
+          <description>1 = Normal behavior. 2 = High Response time for /list.html</description>
+          <choices>
+            <string>1</string>
+            <string>2</string>
+          </choices>
+        </hudson.model.ChoiceParameterDefinition>
+        <hudson.model.ChoiceParameterDefinition>
+          <name>catalog_service_version</name>
+          <description>1 = Normal behavior</description>
+          <choices>
+            <string>1</string>
+          </choices>
+        </hudson.model.ChoiceParameterDefinition>
+	<hudson.model.StringParameterDefinition>
+          <name>response_time_target</name>
+          <description>response time target</description>
+          <defaultValue>10000000</defaultValue>
+          <trim>false</trim>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>server_error_target</name>
+          <description>server error target</description>
+          <defaultValue>5</defaultValue>
+          <trim>false</trim>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>cpu_time_target</name>
+          <description>cpu time target</description>
+          <defaultValue>5000000</defaultValue>
+          <trim>false</trim>
+        </hudson.model.StringParameterDefinition>
+      </parameterDefinitions>
+    </hudson.model.ParametersDefinitionProperty>
+  </properties>
+  <definition class="org.jenkinsci.plugins.workflow.cps.CpsScmFlowDefinition" plugin="workflow-cps@2.78">
+    <scm class="hudson.plugins.git.GitSCM" plugin="git@4.0.0">
+      <configVersion>2</configVersion>
+      <userRemoteConfigs>
+        <hudson.plugins.git.UserRemoteConfig>
+          <url>https://github.com/GITHUB_ORGANIZATION_PLACEHOLDER/workshop.git</url>
+        </hudson.plugins.git.UserRemoteConfig>
+      </userRemoteConfigs>
+      <branches>
+        <hudson.plugins.git.BranchSpec>
+          <name>*/master</name>
+        </hudson.plugins.git.BranchSpec>
+      </branches>
+      <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
+      <submoduleCfg class="list"/>
+      <extensions/>
+    </scm>
+    <scriptPath>lab4/Jenkinsfile.withgate</scriptPath>
+    <lightweight>true</lightweight>
+  </definition>
+  <triggers/>
+  <disabled>false</disabled>
+</flow-definition>

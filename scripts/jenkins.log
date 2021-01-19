@@ -1,0 +1,1928 @@
+/usr/local/bin/jenkins-support: line 31: unzip: command not found
+/usr/local/bin/jenkins-support: line 31: unzip: command not found
+/usr/local/bin/jenkins-support: line 31: unzip: command not found
+/usr/local/bin/jenkins-support: line 31: unzip: command not found
+/usr/local/bin/jenkins-support: line 31: unzip: command not found
+/usr/local/bin/jenkins-support: line 31: unzip: command not found
+/usr/local/bin/jenkins-support: line 31: unzip: command not found
+/usr/local/bin/jenkins-support: line 31: unzip: command not found
+/usr/local/bin/jenkins-support: line 31: unzip: command not found
+/usr/local/bin/jenkins-support: line 31: unzip: command not found
+/usr/local/bin/jenkins-support: line 31: unzip: command not found
+/usr/local/bin/jenkins-support: line 31: unzip: command not found
+/usr/local/bin/jenkins-support: line 31: unzip: command not found
+/usr/local/bin/jenkins-support: line 31: unzip: command not found
+/usr/local/bin/jenkins-support: line 31: unzip: command not found
+/usr/local/bin/jenkins-support: line 31: unzip: command not found
+/usr/local/bin/jenkins-support: line 31: unzip: command not found
+/usr/local/bin/jenkins-support: line 31: unzip: command not found
+/usr/local/bin/jenkins-support: line 31: unzip: command not found
+/usr/local/bin/jenkins-support: line 31: unzip: command not found
+/usr/local/bin/jenkins-support: line 31: unzip: command not found
+/usr/local/bin/jenkins-support: line 31: unzip: command not found
+/usr/local/bin/jenkins-support: line 31: unzip: command not found
+/usr/local/bin/jenkins-support: line 31: unzip: command not found
+jenkinhome: /var/jenkins_home
+jenkinwar - /usr/share/jenkins/jenkins.war - 
+alias - 
+nohup: ignoring input
+Running from: /usr/share/jenkins/jenkins.war
+webroot: EnvVars.masterEnvVars.get("JENKINS_HOME")
+2021-01-19 07:49:50.966+0000 [id=1]	INFO	org.eclipse.jetty.util.log.Log#initialized: Logging initialized @3737ms to org.eclipse.jetty.util.log.JavaUtilLog
+2021-01-19 07:49:51.134+0000 [id=1]	INFO	winstone.Logger#logInternal: Beginning extraction from war file
+2021-01-19 07:49:53.473+0000 [id=1]	WARNING	o.e.j.s.handler.ContextHandler#setContextPath: Empty contextPath
+2021-01-19 07:49:53.536+0000 [id=1]	INFO	org.eclipse.jetty.server.Server#doStart: jetty-9.4.30.v20200611; built: 2020-06-11T12:34:51.929Z; git: 271836e4c1f4612f12b7bb13ef5a92a927634b0d; jvm 1.8.0_275-8u275-b01-0ubuntu1~18.04-b01
+2021-01-19 07:49:53.828+0000 [id=1]	INFO	o.e.j.w.StandardDescriptorProcessor#visitServlet: NO JSP Support for /, did not find org.eclipse.jetty.jsp.JettyJspServlet
+2021-01-19 07:49:53.886+0000 [id=1]	INFO	o.e.j.s.s.DefaultSessionIdManager#doStart: DefaultSessionIdManager workerName=node0
+2021-01-19 07:49:53.886+0000 [id=1]	INFO	o.e.j.s.s.DefaultSessionIdManager#doStart: No SessionScavenger set, using defaults
+2021-01-19 07:49:53.899+0000 [id=1]	INFO	o.e.j.server.session.HouseKeeper#startScavenging: node0 Scavenging every 600000ms
+2021-01-19 07:49:54.305+0000 [id=1]	INFO	hudson.WebAppMain#contextInitialized: Jenkins home directory: /var/jenkins_home found at: EnvVars.masterEnvVars.get("JENKINS_HOME")
+2021-01-19 07:49:54.577+0000 [id=1]	INFO	o.e.j.s.handler.ContextHandler#doStart: Started w.@2ca65ce4{Jenkins v2.249.2,/,file:///var/jenkins_home/war/,AVAILABLE}{/var/jenkins_home/war}
+2021-01-19 07:49:54.698+0000 [id=1]	INFO	o.e.j.server.AbstractConnector#doStart: Started ServerConnector@5be1d0a4{HTTP/1.1, (http/1.1)}{0.0.0.0:8080}
+2021-01-19 07:49:54.699+0000 [id=1]	INFO	org.eclipse.jetty.server.Server#doStart: Started @7471ms
+2021-01-19 07:49:54.720+0000 [id=27]	INFO	winstone.Logger#logInternal: Winstone Servlet Engine running: controlPort=disabled
+2021-01-19 07:49:56.096+0000 [id=33]	INFO	jenkins.InitReactorRunner$1#onAttained: Started initialization
+2021-01-19 07:49:56.546+0000 [id=33]	INFO	jenkins.InitReactorRunner$1#onAttained: Listed all plugins
+2021-01-19 07:49:56.565+0000 [id=34]	SEVERE	jenkins.InitReactorRunner$1#onTaskFailed: Failed Loading plugin Jenkins Git plugin v4.0.0 (git)
+java.io.IOException: Failed to load: Jenkins Git plugin (4.0.0)
+ - Plugin is missing: ssh-credentials (1.17.2)
+ - Plugin is missing: workflow-scm-step (2.9)
+ - Plugin is missing: git-client (3.0.0)
+ - Plugin is missing: mailer (1.23)
+ - Update required: SCM API Plugin (2.4.1) to be updated to 2.6.3 or higher
+ - Plugin is missing: credentials (2.3.0)
+	at hudson.PluginWrapper.resolvePluginDependencies(PluginWrapper.java:952)
+	at hudson.PluginManager$2$1$1.run(PluginManager.java:549)
+	at org.jvnet.hudson.reactor.TaskGraphBuilder$TaskImpl.run(TaskGraphBuilder.java:169)
+	at org.jvnet.hudson.reactor.Reactor.runTask(Reactor.java:296)
+	at jenkins.model.Jenkins$5.runTask(Jenkins.java:1131)
+	at org.jvnet.hudson.reactor.Reactor$2.run(Reactor.java:214)
+	at org.jvnet.hudson.reactor.Reactor$Node.run(Reactor.java:117)
+	at jenkins.security.ImpersonatingExecutorService$1.run(ImpersonatingExecutorService.java:59)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2021-01-19 07:49:56.567+0000 [id=34]	SEVERE	jenkins.InitReactorRunner$1#onTaskFailed: Failed Loading plugin GitHub Branch Source Plugin v2.5.8 (github-branch-source)
+java.io.IOException: Failed to load: GitHub Branch Source Plugin (2.5.8)
+ - Plugin is missing: github (1.29.3)
+ - Plugin is missing: credentials (2.1.18)
+ - Plugin is missing: display-url-api (2.0)
+ - Failed to load: Jenkins Git plugin (4.0.0)
+	at hudson.PluginWrapper.resolvePluginDependencies(PluginWrapper.java:952)
+	at hudson.PluginManager$2$1$1.run(PluginManager.java:549)
+	at org.jvnet.hudson.reactor.TaskGraphBuilder$TaskImpl.run(TaskGraphBuilder.java:169)
+	at org.jvnet.hudson.reactor.Reactor.runTask(Reactor.java:296)
+	at jenkins.model.Jenkins$5.runTask(Jenkins.java:1131)
+	at org.jvnet.hudson.reactor.Reactor$2.run(Reactor.java:214)
+	at org.jvnet.hudson.reactor.Reactor$Node.run(Reactor.java:117)
+	at jenkins.security.ImpersonatingExecutorService$1.run(ImpersonatingExecutorService.java:59)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2021-01-19 07:49:56.567+0000 [id=34]	SEVERE	jenkins.InitReactorRunner$1#onTaskFailed: Failed Loading plugin Credentials Binding Plugin v1.23 (credentials-binding)
+java.io.IOException: Failed to load: Credentials Binding Plugin (1.23)
+ - Plugin is missing: plain-credentials (1.6)
+ - Plugin is missing: credentials (2.3.5)
+ - Plugin is missing: ssh-credentials (1.17.3)
+	at hudson.PluginWrapper.resolvePluginDependencies(PluginWrapper.java:952)
+	at hudson.PluginManager$2$1$1.run(PluginManager.java:549)
+	at org.jvnet.hudson.reactor.TaskGraphBuilder$TaskImpl.run(TaskGraphBuilder.java:169)
+	at org.jvnet.hudson.reactor.Reactor.runTask(Reactor.java:296)
+	at jenkins.model.Jenkins$5.runTask(Jenkins.java:1131)
+	at org.jvnet.hudson.reactor.Reactor$2.run(Reactor.java:214)
+	at org.jvnet.hudson.reactor.Reactor$Node.run(Reactor.java:117)
+	at jenkins.security.ImpersonatingExecutorService$1.run(ImpersonatingExecutorService.java:59)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2021-01-19 07:49:56.568+0000 [id=37]	SEVERE	jenkins.InitReactorRunner$1#onTaskFailed: Failed Loading plugin Google OAuth Credentials plugin v1.0.0 (google-oauth-plugin)
+java.io.IOException: Failed to load: Google OAuth Credentials plugin (1.0.0)
+ - Plugin is missing: credentials (2.2.0)
+ - Plugin is missing: oauth-credentials (0.3)
+	at hudson.PluginWrapper.resolvePluginDependencies(PluginWrapper.java:952)
+	at hudson.PluginManager$2$1$1.run(PluginManager.java:549)
+	at org.jvnet.hudson.reactor.TaskGraphBuilder$TaskImpl.run(TaskGraphBuilder.java:169)
+	at org.jvnet.hudson.reactor.Reactor.runTask(Reactor.java:296)
+	at jenkins.model.Jenkins$5.runTask(Jenkins.java:1131)
+	at org.jvnet.hudson.reactor.Reactor$2.run(Reactor.java:214)
+	at org.jvnet.hudson.reactor.Reactor$Node.run(Reactor.java:117)
+	at jenkins.security.ImpersonatingExecutorService$1.run(ImpersonatingExecutorService.java:59)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2021-01-19 07:49:56.568+0000 [id=37]	SEVERE	jenkins.InitReactorRunner$1#onTaskFailed: Failed Loading plugin Google Authenticated Source plugin v0.4 (google-source-plugin)
+java.io.IOException: Failed to load: Google Authenticated Source plugin (0.4)
+ - Failed to load: Google OAuth Credentials plugin (1.0.0)
+ - Plugin is missing: google-metadata-plugin (0.2)
+	at hudson.PluginWrapper.resolvePluginDependencies(PluginWrapper.java:952)
+	at hudson.PluginManager$2$1$1.run(PluginManager.java:549)
+	at org.jvnet.hudson.reactor.TaskGraphBuilder$TaskImpl.run(TaskGraphBuilder.java:169)
+	at org.jvnet.hudson.reactor.Reactor.runTask(Reactor.java:296)
+	at jenkins.model.Jenkins$5.runTask(Jenkins.java:1131)
+	at org.jvnet.hudson.reactor.Reactor$2.run(Reactor.java:214)
+	at org.jvnet.hudson.reactor.Reactor$Node.run(Reactor.java:117)
+	at jenkins.security.ImpersonatingExecutorService$1.run(ImpersonatingExecutorService.java:59)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2021-01-19 07:49:56.624+0000 [id=37]	INFO	j.b.a.SecurityProviderInitializer#addSecurityProvider: Initializing Bouncy Castle security provider.
+2021-01-19 07:49:56.816+0000 [id=37]	INFO	j.b.a.SecurityProviderInitializer#addSecurityProvider: Bouncy Castle security provider initialized.
+2021-01-19 07:49:56.817+0000 [id=38]	SEVERE	jenkins.InitReactorRunner$1#onTaskFailed: Failed Loading plugin Jenkins Workspace Cleanup Plugin v0.38 (ws-cleanup)
+java.io.IOException: Failed to load: Jenkins Workspace Cleanup Plugin (0.38)
+ - Plugin is missing: resource-disposer (0.3)
+ - Plugin is missing: workflow-durable-task-step (2.4)
+	at hudson.PluginWrapper.resolvePluginDependencies(PluginWrapper.java:952)
+	at hudson.PluginManager$2$1$1.run(PluginManager.java:549)
+	at org.jvnet.hudson.reactor.TaskGraphBuilder$TaskImpl.run(TaskGraphBuilder.java:169)
+	at org.jvnet.hudson.reactor.Reactor.runTask(Reactor.java:296)
+	at jenkins.model.Jenkins$5.runTask(Jenkins.java:1131)
+	at org.jvnet.hudson.reactor.Reactor$2.run(Reactor.java:214)
+	at org.jvnet.hudson.reactor.Reactor$Node.run(Reactor.java:117)
+	at jenkins.security.ImpersonatingExecutorService$1.run(ImpersonatingExecutorService.java:59)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2021-01-19 07:49:56.818+0000 [id=38]	SEVERE	jenkins.InitReactorRunner$1#onTaskFailed: Failed Loading plugin Pipeline: Job v2.39 (workflow-job)
+java.io.IOException: Failed to load: Pipeline: Job (2.39)
+ - Plugin is missing: workflow-support (3.3)
+	at hudson.PluginWrapper.resolvePluginDependencies(PluginWrapper.java:952)
+	at hudson.PluginManager$2$1$1.run(PluginManager.java:549)
+	at org.jvnet.hudson.reactor.TaskGraphBuilder$TaskImpl.run(TaskGraphBuilder.java:169)
+	at org.jvnet.hudson.reactor.Reactor.runTask(Reactor.java:296)
+	at jenkins.model.Jenkins$5.runTask(Jenkins.java:1131)
+	at org.jvnet.hudson.reactor.Reactor$2.run(Reactor.java:214)
+	at org.jvnet.hudson.reactor.Reactor$Node.run(Reactor.java:117)
+	at jenkins.security.ImpersonatingExecutorService$1.run(ImpersonatingExecutorService.java:59)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2021-01-19 07:49:56.819+0000 [id=38]	SEVERE	jenkins.InitReactorRunner$1#onTaskFailed: Failed Loading plugin Docker plugin v1.2.1 (docker-plugin)
+java.io.IOException: Failed to load: Docker plugin (1.2.1)
+ - Plugin is missing: token-macro (2.3)
+ - Update required: bouncycastle API Plugin (2.16.0) to be updated to 2.16.2 or higher
+ - Plugin is missing: apache-httpcomponents-client-4-api (4.5.3-2.0)
+ - Plugin is missing: docker-commons (1.9)
+ - Plugin is missing: ssh-slaves (1.22)
+ - Plugin is missing: docker-java-api (3.1.5)
+ - Plugin is missing: durable-task (1.16)
+	at hudson.PluginWrapper.resolvePluginDependencies(PluginWrapper.java:952)
+	at hudson.PluginManager$2$1$1.run(PluginManager.java:549)
+	at org.jvnet.hudson.reactor.TaskGraphBuilder$TaskImpl.run(TaskGraphBuilder.java:169)
+	at org.jvnet.hudson.reactor.Reactor.runTask(Reactor.java:296)
+	at jenkins.model.Jenkins$5.runTask(Jenkins.java:1131)
+	at org.jvnet.hudson.reactor.Reactor$2.run(Reactor.java:214)
+	at org.jvnet.hudson.reactor.Reactor$Node.run(Reactor.java:117)
+	at jenkins.security.ImpersonatingExecutorService$1.run(ImpersonatingExecutorService.java:59)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2021-01-19 07:49:56.820+0000 [id=38]	SEVERE	jenkins.InitReactorRunner$1#onTaskFailed: Failed Loading plugin docker-build-step v2.0 (docker-build-step)
+java.io.IOException: Failed to load: docker-build-step (2.0)
+ - Plugin is missing: credentials (1.22)
+ - Plugin is missing: docker-commons (1.4.0)
+	at hudson.PluginWrapper.resolvePluginDependencies(PluginWrapper.java:952)
+	at hudson.PluginManager$2$1$1.run(PluginManager.java:549)
+	at org.jvnet.hudson.reactor.TaskGraphBuilder$TaskImpl.run(TaskGraphBuilder.java:169)
+	at org.jvnet.hudson.reactor.Reactor.runTask(Reactor.java:296)
+	at jenkins.model.Jenkins$5.runTask(Jenkins.java:1131)
+	at org.jvnet.hudson.reactor.Reactor$2.run(Reactor.java:214)
+	at org.jvnet.hudson.reactor.Reactor$Node.run(Reactor.java:117)
+	at jenkins.security.ImpersonatingExecutorService$1.run(ImpersonatingExecutorService.java:59)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2021-01-19 07:49:56.820+0000 [id=38]	SEVERE	jenkins.InitReactorRunner$1#onTaskFailed: Failed Loading plugin Pipeline v2.6 (workflow-aggregator)
+java.io.IOException: Failed to load: Pipeline (2.6)
+ - Plugin is missing: workflow-basic-steps (2.11)
+ - Plugin is missing: workflow-cps (2.56)
+ - Failed to load: Pipeline: Job (2.39)
+ - Plugin is missing: lockable-resources (2.3)
+ - Plugin is missing: workflow-cps-global-lib (2.11)
+ - Plugin is missing: pipeline-stage-view (2.10)
+ - Plugin is missing: workflow-durable-task-step (2.22)
+	at hudson.PluginWrapper.resolvePluginDependencies(PluginWrapper.java:952)
+	at hudson.PluginManager$2$1$1.run(PluginManager.java:549)
+	at org.jvnet.hudson.reactor.TaskGraphBuilder$TaskImpl.run(TaskGraphBuilder.java:169)
+	at org.jvnet.hudson.reactor.Reactor.runTask(Reactor.java:296)
+	at jenkins.model.Jenkins$5.runTask(Jenkins.java:1131)
+	at org.jvnet.hudson.reactor.Reactor$2.run(Reactor.java:214)
+	at org.jvnet.hudson.reactor.Reactor$Node.run(Reactor.java:117)
+	at jenkins.security.ImpersonatingExecutorService$1.run(ImpersonatingExecutorService.java:59)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2021-01-19 07:50:00.195+0000 [id=38]	INFO	jenkins.InitReactorRunner$1#onAttained: Prepared all plugins
+2021-01-19 07:50:00.210+0000 [id=34]	INFO	jenkins.InitReactorRunner$1#onAttained: Started all plugins
+2021-01-19 07:50:00.237+0000 [id=38]	INFO	jenkins.InitReactorRunner$1#onAttained: Augmented all extensions
+2021-01-19 07:50:01.083+0000 [id=36]	INFO	jenkins.InitReactorRunner$1#onAttained: System config loaded
+2021-01-19 07:50:01.088+0000 [id=33]	SEVERE	jenkins.InitReactorRunner$1#onTaskFailed: Failed Loading item catalog
+com.thoughtworks.xstream.mapper.CannotResolveClassException: com.cloudbees.hudson.plugins.folder.Folder
+	at com.thoughtworks.xstream.mapper.DefaultMapper.realClass(DefaultMapper.java:79)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.DynamicProxyMapper.realClass(DynamicProxyMapper.java:55)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.PackageAliasingMapper.realClass(PackageAliasingMapper.java:88)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.ClassAliasingMapper.realClass(ClassAliasingMapper.java:79)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.ArrayMapper.realClass(ArrayMapper.java:74)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.SecurityMapper.realClass(SecurityMapper.java:71)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at hudson.util.XStream2$CompatibilityMapper.realClass(XStream2.java:379)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at hudson.util.xstream.MapperDelegate.realClass(MapperDelegate.java:43)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.CachingMapper.realClass(CachingMapper.java:48)
+	at com.thoughtworks.xstream.core.util.HierarchicalStreams.readClassType(HierarchicalStreams.java:29)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.start(TreeUnmarshaller.java:133)
+	at com.thoughtworks.xstream.core.AbstractTreeMarshallingStrategy.unmarshal(AbstractTreeMarshallingStrategy.java:32)
+	at com.thoughtworks.xstream.XStream.unmarshal(XStream.java:1189)
+	at hudson.util.XStream2.unmarshal(XStream2.java:161)
+	at hudson.util.XStream2.unmarshal(XStream2.java:132)
+	at com.thoughtworks.xstream.XStream.unmarshal(XStream.java:1173)
+	at com.thoughtworks.xstream.XStream.fromXML(XStream.java:1053)
+	at hudson.XmlFile.read(XmlFile.java:149)
+Caused: java.io.IOException: Unable to read /var/jenkins_home/jobs/catalog/config.xml
+	at hudson.XmlFile.read(XmlFile.java:151)
+	at hudson.model.Items.load(Items.java:370)
+	at jenkins.model.Jenkins$14.run(Jenkins.java:3269)
+	at org.jvnet.hudson.reactor.TaskGraphBuilder$TaskImpl.run(TaskGraphBuilder.java:169)
+	at org.jvnet.hudson.reactor.Reactor.runTask(Reactor.java:296)
+	at jenkins.model.Jenkins$5.runTask(Jenkins.java:1131)
+	at org.jvnet.hudson.reactor.Reactor$2.run(Reactor.java:214)
+	at org.jvnet.hudson.reactor.Reactor$Node.run(Reactor.java:117)
+	at jenkins.security.ImpersonatingExecutorService$1.run(ImpersonatingExecutorService.java:59)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2021-01-19 07:50:01.089+0000 [id=33]	SEVERE	jenkins.InitReactorRunner$1#onTaskFailed: Failed Loading item pipeline_with_gate
+com.thoughtworks.xstream.mapper.CannotResolveClassException: flow-definition
+	at com.thoughtworks.xstream.mapper.DefaultMapper.realClass(DefaultMapper.java:79)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.DynamicProxyMapper.realClass(DynamicProxyMapper.java:55)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.PackageAliasingMapper.realClass(PackageAliasingMapper.java:88)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.ClassAliasingMapper.realClass(ClassAliasingMapper.java:79)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.ArrayMapper.realClass(ArrayMapper.java:74)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.SecurityMapper.realClass(SecurityMapper.java:71)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at hudson.util.XStream2$CompatibilityMapper.realClass(XStream2.java:379)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at hudson.util.xstream.MapperDelegate.realClass(MapperDelegate.java:43)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.CachingMapper.realClass(CachingMapper.java:48)
+	at com.thoughtworks.xstream.core.util.HierarchicalStreams.readClassType(HierarchicalStreams.java:29)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.start(TreeUnmarshaller.java:133)
+	at com.thoughtworks.xstream.core.AbstractTreeMarshallingStrategy.unmarshal(AbstractTreeMarshallingStrategy.java:32)
+	at com.thoughtworks.xstream.XStream.unmarshal(XStream.java:1189)
+	at hudson.util.XStream2.unmarshal(XStream2.java:161)
+	at hudson.util.XStream2.unmarshal(XStream2.java:132)
+	at com.thoughtworks.xstream.XStream.unmarshal(XStream.java:1173)
+	at com.thoughtworks.xstream.XStream.fromXML(XStream.java:1053)
+	at hudson.XmlFile.read(XmlFile.java:149)
+Caused: java.io.IOException: Unable to read /var/jenkins_home/jobs/pipeline_with_gate/config.xml
+	at hudson.XmlFile.read(XmlFile.java:151)
+	at hudson.model.Items.load(Items.java:370)
+	at jenkins.model.Jenkins$14.run(Jenkins.java:3269)
+	at org.jvnet.hudson.reactor.TaskGraphBuilder$TaskImpl.run(TaskGraphBuilder.java:169)
+	at org.jvnet.hudson.reactor.Reactor.runTask(Reactor.java:296)
+	at jenkins.model.Jenkins$5.runTask(Jenkins.java:1131)
+	at org.jvnet.hudson.reactor.Reactor$2.run(Reactor.java:214)
+	at org.jvnet.hudson.reactor.Reactor$Node.run(Reactor.java:117)
+	at jenkins.security.ImpersonatingExecutorService$1.run(ImpersonatingExecutorService.java:59)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2021-01-19 07:50:01.090+0000 [id=33]	INFO	jenkins.InitReactorRunner$1#onAttained: System config adapted
+2021-01-19 07:50:01.087+0000 [id=32]	SEVERE	jenkins.InitReactorRunner$1#onTaskFailed: Failed Loading item pipeline
+com.thoughtworks.xstream.mapper.CannotResolveClassException: flow-definition
+	at com.thoughtworks.xstream.mapper.DefaultMapper.realClass(DefaultMapper.java:79)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.DynamicProxyMapper.realClass(DynamicProxyMapper.java:55)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.PackageAliasingMapper.realClass(PackageAliasingMapper.java:88)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.ClassAliasingMapper.realClass(ClassAliasingMapper.java:79)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.ArrayMapper.realClass(ArrayMapper.java:74)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.SecurityMapper.realClass(SecurityMapper.java:71)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at hudson.util.XStream2$CompatibilityMapper.realClass(XStream2.java:379)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at hudson.util.xstream.MapperDelegate.realClass(MapperDelegate.java:43)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.CachingMapper.realClass(CachingMapper.java:48)
+	at com.thoughtworks.xstream.core.util.HierarchicalStreams.readClassType(HierarchicalStreams.java:29)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.start(TreeUnmarshaller.java:133)
+	at com.thoughtworks.xstream.core.AbstractTreeMarshallingStrategy.unmarshal(AbstractTreeMarshallingStrategy.java:32)
+	at com.thoughtworks.xstream.XStream.unmarshal(XStream.java:1189)
+	at hudson.util.XStream2.unmarshal(XStream2.java:161)
+	at hudson.util.XStream2.unmarshal(XStream2.java:132)
+	at com.thoughtworks.xstream.XStream.unmarshal(XStream.java:1173)
+	at com.thoughtworks.xstream.XStream.fromXML(XStream.java:1053)
+	at hudson.XmlFile.read(XmlFile.java:149)
+Caused: java.io.IOException: Unable to read /var/jenkins_home/jobs/pipeline/config.xml
+	at hudson.XmlFile.read(XmlFile.java:151)
+	at hudson.model.Items.load(Items.java:370)
+	at jenkins.model.Jenkins$14.run(Jenkins.java:3269)
+	at org.jvnet.hudson.reactor.TaskGraphBuilder$TaskImpl.run(TaskGraphBuilder.java:169)
+	at org.jvnet.hudson.reactor.Reactor.runTask(Reactor.java:296)
+	at jenkins.model.Jenkins$5.runTask(Jenkins.java:1131)
+	at org.jvnet.hudson.reactor.Reactor$2.run(Reactor.java:214)
+	at org.jvnet.hudson.reactor.Reactor$Node.run(Reactor.java:117)
+	at jenkins.security.ImpersonatingExecutorService$1.run(ImpersonatingExecutorService.java:59)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2021-01-19 07:50:01.091+0000 [id=36]	SEVERE	jenkins.InitReactorRunner$1#onTaskFailed: Failed Loading item pipeline_with_perf_Sign
+com.thoughtworks.xstream.mapper.CannotResolveClassException: flow-definition
+	at com.thoughtworks.xstream.mapper.DefaultMapper.realClass(DefaultMapper.java:79)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.DynamicProxyMapper.realClass(DynamicProxyMapper.java:55)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.PackageAliasingMapper.realClass(PackageAliasingMapper.java:88)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.ClassAliasingMapper.realClass(ClassAliasingMapper.java:79)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.ArrayMapper.realClass(ArrayMapper.java:74)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.SecurityMapper.realClass(SecurityMapper.java:71)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at hudson.util.XStream2$CompatibilityMapper.realClass(XStream2.java:379)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at hudson.util.xstream.MapperDelegate.realClass(MapperDelegate.java:43)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.CachingMapper.realClass(CachingMapper.java:48)
+	at com.thoughtworks.xstream.core.util.HierarchicalStreams.readClassType(HierarchicalStreams.java:29)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.start(TreeUnmarshaller.java:133)
+	at com.thoughtworks.xstream.core.AbstractTreeMarshallingStrategy.unmarshal(AbstractTreeMarshallingStrategy.java:32)
+	at com.thoughtworks.xstream.XStream.unmarshal(XStream.java:1189)
+	at hudson.util.XStream2.unmarshal(XStream2.java:161)
+	at hudson.util.XStream2.unmarshal(XStream2.java:132)
+	at com.thoughtworks.xstream.XStream.unmarshal(XStream.java:1173)
+	at com.thoughtworks.xstream.XStream.fromXML(XStream.java:1053)
+	at hudson.XmlFile.read(XmlFile.java:149)
+Caused: java.io.IOException: Unable to read /var/jenkins_home/jobs/pipeline_with_perf_Sign/config.xml
+	at hudson.XmlFile.read(XmlFile.java:151)
+	at hudson.model.Items.load(Items.java:370)
+	at jenkins.model.Jenkins$14.run(Jenkins.java:3269)
+	at org.jvnet.hudson.reactor.TaskGraphBuilder$TaskImpl.run(TaskGraphBuilder.java:169)
+	at org.jvnet.hudson.reactor.Reactor.runTask(Reactor.java:296)
+	at jenkins.model.Jenkins$5.runTask(Jenkins.java:1131)
+	at org.jvnet.hudson.reactor.Reactor$2.run(Reactor.java:214)
+	at org.jvnet.hudson.reactor.Reactor$Node.run(Reactor.java:117)
+	at jenkins.security.ImpersonatingExecutorService$1.run(ImpersonatingExecutorService.java:59)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2021-01-19 07:50:01.092+0000 [id=39]	SEVERE	jenkins.InitReactorRunner$1#onTaskFailed: Failed Loading item End2End
+com.thoughtworks.xstream.mapper.CannotResolveClassException: com.cloudbees.hudson.plugins.folder.Folder
+	at com.thoughtworks.xstream.mapper.DefaultMapper.realClass(DefaultMapper.java:79)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.DynamicProxyMapper.realClass(DynamicProxyMapper.java:55)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.PackageAliasingMapper.realClass(PackageAliasingMapper.java:88)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.ClassAliasingMapper.realClass(ClassAliasingMapper.java:79)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.ArrayMapper.realClass(ArrayMapper.java:74)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.SecurityMapper.realClass(SecurityMapper.java:71)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at hudson.util.XStream2$CompatibilityMapper.realClass(XStream2.java:379)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at hudson.util.xstream.MapperDelegate.realClass(MapperDelegate.java:43)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.CachingMapper.realClass(CachingMapper.java:48)
+	at com.thoughtworks.xstream.core.util.HierarchicalStreams.readClassType(HierarchicalStreams.java:29)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.start(TreeUnmarshaller.java:133)
+	at com.thoughtworks.xstream.core.AbstractTreeMarshallingStrategy.unmarshal(AbstractTreeMarshallingStrategy.java:32)
+	at com.thoughtworks.xstream.XStream.unmarshal(XStream.java:1189)
+	at hudson.util.XStream2.unmarshal(XStream2.java:161)
+	at hudson.util.XStream2.unmarshal(XStream2.java:132)
+	at com.thoughtworks.xstream.XStream.unmarshal(XStream.java:1173)
+	at com.thoughtworks.xstream.XStream.fromXML(XStream.java:1053)
+	at hudson.XmlFile.read(XmlFile.java:149)
+Caused: java.io.IOException: Unable to read /var/jenkins_home/jobs/End2End/config.xml
+	at hudson.XmlFile.read(XmlFile.java:151)
+	at hudson.model.Items.load(Items.java:370)
+	at jenkins.model.Jenkins$14.run(Jenkins.java:3269)
+	at org.jvnet.hudson.reactor.TaskGraphBuilder$TaskImpl.run(TaskGraphBuilder.java:169)
+	at org.jvnet.hudson.reactor.Reactor.runTask(Reactor.java:296)
+	at jenkins.model.Jenkins$5.runTask(Jenkins.java:1131)
+	at org.jvnet.hudson.reactor.Reactor$2.run(Reactor.java:214)
+	at org.jvnet.hudson.reactor.Reactor$Node.run(Reactor.java:117)
+	at jenkins.security.ImpersonatingExecutorService$1.run(ImpersonatingExecutorService.java:59)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2021-01-19 07:50:01.091+0000 [id=38]	SEVERE	jenkins.InitReactorRunner$1#onTaskFailed: Failed Loading item customer
+com.thoughtworks.xstream.mapper.CannotResolveClassException: com.cloudbees.hudson.plugins.folder.Folder
+	at com.thoughtworks.xstream.mapper.DefaultMapper.realClass(DefaultMapper.java:79)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.DynamicProxyMapper.realClass(DynamicProxyMapper.java:55)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.PackageAliasingMapper.realClass(PackageAliasingMapper.java:88)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.ClassAliasingMapper.realClass(ClassAliasingMapper.java:79)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.ArrayMapper.realClass(ArrayMapper.java:74)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.SecurityMapper.realClass(SecurityMapper.java:71)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at hudson.util.XStream2$CompatibilityMapper.realClass(XStream2.java:379)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at hudson.util.xstream.MapperDelegate.realClass(MapperDelegate.java:43)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.CachingMapper.realClass(CachingMapper.java:48)
+	at com.thoughtworks.xstream.core.util.HierarchicalStreams.readClassType(HierarchicalStreams.java:29)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.start(TreeUnmarshaller.java:133)
+	at com.thoughtworks.xstream.core.AbstractTreeMarshallingStrategy.unmarshal(AbstractTreeMarshallingStrategy.java:32)
+	at com.thoughtworks.xstream.XStream.unmarshal(XStream.java:1189)
+	at hudson.util.XStream2.unmarshal(XStream2.java:161)
+	at hudson.util.XStream2.unmarshal(XStream2.java:132)
+	at com.thoughtworks.xstream.XStream.unmarshal(XStream.java:1173)
+	at com.thoughtworks.xstream.XStream.fromXML(XStream.java:1053)
+	at hudson.XmlFile.read(XmlFile.java:149)
+Caused: java.io.IOException: Unable to read /var/jenkins_home/jobs/customer/config.xml
+	at hudson.XmlFile.read(XmlFile.java:151)
+	at hudson.model.Items.load(Items.java:370)
+	at jenkins.model.Jenkins$14.run(Jenkins.java:3269)
+	at org.jvnet.hudson.reactor.TaskGraphBuilder$TaskImpl.run(TaskGraphBuilder.java:169)
+	at org.jvnet.hudson.reactor.Reactor.runTask(Reactor.java:296)
+	at jenkins.model.Jenkins$5.runTask(Jenkins.java:1131)
+	at org.jvnet.hudson.reactor.Reactor$2.run(Reactor.java:214)
+	at org.jvnet.hudson.reactor.Reactor$Node.run(Reactor.java:117)
+	at jenkins.security.ImpersonatingExecutorService$1.run(ImpersonatingExecutorService.java:59)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2021-01-19 07:50:01.093+0000 [id=38]	INFO	jenkins.InitReactorRunner$1#onAttained: Loaded all jobs
+2021-01-19 07:50:01.094+0000 [id=39]	INFO	jenkins.InitReactorRunner$1#onAttained: Configuration for all jobs updated
+2021-01-19 07:50:01.143+0000 [id=53]	INFO	hudson.model.AsyncPeriodicWork#lambda$doRun$0: Started Download metadata
+2021-01-19 07:50:01.167+0000 [id=53]	INFO	hudson.model.AsyncPeriodicWork#lambda$doRun$0: Finished Download metadata. 22 ms
+2021-01-19 07:50:01.792+0000 [id=32]	INFO	j.util.groovy.GroovyHookScript#execute: Executing /var/jenkins_home/init.groovy.d/tcp-slave-agent-port.groovy
+2021-01-19 07:50:02.785+0000 [id=33]	INFO	o.s.c.s.AbstractApplicationContext#prepareRefresh: Refreshing org.springframework.web.context.support.StaticWebApplicationContext@a3d1571: display name [Root WebApplicationContext]; startup date [Tue Jan 19 15:50:02 MYT 2021]; root of context hierarchy
+2021-01-19 07:50:02.786+0000 [id=33]	INFO	o.s.c.s.AbstractApplicationContext#obtainFreshBeanFactory: Bean factory for application context [org.springframework.web.context.support.StaticWebApplicationContext@a3d1571]: org.springframework.beans.factory.support.DefaultListableBeanFactory@2f3f249a
+2021-01-19 07:50:02.807+0000 [id=33]	INFO	o.s.b.f.s.DefaultListableBeanFactory#preInstantiateSingletons: Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@2f3f249a: defining beans [authenticationManager]; root of factory hierarchy
+2021-01-19 07:50:03.045+0000 [id=33]	INFO	o.s.c.s.AbstractApplicationContext#prepareRefresh: Refreshing org.springframework.web.context.support.StaticWebApplicationContext@41cbd9a7: display name [Root WebApplicationContext]; startup date [Tue Jan 19 15:50:03 MYT 2021]; root of context hierarchy
+2021-01-19 07:50:03.045+0000 [id=33]	INFO	o.s.c.s.AbstractApplicationContext#obtainFreshBeanFactory: Bean factory for application context [org.springframework.web.context.support.StaticWebApplicationContext@41cbd9a7]: org.springframework.beans.factory.support.DefaultListableBeanFactory@2887f03e
+2021-01-19 07:50:03.046+0000 [id=33]	INFO	o.s.b.f.s.DefaultListableBeanFactory#preInstantiateSingletons: Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@2887f03e: defining beans [filter,legacy]; root of factory hierarchy
+2021-01-19 07:50:03.152+0000 [id=33]	INFO	jenkins.InitReactorRunner$1#onAttained: Completed initialization
+2021-01-19 07:50:03.335+0000 [id=26]	INFO	hudson.WebAppMain$3#run: Jenkins is fully up and running
+--> setting agent port for jnlp
+--> setting agent port for jnlp... done
+2021-01-19 07:54:12.135+0000 [id=75]	INFO	hudson.PluginManager#install: Starting installation of a batch of 10 plugins plus their dependencies
+2021-01-19 07:54:12.143+0000 [id=75]	INFO	hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of script-security for plugin command-launcher
+2021-01-19 07:54:12.144+0000 [id=75]	INFO	hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of bootstrap4-api for plugin junit
+2021-01-19 07:54:12.144+0000 [id=75]	INFO	hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of font-awesome-api for plugin bootstrap4-api
+2021-01-19 07:54:12.144+0000 [id=75]	INFO	hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of plugin-util-api for plugin font-awesome-api
+2021-01-19 07:54:12.144+0000 [id=75]	INFO	hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of popper-api for plugin bootstrap4-api
+2021-01-19 07:54:12.144+0000 [id=75]	INFO	hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of jquery3-api for plugin bootstrap4-api
+2021-01-19 07:54:12.145+0000 [id=75]	INFO	hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of jackson2-api for plugin junit
+2021-01-19 07:54:12.145+0000 [id=75]	INFO	hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of snakeyaml-api for plugin jackson2-api
+2021-01-19 07:54:12.145+0000 [id=75]	INFO	hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of echarts-api for plugin junit
+2021-01-19 07:54:12.145+0000 [id=75]	INFO	hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of display-url-api for plugin junit
+2021-01-19 07:54:12.146+0000 [id=75]	INFO	hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of workflow-step-api for plugin junit
+2021-01-19 07:54:12.147+0000 [id=75]	INFO	hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of checks-api for plugin junit
+2021-01-19 07:54:13.347+0000 [id=77]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of trilead-api on behalf of admin
+2021-01-19 07:54:21.291+0000 [id=77]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading trilead-api
+2021-01-19 07:57:18.015+0000 [id=77]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of bouncycastle-api on behalf of admin
+2021-01-19 07:57:22.023+0000 [id=77]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading bouncycastle-api
+2021-01-19 08:03:34.362+0000 [id=85]	INFO	hudson.model.AsyncPeriodicWork#lambda$doRun$0: Started Periodic background build discarder
+2021-01-19 08:03:34.369+0000 [id=85]	INFO	hudson.model.AsyncPeriodicWork#lambda$doRun$0: Finished Periodic background build discarder. 3 ms
+2021-01-19 08:06:29.624+0000 [id=77]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of script-security on behalf of admin
+2021-01-19 08:06:54.475+0000 [id=77]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading script-security
+2021-01-19 08:06:59.668+0000 [id=77]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of command-launcher on behalf of admin
+2021-01-19 08:07:03.096+0000 [id=77]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading command-launcher
+2021-01-19 08:07:03.110+0000 [id=77]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of plugin-util-api on behalf of admin
+2021-01-19 08:07:05.856+0000 [id=77]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading plugin-util-api
+2021-01-19 08:07:09.056+0000 [id=77]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of font-awesome-api on behalf of admin
+2021-01-19 08:07:11.707+0000 [id=77]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading font-awesome-api
+2021-01-19 08:07:14.040+0000 [id=77]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of popper-api on behalf of admin
+2021-01-19 08:07:16.693+0000 [id=77]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading popper-api
+2021-01-19 08:07:19.338+0000 [id=77]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of jquery3-api on behalf of admin
+2021-01-19 08:07:22.670+0000 [id=77]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading jquery3-api
+2021-01-19 08:07:24.671+0000 [id=77]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of bootstrap4-api on behalf of admin
+2021-01-19 08:07:27.760+0000 [id=77]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading bootstrap4-api
+2021-01-19 08:07:39.051+0000 [id=77]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of snakeyaml-api on behalf of admin
+2021-01-19 08:07:43.663+0000 [id=77]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading snakeyaml-api
+2021-01-19 08:07:50.446+0000 [id=77]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of jackson2-api on behalf of admin
+2021-01-19 08:07:54.104+0000 [id=77]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading jackson2-api
+2021-01-19 08:09:12.774+0000 [id=77]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of echarts-api on behalf of admin
+2021-01-19 08:09:18.276+0000 [id=77]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading echarts-api
+2021-01-19 08:19:41.921+0000 [id=77]	SEVERE	h.model.UpdateCenter$DownloadJob#run: Failed to install echarts-api
+java.io.IOException: Inconsistent file length: expected 16144904 but only got 5029551
+	at hudson.model.UpdateCenter$UpdateCenterConfiguration.download(UpdateCenter.java:1296)
+Caused: java.io.IOException: Failed to download from https://updates.jenkins.io/download/plugins/echarts-api/4.9.0-2/echarts-api.hpi (redirected to: https://mirrors.tuna.tsinghua.edu.cn/jenkins/plugins/echarts-api/4.9.0-2/echarts-api.hpi)
+	at hudson.model.UpdateCenter$UpdateCenterConfiguration.download(UpdateCenter.java:1321)
+	at hudson.model.UpdateCenter$DownloadJob._run(UpdateCenter.java:1869)
+	at hudson.model.UpdateCenter$InstallationJob._run(UpdateCenter.java:2147)
+	at hudson.model.UpdateCenter$DownloadJob.run(UpdateCenter.java:1843)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at hudson.remoting.AtmostOneThreadExecutor$Worker.run(AtmostOneThreadExecutor.java:118)
+	at java.lang.Thread.run(Thread.java:748)
+2021-01-19 08:19:41.921+0000 [id=77]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of display-url-api on behalf of admin
+2021-01-19 08:19:47.765+0000 [id=77]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading display-url-api
+2021-01-19 08:19:48.223+0000 [id=77]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of workflow-step-api on behalf of admin
+2021-01-19 08:19:52.112+0000 [id=77]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading workflow-step-api
+2021-01-19 08:19:52.468+0000 [id=77]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of checks-api on behalf of admin
+2021-01-19 08:19:55.111+0000 [id=77]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading checks-api
+2021-01-19 08:19:55.255+0000 [id=77]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of junit on behalf of admin
+2021-01-19 08:19:58.238+0000 [id=77]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading junit
+2021-01-19 08:20:00.706+0000 [id=77]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of performance on behalf of admin
+2021-01-19 08:20:03.571+0000 [id=77]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading performance
+2021-01-19 08:20:09.814+0000 [id=77]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of scm-api on behalf of admin
+2021-01-19 08:20:12.507+0000 [id=77]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading scm-api
+2021-01-19 08:20:12.534+0000 [id=77]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of jdk-tool on behalf of admin
+2021-01-19 08:20:15.174+0000 [id=77]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading jdk-tool
+2021-01-19 08:20:15.183+0000 [id=77]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of script-security on behalf of admin
+2021-01-19 08:20:15.184+0000 [id=77]	INFO	h.m.UpdateCenter$InstallationJob#_run: Skipping duplicate install of: Script Security@1.75
+2021-01-19 08:20:15.184+0000 [id=77]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: script-security
+2021-01-19 08:20:15.184+0000 [id=77]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of workflow-step-api on behalf of admin
+2021-01-19 08:20:15.185+0000 [id=77]	INFO	h.m.UpdateCenter$InstallationJob#_run: Skipping duplicate install of: Pipeline: Step API@2.23
+2021-01-19 08:20:15.185+0000 [id=77]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: workflow-step-api
+2021-01-19 08:20:15.185+0000 [id=77]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of matrix-project on behalf of admin
+2021-01-19 08:20:18.167+0000 [id=77]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading matrix-project
+2021-01-19 08:27:18.252+0000 [id=19]	INFO	hudson.model.UpdateCenter#doSafeRestart: Scheduling Jenkins reboot
+2021-01-19 08:27:18.264+0000 [id=135]	INFO	jenkins.model.Jenkins$23#run: Restart in 10 seconds
+2021-01-19 08:27:28.267+0000 [id=135]	INFO	jenkins.model.Jenkins$23#run: Restarting VM as requested by admin
+2021-01-19 08:27:28.267+0000 [id=135]	INFO	jenkins.model.Jenkins#cleanUp: Stopping Jenkins
+2021-01-19 08:27:28.271+0000 [id=135]	INFO	jenkins.model.Jenkins$18#onAttained: Started termination
+2021-01-19 08:27:28.281+0000 [id=135]	INFO	jenkins.model.Jenkins$18#onAttained: Completed termination
+2021-01-19 08:27:28.281+0000 [id=135]	INFO	jenkins.model.Jenkins#_cleanUpDisconnectComputers: Starting node disconnection
+2021-01-19 08:27:28.412+0000 [id=135]	INFO	jenkins.model.Jenkins#_cleanUpShutdownPluginManager: Stopping plugin manager
+2021-01-19 08:27:28.414+0000 [id=135]	INFO	jenkins.model.Jenkins#_cleanUpPersistQueue: Persisting build queue
+2021-01-19 08:27:28.444+0000 [id=135]	INFO	jenkins.model.Jenkins#_cleanUpAwaitDisconnects: Waiting for node disconnection completion
+2021-01-19 08:27:28.445+0000 [id=135]	INFO	jenkins.model.Jenkins#cleanUp: Jenkins stopped
+Running from: /usr/share/jenkins/jenkins.war
+webroot: EnvVars.masterEnvVars.get("JENKINS_HOME")
+2021-01-19 08:27:32.966+0000 [id=1]	INFO	org.eclipse.jetty.util.log.Log#initialized: Logging initialized @3873ms to org.eclipse.jetty.util.log.JavaUtilLog
+2021-01-19 08:27:33.062+0000 [id=1]	INFO	winstone.Logger#logInternal: Beginning extraction from war file
+2021-01-19 08:27:33.092+0000 [id=1]	WARNING	o.e.j.s.handler.ContextHandler#setContextPath: Empty contextPath
+2021-01-19 08:27:33.144+0000 [id=1]	INFO	org.eclipse.jetty.server.Server#doStart: jetty-9.4.30.v20200611; built: 2020-06-11T12:34:51.929Z; git: 271836e4c1f4612f12b7bb13ef5a92a927634b0d; jvm 1.8.0_275-8u275-b01-0ubuntu1~18.04-b01
+2021-01-19 08:27:33.323+0000 [id=1]	INFO	o.e.j.w.StandardDescriptorProcessor#visitServlet: NO JSP Support for /, did not find org.eclipse.jetty.jsp.JettyJspServlet
+2021-01-19 08:27:33.365+0000 [id=1]	INFO	o.e.j.s.s.DefaultSessionIdManager#doStart: DefaultSessionIdManager workerName=node0
+2021-01-19 08:27:33.366+0000 [id=1]	INFO	o.e.j.s.s.DefaultSessionIdManager#doStart: No SessionScavenger set, using defaults
+2021-01-19 08:27:33.373+0000 [id=1]	INFO	o.e.j.server.session.HouseKeeper#startScavenging: node0 Scavenging every 660000ms
+2021-01-19 08:27:33.660+0000 [id=1]	INFO	hudson.WebAppMain#contextInitialized: Jenkins home directory: /var/jenkins_home found at: EnvVars.masterEnvVars.get("JENKINS_HOME")
+2021-01-19 08:27:33.783+0000 [id=1]	INFO	o.e.j.s.handler.ContextHandler#doStart: Started w.@456d6c1e{Jenkins v2.249.2,/,file:///var/jenkins_home/war/,AVAILABLE}{/var/jenkins_home/war}
+2021-01-19 08:27:33.846+0000 [id=1]	INFO	o.e.j.server.AbstractConnector#doStart: Started ServerConnector@66d2e7d9{HTTP/1.1, (http/1.1)}{0.0.0.0:8080}
+2021-01-19 08:27:33.846+0000 [id=1]	INFO	org.eclipse.jetty.server.Server#doStart: Started @4754ms
+2021-01-19 08:27:33.851+0000 [id=27]	INFO	winstone.Logger#logInternal: Winstone Servlet Engine running: controlPort=disabled
+2021-01-19 08:27:34.738+0000 [id=33]	INFO	jenkins.InitReactorRunner$1#onAttained: Started initialization
+2021-01-19 08:27:35.258+0000 [id=35]	INFO	jenkins.InitReactorRunner$1#onAttained: Listed all plugins
+2021-01-19 08:27:35.274+0000 [id=38]	SEVERE	jenkins.InitReactorRunner$1#onTaskFailed: Failed Loading plugin JUnit Plugin v1.48 (junit)
+java.io.IOException: Failed to load: JUnit Plugin (1.48)
+ - Plugin is missing: echarts-api (4.9.0-2)
+	at hudson.PluginWrapper.resolvePluginDependencies(PluginWrapper.java:952)
+	at hudson.PluginManager$2$1$1.run(PluginManager.java:549)
+	at org.jvnet.hudson.reactor.TaskGraphBuilder$TaskImpl.run(TaskGraphBuilder.java:169)
+	at org.jvnet.hudson.reactor.Reactor.runTask(Reactor.java:296)
+	at jenkins.model.Jenkins$5.runTask(Jenkins.java:1131)
+	at org.jvnet.hudson.reactor.Reactor$2.run(Reactor.java:214)
+	at org.jvnet.hudson.reactor.Reactor$Node.run(Reactor.java:117)
+	at jenkins.security.ImpersonatingExecutorService$1.run(ImpersonatingExecutorService.java:59)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2021-01-19 08:27:35.277+0000 [id=34]	SEVERE	jenkins.InitReactorRunner$1#onTaskFailed: Failed Loading plugin Matrix Project Plugin v1.18 (matrix-project)
+java.io.IOException: Failed to load: Matrix Project Plugin (1.18)
+ - Failed to load: JUnit Plugin (1.48)
+	at hudson.PluginWrapper.resolvePluginDependencies(PluginWrapper.java:952)
+	at hudson.PluginManager$2$1$1.run(PluginManager.java:549)
+	at org.jvnet.hudson.reactor.TaskGraphBuilder$TaskImpl.run(TaskGraphBuilder.java:169)
+	at org.jvnet.hudson.reactor.Reactor.runTask(Reactor.java:296)
+	at jenkins.model.Jenkins$5.runTask(Jenkins.java:1131)
+	at org.jvnet.hudson.reactor.Reactor$2.run(Reactor.java:214)
+	at org.jvnet.hudson.reactor.Reactor$Node.run(Reactor.java:117)
+	at jenkins.security.ImpersonatingExecutorService$1.run(ImpersonatingExecutorService.java:59)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2021-01-19 08:27:35.278+0000 [id=37]	SEVERE	jenkins.InitReactorRunner$1#onTaskFailed: Failed Loading plugin Jenkins Git plugin v4.0.0 (git)
+java.io.IOException: Failed to load: Jenkins Git plugin (4.0.0)
+ - Plugin is missing: ssh-credentials (1.17.2)
+ - Plugin is missing: workflow-scm-step (2.9)
+ - Plugin is missing: git-client (3.0.0)
+ - Plugin is missing: mailer (1.23)
+ - Plugin is missing: credentials (2.3.0)
+	at hudson.PluginWrapper.resolvePluginDependencies(PluginWrapper.java:952)
+	at hudson.PluginManager$2$1$1.run(PluginManager.java:549)
+	at org.jvnet.hudson.reactor.TaskGraphBuilder$TaskImpl.run(TaskGraphBuilder.java:169)
+	at org.jvnet.hudson.reactor.Reactor.runTask(Reactor.java:296)
+	at jenkins.model.Jenkins$5.runTask(Jenkins.java:1131)
+	at org.jvnet.hudson.reactor.Reactor$2.run(Reactor.java:214)
+	at org.jvnet.hudson.reactor.Reactor$Node.run(Reactor.java:117)
+	at jenkins.security.ImpersonatingExecutorService$1.run(ImpersonatingExecutorService.java:59)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2021-01-19 08:27:35.279+0000 [id=37]	SEVERE	jenkins.InitReactorRunner$1#onTaskFailed: Failed Loading plugin GitHub Branch Source Plugin v2.5.8 (github-branch-source)
+java.io.IOException: Failed to load: GitHub Branch Source Plugin (2.5.8)
+ - Plugin is missing: github (1.29.3)
+ - Plugin is missing: credentials (2.1.18)
+ - Failed to load: Jenkins Git plugin (4.0.0)
+	at hudson.PluginWrapper.resolvePluginDependencies(PluginWrapper.java:952)
+	at hudson.PluginManager$2$1$1.run(PluginManager.java:549)
+	at org.jvnet.hudson.reactor.TaskGraphBuilder$TaskImpl.run(TaskGraphBuilder.java:169)
+	at org.jvnet.hudson.reactor.Reactor.runTask(Reactor.java:296)
+	at jenkins.model.Jenkins$5.runTask(Jenkins.java:1131)
+	at org.jvnet.hudson.reactor.Reactor$2.run(Reactor.java:214)
+	at org.jvnet.hudson.reactor.Reactor$Node.run(Reactor.java:117)
+	at jenkins.security.ImpersonatingExecutorService$1.run(ImpersonatingExecutorService.java:59)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2021-01-19 08:27:35.280+0000 [id=37]	SEVERE	jenkins.InitReactorRunner$1#onTaskFailed: Failed Loading plugin Credentials Binding Plugin v1.23 (credentials-binding)
+java.io.IOException: Failed to load: Credentials Binding Plugin (1.23)
+ - Plugin is missing: plain-credentials (1.6)
+ - Plugin is missing: credentials (2.3.5)
+ - Plugin is missing: ssh-credentials (1.17.3)
+	at hudson.PluginWrapper.resolvePluginDependencies(PluginWrapper.java:952)
+	at hudson.PluginManager$2$1$1.run(PluginManager.java:549)
+	at org.jvnet.hudson.reactor.TaskGraphBuilder$TaskImpl.run(TaskGraphBuilder.java:169)
+	at org.jvnet.hudson.reactor.Reactor.runTask(Reactor.java:296)
+	at jenkins.model.Jenkins$5.runTask(Jenkins.java:1131)
+	at org.jvnet.hudson.reactor.Reactor$2.run(Reactor.java:214)
+	at org.jvnet.hudson.reactor.Reactor$Node.run(Reactor.java:117)
+	at jenkins.security.ImpersonatingExecutorService$1.run(ImpersonatingExecutorService.java:59)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2021-01-19 08:27:35.281+0000 [id=39]	SEVERE	jenkins.InitReactorRunner$1#onTaskFailed: Failed Loading plugin Google OAuth Credentials plugin v1.0.0 (google-oauth-plugin)
+java.io.IOException: Failed to load: Google OAuth Credentials plugin (1.0.0)
+ - Plugin is missing: credentials (2.2.0)
+ - Plugin is missing: oauth-credentials (0.3)
+	at hudson.PluginWrapper.resolvePluginDependencies(PluginWrapper.java:952)
+	at hudson.PluginManager$2$1$1.run(PluginManager.java:549)
+	at org.jvnet.hudson.reactor.TaskGraphBuilder$TaskImpl.run(TaskGraphBuilder.java:169)
+	at org.jvnet.hudson.reactor.Reactor.runTask(Reactor.java:296)
+	at jenkins.model.Jenkins$5.runTask(Jenkins.java:1131)
+	at org.jvnet.hudson.reactor.Reactor$2.run(Reactor.java:214)
+	at org.jvnet.hudson.reactor.Reactor$Node.run(Reactor.java:117)
+	at jenkins.security.ImpersonatingExecutorService$1.run(ImpersonatingExecutorService.java:59)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2021-01-19 08:27:35.282+0000 [id=36]	SEVERE	jenkins.InitReactorRunner$1#onTaskFailed: Failed Loading plugin Google Authenticated Source plugin v0.4 (google-source-plugin)
+java.io.IOException: Failed to load: Google Authenticated Source plugin (0.4)
+ - Failed to load: Google OAuth Credentials plugin (1.0.0)
+ - Plugin is missing: google-metadata-plugin (0.2)
+	at hudson.PluginWrapper.resolvePluginDependencies(PluginWrapper.java:952)
+	at hudson.PluginManager$2$1$1.run(PluginManager.java:549)
+	at org.jvnet.hudson.reactor.TaskGraphBuilder$TaskImpl.run(TaskGraphBuilder.java:169)
+	at org.jvnet.hudson.reactor.Reactor.runTask(Reactor.java:296)
+	at jenkins.model.Jenkins$5.runTask(Jenkins.java:1131)
+	at org.jvnet.hudson.reactor.Reactor$2.run(Reactor.java:214)
+	at org.jvnet.hudson.reactor.Reactor$Node.run(Reactor.java:117)
+	at jenkins.security.ImpersonatingExecutorService$1.run(ImpersonatingExecutorService.java:59)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2021-01-19 08:27:35.573+0000 [id=38]	SEVERE	jenkins.InitReactorRunner$1#onTaskFailed: Failed Loading plugin Jenkins Workspace Cleanup Plugin v0.38 (ws-cleanup)
+java.io.IOException: Failed to load: Jenkins Workspace Cleanup Plugin (0.38)
+ - Plugin is missing: workflow-durable-task-step (2.4)
+ - Failed to load: Matrix Project Plugin (1.18)
+	at hudson.PluginWrapper.resolvePluginDependencies(PluginWrapper.java:952)
+	at hudson.PluginManager$2$1$1.run(PluginManager.java:549)
+	at org.jvnet.hudson.reactor.TaskGraphBuilder$TaskImpl.run(TaskGraphBuilder.java:169)
+	at org.jvnet.hudson.reactor.Reactor.runTask(Reactor.java:296)
+	at jenkins.model.Jenkins$5.runTask(Jenkins.java:1131)
+	at org.jvnet.hudson.reactor.Reactor$2.run(Reactor.java:214)
+	at org.jvnet.hudson.reactor.Reactor$Node.run(Reactor.java:117)
+	at jenkins.security.ImpersonatingExecutorService$1.run(ImpersonatingExecutorService.java:59)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2021-01-19 08:27:35.573+0000 [id=38]	SEVERE	jenkins.InitReactorRunner$1#onTaskFailed: Failed Loading plugin Pipeline: Job v2.39 (workflow-job)
+java.io.IOException: Failed to load: Pipeline: Job (2.39)
+ - Plugin is missing: workflow-support (3.3)
+	at hudson.PluginWrapper.resolvePluginDependencies(PluginWrapper.java:952)
+	at hudson.PluginManager$2$1$1.run(PluginManager.java:549)
+	at org.jvnet.hudson.reactor.TaskGraphBuilder$TaskImpl.run(TaskGraphBuilder.java:169)
+	at org.jvnet.hudson.reactor.Reactor.runTask(Reactor.java:296)
+	at jenkins.model.Jenkins$5.runTask(Jenkins.java:1131)
+	at org.jvnet.hudson.reactor.Reactor$2.run(Reactor.java:214)
+	at org.jvnet.hudson.reactor.Reactor$Node.run(Reactor.java:117)
+	at jenkins.security.ImpersonatingExecutorService$1.run(ImpersonatingExecutorService.java:59)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2021-01-19 08:27:35.574+0000 [id=35]	SEVERE	jenkins.InitReactorRunner$1#onTaskFailed: Failed Loading plugin Docker plugin v1.2.1 (docker-plugin)
+java.io.IOException: Failed to load: Docker plugin (1.2.1)
+ - Plugin is missing: token-macro (2.3)
+ - Plugin is missing: docker-commons (1.9)
+ - Plugin is missing: ssh-slaves (1.22)
+ - Plugin is missing: apache-httpcomponents-client-4-api (4.5.3-2.0)
+ - Plugin is missing: docker-java-api (3.1.5)
+ - Plugin is missing: durable-task (1.16)
+	at hudson.PluginWrapper.resolvePluginDependencies(PluginWrapper.java:952)
+	at hudson.PluginManager$2$1$1.run(PluginManager.java:549)
+	at org.jvnet.hudson.reactor.TaskGraphBuilder$TaskImpl.run(TaskGraphBuilder.java:169)
+	at org.jvnet.hudson.reactor.Reactor.runTask(Reactor.java:296)
+	at jenkins.model.Jenkins$5.runTask(Jenkins.java:1131)
+	at org.jvnet.hudson.reactor.Reactor$2.run(Reactor.java:214)
+	at org.jvnet.hudson.reactor.Reactor$Node.run(Reactor.java:117)
+	at jenkins.security.ImpersonatingExecutorService$1.run(ImpersonatingExecutorService.java:59)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2021-01-19 08:27:35.574+0000 [id=35]	SEVERE	jenkins.InitReactorRunner$1#onTaskFailed: Failed Loading plugin docker-build-step v2.0 (docker-build-step)
+java.io.IOException: Failed to load: docker-build-step (2.0)
+ - Plugin is missing: credentials (1.22)
+ - Plugin is missing: docker-commons (1.4.0)
+	at hudson.PluginWrapper.resolvePluginDependencies(PluginWrapper.java:952)
+	at hudson.PluginManager$2$1$1.run(PluginManager.java:549)
+	at org.jvnet.hudson.reactor.TaskGraphBuilder$TaskImpl.run(TaskGraphBuilder.java:169)
+	at org.jvnet.hudson.reactor.Reactor.runTask(Reactor.java:296)
+	at jenkins.model.Jenkins$5.runTask(Jenkins.java:1131)
+	at org.jvnet.hudson.reactor.Reactor$2.run(Reactor.java:214)
+	at org.jvnet.hudson.reactor.Reactor$Node.run(Reactor.java:117)
+	at jenkins.security.ImpersonatingExecutorService$1.run(ImpersonatingExecutorService.java:59)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2021-01-19 08:27:35.574+0000 [id=32]	SEVERE	jenkins.InitReactorRunner$1#onTaskFailed: Failed Loading plugin Pipeline v2.6 (workflow-aggregator)
+java.io.IOException: Failed to load: Pipeline (2.6)
+ - Plugin is missing: workflow-basic-steps (2.11)
+ - Plugin is missing: workflow-cps (2.56)
+ - Failed to load: Pipeline: Job (2.39)
+ - Plugin is missing: lockable-resources (2.3)
+ - Plugin is missing: workflow-cps-global-lib (2.11)
+ - Plugin is missing: pipeline-stage-view (2.10)
+ - Plugin is missing: workflow-durable-task-step (2.22)
+	at hudson.PluginWrapper.resolvePluginDependencies(PluginWrapper.java:952)
+	at hudson.PluginManager$2$1$1.run(PluginManager.java:549)
+	at org.jvnet.hudson.reactor.TaskGraphBuilder$TaskImpl.run(TaskGraphBuilder.java:169)
+	at org.jvnet.hudson.reactor.Reactor.runTask(Reactor.java:296)
+	at jenkins.model.Jenkins$5.runTask(Jenkins.java:1131)
+	at org.jvnet.hudson.reactor.Reactor$2.run(Reactor.java:214)
+	at org.jvnet.hudson.reactor.Reactor$Node.run(Reactor.java:117)
+	at jenkins.security.ImpersonatingExecutorService$1.run(ImpersonatingExecutorService.java:59)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2021-01-19 08:27:36.963+0000 [id=32]	INFO	jenkins.InitReactorRunner$1#onAttained: Prepared all plugins
+2021-01-19 08:27:36.968+0000 [id=37]	INFO	jenkins.InitReactorRunner$1#onAttained: Started all plugins
+2021-01-19 08:27:36.978+0000 [id=34]	INFO	jenkins.InitReactorRunner$1#onAttained: Augmented all extensions
+2021-01-19 08:27:37.298+0000 [id=39]	INFO	jenkins.InitReactorRunner$1#onAttained: System config loaded
+2021-01-19 08:27:37.302+0000 [id=36]	SEVERE	jenkins.InitReactorRunner$1#onTaskFailed: Failed Loading item customer
+com.thoughtworks.xstream.mapper.CannotResolveClassException: com.cloudbees.hudson.plugins.folder.Folder
+	at com.thoughtworks.xstream.mapper.DefaultMapper.realClass(DefaultMapper.java:79)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.DynamicProxyMapper.realClass(DynamicProxyMapper.java:55)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.PackageAliasingMapper.realClass(PackageAliasingMapper.java:88)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.ClassAliasingMapper.realClass(ClassAliasingMapper.java:79)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.ArrayMapper.realClass(ArrayMapper.java:74)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.SecurityMapper.realClass(SecurityMapper.java:71)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at hudson.util.XStream2$CompatibilityMapper.realClass(XStream2.java:379)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at hudson.util.xstream.MapperDelegate.realClass(MapperDelegate.java:43)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.CachingMapper.realClass(CachingMapper.java:48)
+	at com.thoughtworks.xstream.core.util.HierarchicalStreams.readClassType(HierarchicalStreams.java:29)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.start(TreeUnmarshaller.java:133)
+	at com.thoughtworks.xstream.core.AbstractTreeMarshallingStrategy.unmarshal(AbstractTreeMarshallingStrategy.java:32)
+	at com.thoughtworks.xstream.XStream.unmarshal(XStream.java:1189)
+	at hudson.util.XStream2.unmarshal(XStream2.java:161)
+	at hudson.util.XStream2.unmarshal(XStream2.java:132)
+	at com.thoughtworks.xstream.XStream.unmarshal(XStream.java:1173)
+	at com.thoughtworks.xstream.XStream.fromXML(XStream.java:1053)
+	at hudson.XmlFile.read(XmlFile.java:149)
+Caused: java.io.IOException: Unable to read /var/jenkins_home/jobs/customer/config.xml
+	at hudson.XmlFile.read(XmlFile.java:151)
+	at hudson.model.Items.load(Items.java:370)
+	at jenkins.model.Jenkins$14.run(Jenkins.java:3269)
+	at org.jvnet.hudson.reactor.TaskGraphBuilder$TaskImpl.run(TaskGraphBuilder.java:169)
+	at org.jvnet.hudson.reactor.Reactor.runTask(Reactor.java:296)
+	at jenkins.model.Jenkins$5.runTask(Jenkins.java:1131)
+	at org.jvnet.hudson.reactor.Reactor$2.run(Reactor.java:214)
+	at org.jvnet.hudson.reactor.Reactor$Node.run(Reactor.java:117)
+	at jenkins.security.ImpersonatingExecutorService$1.run(ImpersonatingExecutorService.java:59)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2021-01-19 08:27:37.304+0000 [id=36]	SEVERE	jenkins.InitReactorRunner$1#onTaskFailed: Failed Loading item catalog
+com.thoughtworks.xstream.mapper.CannotResolveClassException: com.cloudbees.hudson.plugins.folder.Folder
+	at com.thoughtworks.xstream.mapper.DefaultMapper.realClass(DefaultMapper.java:79)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.DynamicProxyMapper.realClass(DynamicProxyMapper.java:55)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.PackageAliasingMapper.realClass(PackageAliasingMapper.java:88)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.ClassAliasingMapper.realClass(ClassAliasingMapper.java:79)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.ArrayMapper.realClass(ArrayMapper.java:74)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.SecurityMapper.realClass(SecurityMapper.java:71)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at hudson.util.XStream2$CompatibilityMapper.realClass(XStream2.java:379)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at hudson.util.xstream.MapperDelegate.realClass(MapperDelegate.java:43)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.CachingMapper.realClass(CachingMapper.java:48)
+	at com.thoughtworks.xstream.core.util.HierarchicalStreams.readClassType(HierarchicalStreams.java:29)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.start(TreeUnmarshaller.java:133)
+	at com.thoughtworks.xstream.core.AbstractTreeMarshallingStrategy.unmarshal(AbstractTreeMarshallingStrategy.java:32)
+	at com.thoughtworks.xstream.XStream.unmarshal(XStream.java:1189)
+	at hudson.util.XStream2.unmarshal(XStream2.java:161)
+	at hudson.util.XStream2.unmarshal(XStream2.java:132)
+	at com.thoughtworks.xstream.XStream.unmarshal(XStream.java:1173)
+	at com.thoughtworks.xstream.XStream.fromXML(XStream.java:1053)
+	at hudson.XmlFile.read(XmlFile.java:149)
+Caused: java.io.IOException: Unable to read /var/jenkins_home/jobs/catalog/config.xml
+	at hudson.XmlFile.read(XmlFile.java:151)
+	at hudson.model.Items.load(Items.java:370)
+	at jenkins.model.Jenkins$14.run(Jenkins.java:3269)
+	at org.jvnet.hudson.reactor.TaskGraphBuilder$TaskImpl.run(TaskGraphBuilder.java:169)
+	at org.jvnet.hudson.reactor.Reactor.runTask(Reactor.java:296)
+	at jenkins.model.Jenkins$5.runTask(Jenkins.java:1131)
+	at org.jvnet.hudson.reactor.Reactor$2.run(Reactor.java:214)
+	at org.jvnet.hudson.reactor.Reactor$Node.run(Reactor.java:117)
+	at jenkins.security.ImpersonatingExecutorService$1.run(ImpersonatingExecutorService.java:59)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2021-01-19 08:27:37.304+0000 [id=39]	SEVERE	jenkins.InitReactorRunner$1#onTaskFailed: Failed Loading item pipeline_with_gate
+com.thoughtworks.xstream.mapper.CannotResolveClassException: flow-definition
+	at com.thoughtworks.xstream.mapper.DefaultMapper.realClass(DefaultMapper.java:79)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.DynamicProxyMapper.realClass(DynamicProxyMapper.java:55)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.PackageAliasingMapper.realClass(PackageAliasingMapper.java:88)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.ClassAliasingMapper.realClass(ClassAliasingMapper.java:79)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.ArrayMapper.realClass(ArrayMapper.java:74)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.SecurityMapper.realClass(SecurityMapper.java:71)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at hudson.util.XStream2$CompatibilityMapper.realClass(XStream2.java:379)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at hudson.util.xstream.MapperDelegate.realClass(MapperDelegate.java:43)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.CachingMapper.realClass(CachingMapper.java:48)
+	at com.thoughtworks.xstream.core.util.HierarchicalStreams.readClassType(HierarchicalStreams.java:29)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.start(TreeUnmarshaller.java:133)
+	at com.thoughtworks.xstream.core.AbstractTreeMarshallingStrategy.unmarshal(AbstractTreeMarshallingStrategy.java:32)
+	at com.thoughtworks.xstream.XStream.unmarshal(XStream.java:1189)
+	at hudson.util.XStream2.unmarshal(XStream2.java:161)
+	at hudson.util.XStream2.unmarshal(XStream2.java:132)
+	at com.thoughtworks.xstream.XStream.unmarshal(XStream.java:1173)
+	at com.thoughtworks.xstream.XStream.fromXML(XStream.java:1053)
+	at hudson.XmlFile.read(XmlFile.java:149)
+Caused: java.io.IOException: Unable to read /var/jenkins_home/jobs/pipeline_with_gate/config.xml
+	at hudson.XmlFile.read(XmlFile.java:151)
+	at hudson.model.Items.load(Items.java:370)
+	at jenkins.model.Jenkins$14.run(Jenkins.java:3269)
+	at org.jvnet.hudson.reactor.TaskGraphBuilder$TaskImpl.run(TaskGraphBuilder.java:169)
+	at org.jvnet.hudson.reactor.Reactor.runTask(Reactor.java:296)
+	at jenkins.model.Jenkins$5.runTask(Jenkins.java:1131)
+	at org.jvnet.hudson.reactor.Reactor$2.run(Reactor.java:214)
+	at org.jvnet.hudson.reactor.Reactor$Node.run(Reactor.java:117)
+	at jenkins.security.ImpersonatingExecutorService$1.run(ImpersonatingExecutorService.java:59)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2021-01-19 08:27:37.304+0000 [id=36]	SEVERE	jenkins.InitReactorRunner$1#onTaskFailed: Failed Loading item pipeline
+com.thoughtworks.xstream.mapper.CannotResolveClassException: flow-definition
+	at com.thoughtworks.xstream.mapper.DefaultMapper.realClass(DefaultMapper.java:79)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.DynamicProxyMapper.realClass(DynamicProxyMapper.java:55)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.PackageAliasingMapper.realClass(PackageAliasingMapper.java:88)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.ClassAliasingMapper.realClass(ClassAliasingMapper.java:79)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.ArrayMapper.realClass(ArrayMapper.java:74)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.SecurityMapper.realClass(SecurityMapper.java:71)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at hudson.util.XStream2$CompatibilityMapper.realClass(XStream2.java:379)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at hudson.util.xstream.MapperDelegate.realClass(MapperDelegate.java:43)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.CachingMapper.realClass(CachingMapper.java:48)
+	at com.thoughtworks.xstream.core.util.HierarchicalStreams.readClassType(HierarchicalStreams.java:29)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.start(TreeUnmarshaller.java:133)
+	at com.thoughtworks.xstream.core.AbstractTreeMarshallingStrategy.unmarshal(AbstractTreeMarshallingStrategy.java:32)
+	at com.thoughtworks.xstream.XStream.unmarshal(XStream.java:1189)
+	at hudson.util.XStream2.unmarshal(XStream2.java:161)
+	at hudson.util.XStream2.unmarshal(XStream2.java:132)
+	at com.thoughtworks.xstream.XStream.unmarshal(XStream.java:1173)
+	at com.thoughtworks.xstream.XStream.fromXML(XStream.java:1053)
+	at hudson.XmlFile.read(XmlFile.java:149)
+Caused: java.io.IOException: Unable to read /var/jenkins_home/jobs/pipeline/config.xml
+	at hudson.XmlFile.read(XmlFile.java:151)
+	at hudson.model.Items.load(Items.java:370)
+	at jenkins.model.Jenkins$14.run(Jenkins.java:3269)
+	at org.jvnet.hudson.reactor.TaskGraphBuilder$TaskImpl.run(TaskGraphBuilder.java:169)
+	at org.jvnet.hudson.reactor.Reactor.runTask(Reactor.java:296)
+	at jenkins.model.Jenkins$5.runTask(Jenkins.java:1131)
+	at org.jvnet.hudson.reactor.Reactor$2.run(Reactor.java:214)
+	at org.jvnet.hudson.reactor.Reactor$Node.run(Reactor.java:117)
+	at jenkins.security.ImpersonatingExecutorService$1.run(ImpersonatingExecutorService.java:59)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2021-01-19 08:27:37.305+0000 [id=32]	INFO	jenkins.InitReactorRunner$1#onAttained: System config adapted
+2021-01-19 08:27:37.305+0000 [id=35]	SEVERE	jenkins.InitReactorRunner$1#onTaskFailed: Failed Loading item End2End
+com.thoughtworks.xstream.mapper.CannotResolveClassException: com.cloudbees.hudson.plugins.folder.Folder
+	at com.thoughtworks.xstream.mapper.DefaultMapper.realClass(DefaultMapper.java:79)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.DynamicProxyMapper.realClass(DynamicProxyMapper.java:55)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.PackageAliasingMapper.realClass(PackageAliasingMapper.java:88)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.ClassAliasingMapper.realClass(ClassAliasingMapper.java:79)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.ArrayMapper.realClass(ArrayMapper.java:74)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.SecurityMapper.realClass(SecurityMapper.java:71)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at hudson.util.XStream2$CompatibilityMapper.realClass(XStream2.java:379)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at hudson.util.xstream.MapperDelegate.realClass(MapperDelegate.java:43)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.CachingMapper.realClass(CachingMapper.java:48)
+	at com.thoughtworks.xstream.core.util.HierarchicalStreams.readClassType(HierarchicalStreams.java:29)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.start(TreeUnmarshaller.java:133)
+	at com.thoughtworks.xstream.core.AbstractTreeMarshallingStrategy.unmarshal(AbstractTreeMarshallingStrategy.java:32)
+	at com.thoughtworks.xstream.XStream.unmarshal(XStream.java:1189)
+	at hudson.util.XStream2.unmarshal(XStream2.java:161)
+	at hudson.util.XStream2.unmarshal(XStream2.java:132)
+	at com.thoughtworks.xstream.XStream.unmarshal(XStream.java:1173)
+	at com.thoughtworks.xstream.XStream.fromXML(XStream.java:1053)
+	at hudson.XmlFile.read(XmlFile.java:149)
+Caused: java.io.IOException: Unable to read /var/jenkins_home/jobs/End2End/config.xml
+	at hudson.XmlFile.read(XmlFile.java:151)
+	at hudson.model.Items.load(Items.java:370)
+	at jenkins.model.Jenkins$14.run(Jenkins.java:3269)
+	at org.jvnet.hudson.reactor.TaskGraphBuilder$TaskImpl.run(TaskGraphBuilder.java:169)
+	at org.jvnet.hudson.reactor.Reactor.runTask(Reactor.java:296)
+	at jenkins.model.Jenkins$5.runTask(Jenkins.java:1131)
+	at org.jvnet.hudson.reactor.Reactor$2.run(Reactor.java:214)
+	at org.jvnet.hudson.reactor.Reactor$Node.run(Reactor.java:117)
+	at jenkins.security.ImpersonatingExecutorService$1.run(ImpersonatingExecutorService.java:59)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2021-01-19 08:27:37.316+0000 [id=38]	SEVERE	jenkins.InitReactorRunner$1#onTaskFailed: Failed Loading item pipeline_with_perf_Sign
+com.thoughtworks.xstream.mapper.CannotResolveClassException: flow-definition
+	at com.thoughtworks.xstream.mapper.DefaultMapper.realClass(DefaultMapper.java:79)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.DynamicProxyMapper.realClass(DynamicProxyMapper.java:55)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.PackageAliasingMapper.realClass(PackageAliasingMapper.java:88)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.ClassAliasingMapper.realClass(ClassAliasingMapper.java:79)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.ArrayMapper.realClass(ArrayMapper.java:74)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.SecurityMapper.realClass(SecurityMapper.java:71)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at hudson.util.XStream2$CompatibilityMapper.realClass(XStream2.java:379)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at hudson.util.xstream.MapperDelegate.realClass(MapperDelegate.java:43)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:30)
+	at com.thoughtworks.xstream.mapper.CachingMapper.realClass(CachingMapper.java:48)
+	at com.thoughtworks.xstream.core.util.HierarchicalStreams.readClassType(HierarchicalStreams.java:29)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.start(TreeUnmarshaller.java:133)
+	at com.thoughtworks.xstream.core.AbstractTreeMarshallingStrategy.unmarshal(AbstractTreeMarshallingStrategy.java:32)
+	at com.thoughtworks.xstream.XStream.unmarshal(XStream.java:1189)
+	at hudson.util.XStream2.unmarshal(XStream2.java:161)
+	at hudson.util.XStream2.unmarshal(XStream2.java:132)
+	at com.thoughtworks.xstream.XStream.unmarshal(XStream.java:1173)
+	at com.thoughtworks.xstream.XStream.fromXML(XStream.java:1053)
+	at hudson.XmlFile.read(XmlFile.java:149)
+Caused: java.io.IOException: Unable to read /var/jenkins_home/jobs/pipeline_with_perf_Sign/config.xml
+	at hudson.XmlFile.read(XmlFile.java:151)
+	at hudson.model.Items.load(Items.java:370)
+	at jenkins.model.Jenkins$14.run(Jenkins.java:3269)
+	at org.jvnet.hudson.reactor.TaskGraphBuilder$TaskImpl.run(TaskGraphBuilder.java:169)
+	at org.jvnet.hudson.reactor.Reactor.runTask(Reactor.java:296)
+	at jenkins.model.Jenkins$5.runTask(Jenkins.java:1131)
+	at org.jvnet.hudson.reactor.Reactor$2.run(Reactor.java:214)
+	at org.jvnet.hudson.reactor.Reactor$Node.run(Reactor.java:117)
+	at jenkins.security.ImpersonatingExecutorService$1.run(ImpersonatingExecutorService.java:59)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2021-01-19 08:27:37.317+0000 [id=38]	INFO	jenkins.InitReactorRunner$1#onAttained: Loaded all jobs
+2021-01-19 08:27:37.318+0000 [id=32]	INFO	jenkins.InitReactorRunner$1#onAttained: Configuration for all jobs updated
+2021-01-19 08:27:37.363+0000 [id=53]	INFO	hudson.model.AsyncPeriodicWork#lambda$doRun$0: Started Download metadata
+2021-01-19 08:27:37.368+0000 [id=53]	INFO	hudson.model.AsyncPeriodicWork#lambda$doRun$0: Finished Download metadata. 5 ms
+2021-01-19 08:27:37.521+0000 [id=34]	INFO	j.util.groovy.GroovyHookScript#execute: Executing /var/jenkins_home/init.groovy.d/tcp-slave-agent-port.groovy
+2021-01-19 08:27:37.841+0000 [id=38]	INFO	o.s.c.s.AbstractApplicationContext#prepareRefresh: Refreshing org.springframework.web.context.support.StaticWebApplicationContext@2fc76d04: display name [Root WebApplicationContext]; startup date [Tue Jan 19 16:27:37 MYT 2021]; root of context hierarchy
+2021-01-19 08:27:37.842+0000 [id=38]	INFO	o.s.c.s.AbstractApplicationContext#obtainFreshBeanFactory: Bean factory for application context [org.springframework.web.context.support.StaticWebApplicationContext@2fc76d04]: org.springframework.beans.factory.support.DefaultListableBeanFactory@5aae82be
+2021-01-19 08:27:37.849+0000 [id=38]	INFO	o.s.b.f.s.DefaultListableBeanFactory#preInstantiateSingletons: Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5aae82be: defining beans [authenticationManager]; root of factory hierarchy
+2021-01-19 08:27:37.984+0000 [id=38]	INFO	o.s.c.s.AbstractApplicationContext#prepareRefresh: Refreshing org.springframework.web.context.support.StaticWebApplicationContext@5f4616c7: display name [Root WebApplicationContext]; startup date [Tue Jan 19 16:27:37 MYT 2021]; root of context hierarchy
+2021-01-19 08:27:37.984+0000 [id=38]	INFO	o.s.c.s.AbstractApplicationContext#obtainFreshBeanFactory: Bean factory for application context [org.springframework.web.context.support.StaticWebApplicationContext@5f4616c7]: org.springframework.beans.factory.support.DefaultListableBeanFactory@118fc18f
+2021-01-19 08:27:37.985+0000 [id=38]	INFO	o.s.b.f.s.DefaultListableBeanFactory#preInstantiateSingletons: Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@118fc18f: defining beans [filter,legacy]; root of factory hierarchy
+2021-01-19 08:27:38.032+0000 [id=38]	INFO	jenkins.InitReactorRunner$1#onAttained: Completed initialization
+2021-01-19 08:27:38.113+0000 [id=26]	INFO	hudson.WebAppMain$3#run: Jenkins is fully up and running
+--> setting agent port for jnlp
+--> setting agent port for jnlp... done
+2021-01-19 08:35:10.823+0000 [id=74]	INFO	hudson.PluginManager#install: Starting installation of a batch of 1 plugins plus their dependencies
+2021-01-19 08:35:10.823+0000 [id=74]	INFO	hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of pipeline-milestone-step for plugin workflow-aggregator
+2021-01-19 08:35:10.828+0000 [id=74]	INFO	hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of pipeline-stage-view for plugin workflow-aggregator
+2021-01-19 08:35:10.828+0000 [id=74]	INFO	hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of pipeline-rest-api for plugin pipeline-stage-view
+2021-01-19 08:35:10.829+0000 [id=74]	INFO	hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of pipeline-graph-analysis for plugin pipeline-rest-api
+2021-01-19 08:35:10.829+0000 [id=74]	INFO	hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of workflow-cps for plugin pipeline-graph-analysis
+2021-01-19 08:35:10.829+0000 [id=74]	INFO	hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of ace-editor for plugin workflow-cps
+2021-01-19 08:35:10.829+0000 [id=74]	INFO	hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of workflow-scm-step for plugin workflow-cps
+2021-01-19 08:35:10.829+0000 [id=74]	INFO	hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of workflow-support for plugin workflow-cps
+2021-01-19 08:35:10.829+0000 [id=74]	INFO	hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of pipeline-input-step for plugin pipeline-graph-analysis
+2021-01-19 08:35:10.829+0000 [id=74]	INFO	hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of credentials for plugin pipeline-input-step
+2021-01-19 08:35:10.830+0000 [id=74]	INFO	hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of pipeline-stage-step for plugin pipeline-graph-analysis
+2021-01-19 08:35:10.830+0000 [id=74]	INFO	hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of workflow-job for plugin pipeline-graph-analysis
+2021-01-19 08:35:10.830+0000 [id=74]	INFO	hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of handlebars for plugin pipeline-stage-view
+2021-01-19 08:35:10.830+0000 [id=74]	INFO	hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of momentjs for plugin pipeline-stage-view
+2021-01-19 08:35:10.830+0000 [id=74]	INFO	hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of pipeline-build-step for plugin workflow-aggregator
+2021-01-19 08:35:10.831+0000 [id=74]	INFO	hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of pipeline-model-definition for plugin workflow-aggregator
+2021-01-19 08:35:10.831+0000 [id=74]	INFO	hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of credentials-binding for plugin pipeline-model-definition
+2021-01-19 08:35:10.832+0000 [id=74]	INFO	hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of plain-credentials for plugin credentials-binding
+2021-01-19 08:35:10.833+0000 [id=74]	INFO	hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of ssh-credentials for plugin credentials-binding
+2021-01-19 08:35:10.833+0000 [id=74]	INFO	hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of pipeline-model-extensions for plugin pipeline-model-definition
+2021-01-19 08:35:10.833+0000 [id=74]	INFO	hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of pipeline-model-api for plugin pipeline-model-extensions
+2021-01-19 08:35:10.833+0000 [id=74]	INFO	hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of workflow-cps-global-lib for plugin pipeline-model-definition
+2021-01-19 08:35:10.833+0000 [id=74]	INFO	hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of cloudbees-folder for plugin workflow-cps-global-lib
+2021-01-19 08:35:10.834+0000 [id=74]	INFO	hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of git-server for plugin workflow-cps-global-lib
+2021-01-19 08:35:10.834+0000 [id=74]	INFO	hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of git-client for plugin git-server
+2021-01-19 08:35:10.834+0000 [id=74]	INFO	hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of apache-httpcomponents-client-4-api for plugin git-client
+2021-01-19 08:35:10.834+0000 [id=74]	INFO	hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of jsch for plugin git-client
+2021-01-19 08:35:10.834+0000 [id=74]	INFO	hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of mailer for plugin pipeline-model-definition
+2021-01-19 08:35:10.834+0000 [id=74]	INFO	hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of workflow-multibranch for plugin pipeline-model-definition
+2021-01-19 08:35:10.834+0000 [id=74]	INFO	hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of branch-api for plugin workflow-multibranch
+2021-01-19 08:35:10.835+0000 [id=74]	INFO	hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of workflow-durable-task-step for plugin pipeline-model-definition
+2021-01-19 08:35:10.835+0000 [id=74]	INFO	hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of durable-task for plugin workflow-durable-task-step
+2021-01-19 08:35:10.835+0000 [id=74]	INFO	hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of pipeline-stage-tags-metadata for plugin pipeline-model-definition
+2021-01-19 08:35:10.835+0000 [id=74]	INFO	hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of workflow-basic-steps for plugin pipeline-model-definition
+2021-01-19 08:35:10.835+0000 [id=74]	INFO	hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of lockable-resources for plugin workflow-aggregator
+2021-01-19 08:35:10.835+0000 [id=74]	INFO	hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of matrix-project for plugin lockable-resources
+2021-01-19 08:35:10.835+0000 [id=74]	INFO	hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of junit for plugin matrix-project
+2021-01-19 08:35:10.836+0000 [id=74]	INFO	hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of echarts-api for plugin junit
+2021-01-19 08:35:12.133+0000 [id=79]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of pipeline-milestone-step on behalf of admin
+2021-01-19 08:35:17.868+0000 [id=79]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading pipeline-milestone-step
+2021-01-19 08:35:17.879+0000 [id=79]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: pipeline-milestone-step
+2021-01-19 08:35:17.879+0000 [id=79]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of ace-editor on behalf of admin
+2021-01-19 08:35:21.148+0000 [id=79]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading ace-editor
+2021-01-19 08:35:45.880+0000 [id=79]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: ace-editor
+2021-01-19 08:35:45.880+0000 [id=79]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of workflow-scm-step on behalf of admin
+2021-01-19 08:35:48.779+0000 [id=79]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading workflow-scm-step
+2021-01-19 08:35:48.783+0000 [id=79]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: workflow-scm-step
+2021-01-19 08:35:48.784+0000 [id=79]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of workflow-support on behalf of admin
+2021-01-19 08:35:52.501+0000 [id=79]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading workflow-support
+2021-01-19 08:36:01.081+0000 [id=79]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: workflow-support
+2021-01-19 08:36:01.081+0000 [id=79]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of workflow-cps on behalf of admin
+2021-01-19 08:36:04.082+0000 [id=79]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading workflow-cps
+2021-01-19 08:36:09.299+0000 [id=79]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: workflow-cps
+2021-01-19 08:36:09.299+0000 [id=79]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of credentials on behalf of admin
+2021-01-19 08:36:14.470+0000 [id=79]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading credentials
+2021-01-19 08:36:23.934+0000 [id=79]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: credentials
+2021-01-19 08:36:23.934+0000 [id=79]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of pipeline-input-step on behalf of admin
+2021-01-19 08:36:32.197+0000 [id=79]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading pipeline-input-step
+2021-01-19 08:36:32.689+0000 [id=79]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: pipeline-input-step
+2021-01-19 08:36:32.689+0000 [id=79]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of pipeline-stage-step on behalf of admin
+2021-01-19 08:36:35.465+0000 [id=79]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading pipeline-stage-step
+2021-01-19 08:36:35.508+0000 [id=79]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: pipeline-stage-step
+2021-01-19 08:36:35.508+0000 [id=79]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of workflow-job on behalf of admin
+2021-01-19 08:36:38.161+0000 [id=79]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading workflow-job
+2021-01-19 08:36:39.692+0000 [id=79]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: workflow-job
+2021-01-19 08:36:39.692+0000 [id=79]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of pipeline-graph-analysis on behalf of admin
+2021-01-19 08:36:42.890+0000 [id=79]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading pipeline-graph-analysis
+2021-01-19 08:36:42.894+0000 [id=79]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: pipeline-graph-analysis
+2021-01-19 08:36:42.894+0000 [id=79]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of pipeline-rest-api on behalf of admin
+2021-01-19 08:36:45.617+0000 [id=79]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading pipeline-rest-api
+2021-01-19 08:36:47.152+0000 [id=79]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: pipeline-rest-api
+2021-01-19 08:36:47.153+0000 [id=79]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of handlebars on behalf of admin
+2021-01-19 08:36:50.266+0000 [id=79]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading handlebars
+2021-01-19 08:36:51.327+0000 [id=79]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: handlebars
+2021-01-19 08:36:51.328+0000 [id=79]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of momentjs on behalf of admin
+2021-01-19 08:36:54.487+0000 [id=79]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading momentjs
+2021-01-19 08:36:54.902+0000 [id=79]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: momentjs
+2021-01-19 08:36:54.902+0000 [id=79]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of pipeline-stage-view on behalf of admin
+2021-01-19 08:36:57.722+0000 [id=79]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading pipeline-stage-view
+2021-01-19 08:37:04.112+0000 [id=79]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: pipeline-stage-view
+2021-01-19 08:37:04.113+0000 [id=79]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of pipeline-build-step on behalf of admin
+2021-01-19 08:37:08.425+0000 [id=79]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading pipeline-build-step
+2021-01-19 08:37:08.832+0000 [id=79]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: pipeline-build-step
+2021-01-19 08:37:08.832+0000 [id=79]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of plain-credentials on behalf of admin
+2021-01-19 08:37:12.765+0000 [id=79]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading plain-credentials
+2021-01-19 08:37:12.769+0000 [id=79]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: plain-credentials
+2021-01-19 08:37:12.769+0000 [id=79]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of ssh-credentials on behalf of admin
+2021-01-19 08:37:41.174+0000 [id=79]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading ssh-credentials
+2021-01-19 08:38:07.482+0000 [id=79]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: ssh-credentials
+2021-01-19 08:38:07.483+0000 [id=79]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of credentials-binding on behalf of admin
+2021-01-19 08:38:13.504+0000 [id=79]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading credentials-binding
+2021-01-19 08:38:18.925+0000 [id=79]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: credentials-binding
+2021-01-19 08:38:18.925+0000 [id=79]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of pipeline-model-api on behalf of admin
+2021-01-19 08:38:23.105+0000 [id=79]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading pipeline-model-api
+2021-01-19 08:42:40.259+0000 [id=17]	INFO	hudson.model.UpdateCenter#doSafeRestart: Scheduling Jenkins reboot
+2021-01-19 08:43:28.746+0000 [id=79]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: pipeline-model-api
+2021-01-19 08:43:28.746+0000 [id=79]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of pipeline-model-extensions on behalf of admin
+2021-01-19 08:43:33.807+0000 [id=79]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading pipeline-model-extensions
+2021-01-19 08:43:34.344+0000 [id=79]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: pipeline-model-extensions
+2021-01-19 08:43:34.344+0000 [id=79]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of cloudbees-folder on behalf of admin
+2021-01-19 08:43:38.293+0000 [id=79]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading cloudbees-folder
+2021-01-19 08:43:39.502+0000 [id=79]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: cloudbees-folder
+2021-01-19 08:43:39.504+0000 [id=79]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of apache-httpcomponents-client-4-api on behalf of admin
+2021-01-19 08:43:42.640+0000 [id=79]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading apache-httpcomponents-client-4-api
+2021-01-19 08:43:45.327+0000 [id=79]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: apache-httpcomponents-client-4-api
+2021-01-19 08:43:45.327+0000 [id=79]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of jsch on behalf of admin
+2021-01-19 08:43:48.313+0000 [id=79]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading jsch
+2021-01-19 08:43:48.385+0000 [id=79]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: jsch
+2021-01-19 08:43:48.385+0000 [id=79]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of git-client on behalf of admin
+2021-01-19 08:43:51.001+0000 [id=79]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading git-client
+2021-01-19 08:43:54.139+0000 [id=79]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: git-client
+2021-01-19 08:43:54.139+0000 [id=79]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of git-server on behalf of admin
+2021-01-19 08:43:56.750+0000 [id=79]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading git-server
+2021-01-19 08:43:56.759+0000 [id=79]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: git-server
+2021-01-19 08:43:56.759+0000 [id=79]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of workflow-cps-global-lib on behalf of admin
+2021-01-19 08:43:59.360+0000 [id=79]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading workflow-cps-global-lib
+2021-01-19 08:44:01.178+0000 [id=79]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: workflow-cps-global-lib
+2021-01-19 08:44:01.179+0000 [id=79]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of mailer on behalf of admin
+2021-01-19 08:44:04.003+0000 [id=79]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading mailer
+2021-01-19 08:44:04.474+0000 [id=79]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: mailer
+2021-01-19 08:44:04.474+0000 [id=79]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of branch-api on behalf of admin
+2021-01-19 08:44:07.071+0000 [id=79]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading branch-api
+2021-01-19 08:44:07.664+0000 [id=79]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: branch-api
+2021-01-19 08:44:07.665+0000 [id=79]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of workflow-multibranch on behalf of admin
+2021-01-19 08:44:10.685+0000 [id=79]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading workflow-multibranch
+2021-01-19 08:44:10.739+0000 [id=79]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: workflow-multibranch
+2021-01-19 08:44:10.739+0000 [id=79]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of durable-task on behalf of admin
+2021-01-19 08:44:14.889+0000 [id=79]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading durable-task
+2021-01-19 08:44:21.138+0000 [id=79]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: durable-task
+2021-01-19 08:44:21.138+0000 [id=79]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of workflow-durable-task-step on behalf of admin
+2021-01-19 08:44:25.290+0000 [id=79]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading workflow-durable-task-step
+2021-01-19 08:44:26.572+0000 [id=79]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: workflow-durable-task-step
+2021-01-19 08:44:26.573+0000 [id=79]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of pipeline-stage-tags-metadata on behalf of admin
+2021-01-19 08:44:29.645+0000 [id=79]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading pipeline-stage-tags-metadata
+2021-01-19 08:44:29.650+0000 [id=79]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: pipeline-stage-tags-metadata
+2021-01-19 08:44:29.650+0000 [id=79]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of workflow-basic-steps on behalf of admin
+2021-01-19 08:44:32.292+0000 [id=79]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading workflow-basic-steps
+2021-01-19 08:44:33.095+0000 [id=79]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: workflow-basic-steps
+2021-01-19 08:44:33.096+0000 [id=79]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of pipeline-model-definition on behalf of admin
+2021-01-19 08:44:37.674+0000 [id=79]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading pipeline-model-definition
+2021-01-19 08:44:54.017+0000 [id=79]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: pipeline-model-definition
+2021-01-19 08:44:54.017+0000 [id=79]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of echarts-api on behalf of admin
+2021-01-19 08:44:57.130+0000 [id=79]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading echarts-api
+2021-01-19 08:52:39.733+0000 [id=79]	SEVERE	h.model.UpdateCenter$DownloadJob#run: Failed to install echarts-api
+java.io.IOException: Inconsistent file length: expected 16144904 but only got 14024367
+	at hudson.model.UpdateCenter$UpdateCenterConfiguration.download(UpdateCenter.java:1296)
+Caused: java.io.IOException: Failed to download from https://updates.jenkins.io/download/plugins/echarts-api/4.9.0-2/echarts-api.hpi (redirected to: https://mirrors.tuna.tsinghua.edu.cn/jenkins/plugins/echarts-api/4.9.0-2/echarts-api.hpi)
+	at hudson.model.UpdateCenter$UpdateCenterConfiguration.download(UpdateCenter.java:1321)
+	at hudson.model.UpdateCenter$DownloadJob._run(UpdateCenter.java:1869)
+	at hudson.model.UpdateCenter$InstallationJob._run(UpdateCenter.java:2147)
+	at hudson.model.UpdateCenter$DownloadJob.run(UpdateCenter.java:1843)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at hudson.remoting.AtmostOneThreadExecutor$Worker.run(AtmostOneThreadExecutor.java:118)
+	at java.lang.Thread.run(Thread.java:748)
+2021-01-19 08:52:39.734+0000 [id=79]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of junit on behalf of admin
+2021-01-19 08:52:50.282+0000 [id=79]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading junit
+2021-01-19 08:52:53.540+0000 [id=79]	SEVERE	h.model.UpdateCenter$DownloadJob#run: Failed to install junit
+java.io.IOException: Failed to load: JUnit Plugin (1.48)
+ - Plugin is missing: echarts-api (4.9.0-2)
+	at hudson.PluginWrapper.resolvePluginDependencies(PluginWrapper.java:952)
+	at hudson.PluginManager.dynamicLoad(PluginManager.java:932)
+Caused: java.io.IOException: Failed to install junit plugin
+	at hudson.PluginManager.dynamicLoad(PluginManager.java:945)
+	at hudson.model.UpdateCenter$InstallationJob._run(UpdateCenter.java:2159)
+Caused: java.io.IOException: Failed to dynamically deploy this plugin
+	at hudson.model.UpdateCenter$InstallationJob._run(UpdateCenter.java:2163)
+	at hudson.model.UpdateCenter$DownloadJob.run(UpdateCenter.java:1843)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at hudson.remoting.AtmostOneThreadExecutor$Worker.run(AtmostOneThreadExecutor.java:118)
+	at java.lang.Thread.run(Thread.java:748)
+2021-01-19 08:52:53.540+0000 [id=79]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of matrix-project on behalf of admin
+2021-01-19 08:52:56.105+0000 [id=79]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading matrix-project
+2021-01-19 08:52:56.685+0000 [id=79]	SEVERE	h.model.UpdateCenter$DownloadJob#run: Failed to install matrix-project
+java.io.IOException: Failed to load: Matrix Project Plugin (1.18)
+ - Failed to load: JUnit Plugin (1.48)
+	at hudson.PluginWrapper.resolvePluginDependencies(PluginWrapper.java:952)
+	at hudson.PluginManager.dynamicLoad(PluginManager.java:932)
+Caused: java.io.IOException: Failed to install matrix-project plugin
+	at hudson.PluginManager.dynamicLoad(PluginManager.java:945)
+	at hudson.model.UpdateCenter$InstallationJob._run(UpdateCenter.java:2159)
+Caused: java.io.IOException: Failed to dynamically deploy this plugin
+	at hudson.model.UpdateCenter$InstallationJob._run(UpdateCenter.java:2163)
+	at hudson.model.UpdateCenter$DownloadJob.run(UpdateCenter.java:1843)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at hudson.remoting.AtmostOneThreadExecutor$Worker.run(AtmostOneThreadExecutor.java:118)
+	at java.lang.Thread.run(Thread.java:748)
+2021-01-19 08:52:56.685+0000 [id=79]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of lockable-resources on behalf of admin
+2021-01-19 08:52:59.354+0000 [id=79]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading lockable-resources
+2021-01-19 08:53:04.140+0000 [id=79]	SEVERE	h.model.UpdateCenter$DownloadJob#run: Failed to install lockable-resources
+java.io.IOException: Failed to load: Lockable Resources plugin (2.10)
+ - Failed to load: Matrix Project Plugin (1.18)
+	at hudson.PluginWrapper.resolvePluginDependencies(PluginWrapper.java:952)
+	at hudson.PluginManager.dynamicLoad(PluginManager.java:932)
+Caused: java.io.IOException: Failed to install lockable-resources plugin
+	at hudson.PluginManager.dynamicLoad(PluginManager.java:945)
+	at hudson.model.UpdateCenter$InstallationJob._run(UpdateCenter.java:2159)
+Caused: java.io.IOException: Failed to dynamically deploy this plugin
+	at hudson.model.UpdateCenter$InstallationJob._run(UpdateCenter.java:2163)
+	at hudson.model.UpdateCenter$DownloadJob.run(UpdateCenter.java:1843)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at hudson.remoting.AtmostOneThreadExecutor$Worker.run(AtmostOneThreadExecutor.java:118)
+	at java.lang.Thread.run(Thread.java:748)
+2021-01-19 08:53:04.140+0000 [id=79]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of workflow-aggregator on behalf of admin
+2021-01-19 08:53:07.327+0000 [id=79]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading workflow-aggregator
+2021-01-19 08:53:07.331+0000 [id=79]	SEVERE	h.model.UpdateCenter$DownloadJob#run: Failed to install workflow-aggregator
+java.io.IOException: Failed to load: Pipeline (2.6)
+ - Failed to load: Lockable Resources plugin (2.10)
+	at hudson.PluginWrapper.resolvePluginDependencies(PluginWrapper.java:952)
+	at hudson.PluginManager.dynamicLoad(PluginManager.java:932)
+Caused: java.io.IOException: Failed to install workflow-aggregator plugin
+	at hudson.PluginManager.dynamicLoad(PluginManager.java:945)
+	at hudson.model.UpdateCenter$InstallationJob._run(UpdateCenter.java:2159)
+Caused: java.io.IOException: Failed to dynamically deploy this plugin
+	at hudson.model.UpdateCenter$InstallationJob._run(UpdateCenter.java:2163)
+	at hudson.model.UpdateCenter$DownloadJob.run(UpdateCenter.java:1843)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at hudson.remoting.AtmostOneThreadExecutor$Worker.run(AtmostOneThreadExecutor.java:118)
+	at java.lang.Thread.run(Thread.java:748)
+2021-01-19 08:53:07.332+0000 [id=79]	INFO	h.m.UpdateCenter$CompleteBatchJob#run: Completing installing of plugin batch…
+2021-01-19 08:53:08.999+0000 [id=183]	INFO	jenkins.InitReactorRunner$1#onAttained: Started initialization
+2021-01-19 08:53:09.031+0000 [id=189]	INFO	jenkins.InitReactorRunner$1#onAttained: Listed all plugins
+2021-01-19 08:53:09.032+0000 [id=189]	INFO	jenkins.InitReactorRunner$1#onAttained: Prepared all plugins
+2021-01-19 08:53:09.048+0000 [id=187]	INFO	jenkins.InitReactorRunner$1#onAttained: Started all plugins
+2021-01-19 08:53:09.062+0000 [id=185]	INFO	jenkins.InitReactorRunner$1#onAttained: Augmented all extensions
+2021-01-19 08:53:09.068+0000 [id=188]	INFO	jenkins.InitReactorRunner$1#onAttained: System config loaded
+2021-01-19 08:53:09.069+0000 [id=188]	INFO	jenkins.InitReactorRunner$1#onAttained: System config adapted
+2021-01-19 08:53:09.069+0000 [id=188]	INFO	jenkins.InitReactorRunner$1#onAttained: Loaded all jobs
+2021-01-19 08:53:09.072+0000 [id=183]	INFO	jenkins.InitReactorRunner$1#onAttained: Configuration for all jobs updated
+2021-01-19 08:53:09.384+0000 [id=183]	INFO	jenkins.InitReactorRunner$1#onAttained: Completed initialization
+2021-01-19 08:53:09.384+0000 [id=79]	INFO	h.m.UpdateCenter$CompleteBatchJob#run: Completed installation of 34 plugins in 17 min
+2021-01-19 08:53:09.393+0000 [id=191]	INFO	jenkins.model.Jenkins$23#run: Restart in 10 seconds
+2021-01-19 08:53:19.393+0000 [id=191]	INFO	jenkins.model.Jenkins$23#run: Restarting VM as requested by admin
+2021-01-19 08:53:19.394+0000 [id=191]	INFO	jenkins.model.Jenkins#cleanUp: Stopping Jenkins
+2021-01-19 08:53:19.418+0000 [id=191]	INFO	jenkins.model.Jenkins$18#onAttained: Started termination
+2021-01-19 08:53:19.438+0000 [id=191]	INFO	jenkins.model.Jenkins$18#onAttained: Completed termination
+2021-01-19 08:53:19.438+0000 [id=191]	INFO	jenkins.model.Jenkins#_cleanUpDisconnectComputers: Starting node disconnection
+2021-01-19 08:53:19.578+0000 [id=191]	INFO	jenkins.model.Jenkins#_cleanUpShutdownPluginManager: Stopping plugin manager
+2021-01-19 08:53:19.580+0000 [id=191]	INFO	jenkins.model.Jenkins#_cleanUpPersistQueue: Persisting build queue
+2021-01-19 08:53:19.582+0000 [id=191]	INFO	jenkins.model.Jenkins#_cleanUpAwaitDisconnects: Waiting for node disconnection completion
+2021-01-19 08:53:19.582+0000 [id=191]	INFO	jenkins.model.Jenkins#cleanUp: Jenkins stopped
+Running from: /usr/share/jenkins/jenkins.war
+webroot: EnvVars.masterEnvVars.get("JENKINS_HOME")
+2021-01-19 08:53:23.817+0000 [id=1]	INFO	org.eclipse.jetty.util.log.Log#initialized: Logging initialized @3516ms to org.eclipse.jetty.util.log.JavaUtilLog
+2021-01-19 08:53:23.922+0000 [id=1]	INFO	winstone.Logger#logInternal: Beginning extraction from war file
+2021-01-19 08:53:23.956+0000 [id=1]	WARNING	o.e.j.s.handler.ContextHandler#setContextPath: Empty contextPath
+2021-01-19 08:53:24.017+0000 [id=1]	INFO	org.eclipse.jetty.server.Server#doStart: jetty-9.4.30.v20200611; built: 2020-06-11T12:34:51.929Z; git: 271836e4c1f4612f12b7bb13ef5a92a927634b0d; jvm 1.8.0_275-8u275-b01-0ubuntu1~18.04-b01
+2021-01-19 08:53:24.235+0000 [id=1]	INFO	o.e.j.w.StandardDescriptorProcessor#visitServlet: NO JSP Support for /, did not find org.eclipse.jetty.jsp.JettyJspServlet
+2021-01-19 08:53:24.285+0000 [id=1]	INFO	o.e.j.s.s.DefaultSessionIdManager#doStart: DefaultSessionIdManager workerName=node0
+2021-01-19 08:53:24.285+0000 [id=1]	INFO	o.e.j.s.s.DefaultSessionIdManager#doStart: No SessionScavenger set, using defaults
+2021-01-19 08:53:24.295+0000 [id=1]	INFO	o.e.j.server.session.HouseKeeper#startScavenging: node0 Scavenging every 660000ms
+2021-01-19 08:53:24.632+0000 [id=1]	INFO	hudson.WebAppMain#contextInitialized: Jenkins home directory: /var/jenkins_home found at: EnvVars.masterEnvVars.get("JENKINS_HOME")
+2021-01-19 08:53:24.782+0000 [id=1]	INFO	o.e.j.s.handler.ContextHandler#doStart: Started w.@456d6c1e{Jenkins v2.249.2,/,file:///var/jenkins_home/war/,AVAILABLE}{/var/jenkins_home/war}
+2021-01-19 08:53:24.837+0000 [id=1]	INFO	o.e.j.server.AbstractConnector#doStart: Started ServerConnector@66d2e7d9{HTTP/1.1, (http/1.1)}{0.0.0.0:8080}
+2021-01-19 08:53:24.838+0000 [id=1]	INFO	org.eclipse.jetty.server.Server#doStart: Started @4537ms
+2021-01-19 08:53:24.844+0000 [id=27]	INFO	winstone.Logger#logInternal: Winstone Servlet Engine running: controlPort=disabled
+2021-01-19 08:53:25.720+0000 [id=33]	INFO	jenkins.InitReactorRunner$1#onAttained: Started initialization
+2021-01-19 08:53:25.893+0000 [id=36]	INFO	jenkins.InitReactorRunner$1#onAttained: Listed all plugins
+2021-01-19 08:53:25.920+0000 [id=35]	SEVERE	jenkins.InitReactorRunner$1#onTaskFailed: Failed Loading plugin JUnit Plugin v1.48 (junit)
+java.io.IOException: Failed to load: JUnit Plugin (1.48)
+ - Plugin is missing: echarts-api (4.9.0-2)
+	at hudson.PluginWrapper.resolvePluginDependencies(PluginWrapper.java:952)
+	at hudson.PluginManager$2$1$1.run(PluginManager.java:549)
+	at org.jvnet.hudson.reactor.TaskGraphBuilder$TaskImpl.run(TaskGraphBuilder.java:169)
+	at org.jvnet.hudson.reactor.Reactor.runTask(Reactor.java:296)
+	at jenkins.model.Jenkins$5.runTask(Jenkins.java:1131)
+	at org.jvnet.hudson.reactor.Reactor$2.run(Reactor.java:214)
+	at org.jvnet.hudson.reactor.Reactor$Node.run(Reactor.java:117)
+	at jenkins.security.ImpersonatingExecutorService$1.run(ImpersonatingExecutorService.java:59)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2021-01-19 08:53:25.921+0000 [id=38]	SEVERE	jenkins.InitReactorRunner$1#onTaskFailed: Failed Loading plugin Matrix Project Plugin v1.18 (matrix-project)
+java.io.IOException: Failed to load: Matrix Project Plugin (1.18)
+ - Failed to load: JUnit Plugin (1.48)
+	at hudson.PluginWrapper.resolvePluginDependencies(PluginWrapper.java:952)
+	at hudson.PluginManager$2$1$1.run(PluginManager.java:549)
+	at org.jvnet.hudson.reactor.TaskGraphBuilder$TaskImpl.run(TaskGraphBuilder.java:169)
+	at org.jvnet.hudson.reactor.Reactor.runTask(Reactor.java:296)
+	at jenkins.model.Jenkins$5.runTask(Jenkins.java:1131)
+	at org.jvnet.hudson.reactor.Reactor$2.run(Reactor.java:214)
+	at org.jvnet.hudson.reactor.Reactor$Node.run(Reactor.java:117)
+	at jenkins.security.ImpersonatingExecutorService$1.run(ImpersonatingExecutorService.java:59)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2021-01-19 08:53:25.921+0000 [id=32]	SEVERE	jenkins.InitReactorRunner$1#onTaskFailed: Failed Loading plugin GitHub Branch Source Plugin v2.5.8 (github-branch-source)
+java.io.IOException: Failed to load: GitHub Branch Source Plugin (2.5.8)
+ - Plugin is missing: github (1.29.3)
+ - Plugin is missing: github-api (1.95)
+	at hudson.PluginWrapper.resolvePluginDependencies(PluginWrapper.java:952)
+	at hudson.PluginManager$2$1$1.run(PluginManager.java:549)
+	at org.jvnet.hudson.reactor.TaskGraphBuilder$TaskImpl.run(TaskGraphBuilder.java:169)
+	at org.jvnet.hudson.reactor.Reactor.runTask(Reactor.java:296)
+	at jenkins.model.Jenkins$5.runTask(Jenkins.java:1131)
+	at org.jvnet.hudson.reactor.Reactor$2.run(Reactor.java:214)
+	at org.jvnet.hudson.reactor.Reactor$Node.run(Reactor.java:117)
+	at jenkins.security.ImpersonatingExecutorService$1.run(ImpersonatingExecutorService.java:59)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2021-01-19 08:53:26.215+0000 [id=32]	SEVERE	jenkins.InitReactorRunner$1#onTaskFailed: Failed Loading plugin Google OAuth Credentials plugin v1.0.0 (google-oauth-plugin)
+java.io.IOException: Failed to load: Google OAuth Credentials plugin (1.0.0)
+ - Plugin is missing: oauth-credentials (0.3)
+	at hudson.PluginWrapper.resolvePluginDependencies(PluginWrapper.java:952)
+	at hudson.PluginManager$2$1$1.run(PluginManager.java:549)
+	at org.jvnet.hudson.reactor.TaskGraphBuilder$TaskImpl.run(TaskGraphBuilder.java:169)
+	at org.jvnet.hudson.reactor.Reactor.runTask(Reactor.java:296)
+	at jenkins.model.Jenkins$5.runTask(Jenkins.java:1131)
+	at org.jvnet.hudson.reactor.Reactor$2.run(Reactor.java:214)
+	at org.jvnet.hudson.reactor.Reactor$Node.run(Reactor.java:117)
+	at jenkins.security.ImpersonatingExecutorService$1.run(ImpersonatingExecutorService.java:59)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2021-01-19 08:53:26.216+0000 [id=32]	SEVERE	jenkins.InitReactorRunner$1#onTaskFailed: Failed Loading plugin Google Authenticated Source plugin v0.4 (google-source-plugin)
+java.io.IOException: Failed to load: Google Authenticated Source plugin (0.4)
+ - Failed to load: Google OAuth Credentials plugin (1.0.0)
+ - Plugin is missing: google-metadata-plugin (0.2)
+	at hudson.PluginWrapper.resolvePluginDependencies(PluginWrapper.java:952)
+	at hudson.PluginManager$2$1$1.run(PluginManager.java:549)
+	at org.jvnet.hudson.reactor.TaskGraphBuilder$TaskImpl.run(TaskGraphBuilder.java:169)
+	at org.jvnet.hudson.reactor.Reactor.runTask(Reactor.java:296)
+	at jenkins.model.Jenkins$5.runTask(Jenkins.java:1131)
+	at org.jvnet.hudson.reactor.Reactor$2.run(Reactor.java:214)
+	at org.jvnet.hudson.reactor.Reactor$Node.run(Reactor.java:117)
+	at jenkins.security.ImpersonatingExecutorService$1.run(ImpersonatingExecutorService.java:59)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2021-01-19 08:53:26.220+0000 [id=37]	SEVERE	jenkins.InitReactorRunner$1#onTaskFailed: Failed Loading plugin Jenkins Workspace Cleanup Plugin v0.38 (ws-cleanup)
+java.io.IOException: Failed to load: Jenkins Workspace Cleanup Plugin (0.38)
+ - Failed to load: Matrix Project Plugin (1.18)
+	at hudson.PluginWrapper.resolvePluginDependencies(PluginWrapper.java:952)
+	at hudson.PluginManager$2$1$1.run(PluginManager.java:549)
+	at org.jvnet.hudson.reactor.TaskGraphBuilder$TaskImpl.run(TaskGraphBuilder.java:169)
+	at org.jvnet.hudson.reactor.Reactor.runTask(Reactor.java:296)
+	at jenkins.model.Jenkins$5.runTask(Jenkins.java:1131)
+	at org.jvnet.hudson.reactor.Reactor$2.run(Reactor.java:214)
+	at org.jvnet.hudson.reactor.Reactor$Node.run(Reactor.java:117)
+	at jenkins.security.ImpersonatingExecutorService$1.run(ImpersonatingExecutorService.java:59)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2021-01-19 08:53:26.221+0000 [id=39]	SEVERE	jenkins.InitReactorRunner$1#onTaskFailed: Failed Loading plugin Docker plugin v1.2.1 (docker-plugin)
+java.io.IOException: Failed to load: Docker plugin (1.2.1)
+ - Plugin is missing: token-macro (2.3)
+ - Plugin is missing: docker-commons (1.9)
+ - Plugin is missing: ssh-slaves (1.22)
+ - Plugin is missing: docker-java-api (3.1.5)
+	at hudson.PluginWrapper.resolvePluginDependencies(PluginWrapper.java:952)
+	at hudson.PluginManager$2$1$1.run(PluginManager.java:549)
+	at org.jvnet.hudson.reactor.TaskGraphBuilder$TaskImpl.run(TaskGraphBuilder.java:169)
+	at org.jvnet.hudson.reactor.Reactor.runTask(Reactor.java:296)
+	at jenkins.model.Jenkins$5.runTask(Jenkins.java:1131)
+	at org.jvnet.hudson.reactor.Reactor$2.run(Reactor.java:214)
+	at org.jvnet.hudson.reactor.Reactor$Node.run(Reactor.java:117)
+	at jenkins.security.ImpersonatingExecutorService$1.run(ImpersonatingExecutorService.java:59)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2021-01-19 08:53:26.221+0000 [id=39]	SEVERE	jenkins.InitReactorRunner$1#onTaskFailed: Failed Loading plugin docker-build-step v2.0 (docker-build-step)
+java.io.IOException: Failed to load: docker-build-step (2.0)
+ - Plugin is missing: docker-commons (1.4.0)
+	at hudson.PluginWrapper.resolvePluginDependencies(PluginWrapper.java:952)
+	at hudson.PluginManager$2$1$1.run(PluginManager.java:549)
+	at org.jvnet.hudson.reactor.TaskGraphBuilder$TaskImpl.run(TaskGraphBuilder.java:169)
+	at org.jvnet.hudson.reactor.Reactor.runTask(Reactor.java:296)
+	at jenkins.model.Jenkins$5.runTask(Jenkins.java:1131)
+	at org.jvnet.hudson.reactor.Reactor$2.run(Reactor.java:214)
+	at org.jvnet.hudson.reactor.Reactor$Node.run(Reactor.java:117)
+	at jenkins.security.ImpersonatingExecutorService$1.run(ImpersonatingExecutorService.java:59)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2021-01-19 08:53:26.222+0000 [id=39]	SEVERE	jenkins.InitReactorRunner$1#onTaskFailed: Failed Loading plugin Lockable Resources plugin v2.10 (lockable-resources)
+java.io.IOException: Failed to load: Lockable Resources plugin (2.10)
+ - Failed to load: Matrix Project Plugin (1.18)
+	at hudson.PluginWrapper.resolvePluginDependencies(PluginWrapper.java:952)
+	at hudson.PluginManager$2$1$1.run(PluginManager.java:549)
+	at org.jvnet.hudson.reactor.TaskGraphBuilder$TaskImpl.run(TaskGraphBuilder.java:169)
+	at org.jvnet.hudson.reactor.Reactor.runTask(Reactor.java:296)
+	at jenkins.model.Jenkins$5.runTask(Jenkins.java:1131)
+	at org.jvnet.hudson.reactor.Reactor$2.run(Reactor.java:214)
+	at org.jvnet.hudson.reactor.Reactor$Node.run(Reactor.java:117)
+	at jenkins.security.ImpersonatingExecutorService$1.run(ImpersonatingExecutorService.java:59)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2021-01-19 08:53:26.223+0000 [id=39]	SEVERE	jenkins.InitReactorRunner$1#onTaskFailed: Failed Loading plugin Pipeline v2.6 (workflow-aggregator)
+java.io.IOException: Failed to load: Pipeline (2.6)
+ - Failed to load: Lockable Resources plugin (2.10)
+	at hudson.PluginWrapper.resolvePluginDependencies(PluginWrapper.java:952)
+	at hudson.PluginManager$2$1$1.run(PluginManager.java:549)
+	at org.jvnet.hudson.reactor.TaskGraphBuilder$TaskImpl.run(TaskGraphBuilder.java:169)
+	at org.jvnet.hudson.reactor.Reactor.runTask(Reactor.java:296)
+	at jenkins.model.Jenkins$5.runTask(Jenkins.java:1131)
+	at org.jvnet.hudson.reactor.Reactor$2.run(Reactor.java:214)
+	at org.jvnet.hudson.reactor.Reactor$Node.run(Reactor.java:117)
+	at jenkins.security.ImpersonatingExecutorService$1.run(ImpersonatingExecutorService.java:59)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2021-01-19 08:53:30.556+0000 [id=39]	INFO	jenkins.InitReactorRunner$1#onAttained: Prepared all plugins
+2021-01-19 08:53:30.577+0000 [id=39]	INFO	jenkins.InitReactorRunner$1#onAttained: Started all plugins
+2021-01-19 08:53:32.915+0000 [id=38]	INFO	jenkins.InitReactorRunner$1#onAttained: Augmented all extensions
+2021-01-19 08:53:33.034+0000 [id=36]	INFO	jenkins.InitReactorRunner$1#onAttained: System config loaded
+2021-01-19 08:53:33.043+0000 [id=32]	INFO	jenkins.InitReactorRunner$1#onAttained: System config adapted
+2021-01-19 08:53:33.195+0000 [id=33]	INFO	jenkins.InitReactorRunner$1#onAttained: Loaded all jobs
+2021-01-19 08:53:33.196+0000 [id=32]	INFO	jenkins.InitReactorRunner$1#onAttained: Configuration for all jobs updated
+2021-01-19 08:53:33.203+0000 [id=38]	INFO	j.util.groovy.GroovyHookScript#execute: Executing /var/jenkins_home/init.groovy.d/tcp-slave-agent-port.groovy
+2021-01-19 08:53:33.254+0000 [id=53]	INFO	hudson.model.AsyncPeriodicWork#lambda$doRun$0: Started Download metadata
+2021-01-19 08:53:33.259+0000 [id=53]	INFO	hudson.model.AsyncPeriodicWork#lambda$doRun$0: Finished Download metadata. 5 ms
+2021-01-19 08:53:34.029+0000 [id=35]	INFO	o.s.c.s.AbstractApplicationContext#prepareRefresh: Refreshing org.springframework.web.context.support.StaticWebApplicationContext@b791943: display name [Root WebApplicationContext]; startup date [Tue Jan 19 16:53:34 MYT 2021]; root of context hierarchy
+2021-01-19 08:53:34.029+0000 [id=35]	INFO	o.s.c.s.AbstractApplicationContext#obtainFreshBeanFactory: Bean factory for application context [org.springframework.web.context.support.StaticWebApplicationContext@b791943]: org.springframework.beans.factory.support.DefaultListableBeanFactory@6b5f96c0
+2021-01-19 08:53:34.049+0000 [id=35]	INFO	o.s.b.f.s.DefaultListableBeanFactory#preInstantiateSingletons: Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@6b5f96c0: defining beans [authenticationManager]; root of factory hierarchy
+2021-01-19 08:53:34.330+0000 [id=35]	INFO	o.s.c.s.AbstractApplicationContext#prepareRefresh: Refreshing org.springframework.web.context.support.StaticWebApplicationContext@1adac564: display name [Root WebApplicationContext]; startup date [Tue Jan 19 16:53:34 MYT 2021]; root of context hierarchy
+2021-01-19 08:53:34.330+0000 [id=35]	INFO	o.s.c.s.AbstractApplicationContext#obtainFreshBeanFactory: Bean factory for application context [org.springframework.web.context.support.StaticWebApplicationContext@1adac564]: org.springframework.beans.factory.support.DefaultListableBeanFactory@5cef44f5
+2021-01-19 08:53:34.330+0000 [id=35]	INFO	o.s.b.f.s.DefaultListableBeanFactory#preInstantiateSingletons: Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5cef44f5: defining beans [filter,legacy]; root of factory hierarchy
+2021-01-19 08:53:34.415+0000 [id=35]	INFO	jenkins.InitReactorRunner$1#onAttained: Completed initialization
+2021-01-19 08:53:34.581+0000 [id=26]	INFO	hudson.WebAppMain$3#run: Jenkins is fully up and running
+--> setting agent port for jnlp
+--> setting agent port for jnlp... done
+2021-01-19 09:02:58.528+0000 [id=111]	INFO	j.p.d.DockerComposeBuilder#perform: Executing Docker Compose build step
+2021-01-19 09:02:58.529+0000 [id=111]	INFO	j.p.d.StopAllServices#execute: Using Docker Compose file 'lab4/docker-compose.yaml'
+2021-01-19 09:02:58.530+0000 [id=111]	INFO	j.p.d.StopAllServices#execute: Stopping all services
+2021-01-19 09:02:59.004+0000 [id=111]	INFO	j.p.d.DockerComposeBuilder#perform: Exit code: 0
+2021-01-19 09:02:59.176+0000 [id=111]	INFO	j.p.d.DockerComposeBuilder#perform: Executing Docker Compose build step
+2021-01-19 09:02:59.177+0000 [id=111]	INFO	j.p.d.StartAllServices#execute: Using Docker Compose file 'lab4/docker-compose.yaml'
+2021-01-19 09:02:59.177+0000 [id=111]	INFO	j.p.d.StartAllServices#execute: Starting all services
+2021-01-19 09:03:00.530+0000 [id=111]	INFO	j.p.d.DockerComposeBuilder#perform: Exit code: 1
+2021-01-19 09:05:13.996+0000 [id=146]	INFO	o.j.p.workflow.job.WorkflowRun#finish: pipeline #1 completed: FAILURE
+2021-01-19 09:15:16.534+0000 [id=73]	INFO	hudson.PluginManager#install: Starting installation of a batch of 2 plugins plus their dependencies
+2021-01-19 09:15:16.536+0000 [id=73]	INFO	hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of docker-commons for plugin docker-plugin
+2021-01-19 09:15:16.537+0000 [id=73]	INFO	hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of authentication-tokens for plugin docker-commons
+2021-01-19 09:15:16.547+0000 [id=73]	INFO	hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of token-macro for plugin docker-plugin
+2021-01-19 09:15:16.547+0000 [id=73]	INFO	hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of ssh-slaves for plugin docker-plugin
+2021-01-19 09:15:16.547+0000 [id=73]	INFO	hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of docker-java-api for plugin docker-plugin
+2021-01-19 09:15:16.548+0000 [id=73]	INFO	hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of matrix-project for plugin docker-build-step
+2021-01-19 09:15:16.548+0000 [id=73]	INFO	hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of junit for plugin matrix-project
+2021-01-19 09:15:16.549+0000 [id=73]	INFO	hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of echarts-api for plugin junit
+2021-01-19 09:15:17.952+0000 [id=235]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of authentication-tokens on behalf of admin
+2021-01-19 09:15:24.150+0000 [id=235]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading authentication-tokens
+2021-01-19 09:15:24.239+0000 [id=235]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: authentication-tokens
+2021-01-19 09:15:24.239+0000 [id=235]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of docker-commons on behalf of admin
+2021-01-19 09:15:27.506+0000 [id=235]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading docker-commons
+2021-01-19 09:15:28.030+0000 [id=235]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: docker-commons
+2021-01-19 09:15:28.031+0000 [id=235]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of token-macro on behalf of admin
+2021-01-19 09:15:31.346+0000 [id=235]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading token-macro
+2021-01-19 09:15:33.833+0000 [id=235]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: token-macro
+2021-01-19 09:15:33.833+0000 [id=235]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of ssh-slaves on behalf of admin
+2021-01-19 09:15:36.479+0000 [id=235]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading ssh-slaves
+2021-01-19 09:15:36.544+0000 [id=235]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: ssh-slaves
+2021-01-19 09:15:36.545+0000 [id=235]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of docker-java-api on behalf of admin
+2021-01-19 09:15:39.173+0000 [id=235]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading docker-java-api
+2021-01-19 09:15:42.869+0000 [id=235]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: docker-java-api
+2021-01-19 09:15:42.870+0000 [id=235]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of docker-plugin on behalf of admin
+2021-01-19 09:15:45.520+0000 [id=235]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading docker-plugin
+2021-01-19 09:15:49.935+0000 [id=235]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: docker-plugin
+2021-01-19 09:15:49.935+0000 [id=235]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of echarts-api on behalf of admin
+2021-01-19 09:15:52.906+0000 [id=235]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading echarts-api
+2021-01-19 09:15:59.050+0000 [id=235]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: echarts-api
+2021-01-19 09:15:59.050+0000 [id=235]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of junit on behalf of admin
+2021-01-19 09:16:01.722+0000 [id=235]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading junit
+2021-01-19 09:16:11.133+0000 [id=235]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: junit
+2021-01-19 09:16:11.134+0000 [id=235]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of matrix-project on behalf of admin
+2021-01-19 09:16:13.654+0000 [id=235]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading matrix-project
+2021-01-19 09:16:13.723+0000 [id=235]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: matrix-project
+2021-01-19 09:16:13.723+0000 [id=235]	INFO	h.model.UpdateCenter$DownloadJob#run: Starting the installation of docker-build-step on behalf of admin
+2021-01-19 09:16:16.516+0000 [id=16]	INFO	hudson.PluginManager#install: Starting installation of a batch of 0 plugins plus their dependencies
+2021-01-19 09:16:16.742+0000 [id=235]	INFO	h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading docker-build-step
+2021-01-19 09:16:20.089+0000 [id=231]	INFO	hudson.model.UpdateCenter#doSafeRestart: Scheduling Jenkins reboot
+2021-01-19 09:16:22.589+0000 [id=235]	INFO	h.model.UpdateCenter$DownloadJob#run: Installation successful: docker-build-step
+2021-01-19 09:16:22.590+0000 [id=235]	INFO	h.m.UpdateCenter$CompleteBatchJob#run: Completing installing of plugin batch…
+2021-01-19 09:16:22.593+0000 [id=235]	INFO	hudson.ClassicPluginStrategy#updateDependency: Updated dependency of git
+2021-01-19 09:16:24.538+0000 [id=235]	WARNING	o.j.p.d.DockerBuilder$DescriptorImpl#<init>: Docker URL is not set, docker client won't be initialized
+2021-01-19 09:16:24.657+0000 [id=264]	INFO	jenkins.InitReactorRunner$1#onAttained: Started initialization
+2021-01-19 09:16:24.692+0000 [id=271]	INFO	jenkins.InitReactorRunner$1#onAttained: Listed all plugins
+2021-01-19 09:16:24.695+0000 [id=269]	INFO	jenkins.InitReactorRunner$1#onAttained: Prepared all plugins
+2021-01-19 09:16:24.721+0000 [id=271]	INFO	jenkins.InitReactorRunner$1#onAttained: Started all plugins
+2021-01-19 09:16:24.725+0000 [id=267]	INFO	jenkins.InitReactorRunner$1#onAttained: Augmented all extensions
+2021-01-19 09:16:24.726+0000 [id=269]	INFO	jenkins.InitReactorRunner$1#onAttained: System config loaded
+2021-01-19 09:16:24.726+0000 [id=269]	INFO	jenkins.InitReactorRunner$1#onAttained: System config adapted
+2021-01-19 09:16:24.727+0000 [id=269]	INFO	jenkins.InitReactorRunner$1#onAttained: Loaded all jobs
+2021-01-19 09:16:24.727+0000 [id=269]	INFO	jenkins.InitReactorRunner$1#onAttained: Configuration for all jobs updated
+2021-01-19 09:16:24.728+0000 [id=269]	INFO	jenkins.InitReactorRunner$1#onAttained: Completed initialization
+2021-01-19 09:16:24.730+0000 [id=235]	INFO	h.m.UpdateCenter$CompleteBatchJob#run: Completed installation of 10 plugins in 1 min 8 sec
+2021-01-19 09:16:24.731+0000 [id=235]	INFO	h.m.UpdateCenter$CompleteBatchJob#run: Completing installing of plugin batch…
+2021-01-19 09:16:24.970+0000 [id=272]	INFO	jenkins.InitReactorRunner$1#onAttained: Started initialization
+2021-01-19 09:16:24.987+0000 [id=276]	INFO	jenkins.InitReactorRunner$1#onAttained: Listed all plugins
+2021-01-19 09:16:24.992+0000 [id=273]	INFO	jenkins.InitReactorRunner$1#onAttained: Prepared all plugins
+2021-01-19 09:16:24.993+0000 [id=273]	INFO	jenkins.InitReactorRunner$1#onAttained: Started all plugins
+2021-01-19 09:16:24.993+0000 [id=273]	INFO	jenkins.InitReactorRunner$1#onAttained: Augmented all extensions
+2021-01-19 09:16:24.994+0000 [id=273]	INFO	jenkins.InitReactorRunner$1#onAttained: System config loaded
+2021-01-19 09:16:24.994+0000 [id=273]	INFO	jenkins.InitReactorRunner$1#onAttained: System config adapted
+2021-01-19 09:16:24.995+0000 [id=273]	INFO	jenkins.InitReactorRunner$1#onAttained: Loaded all jobs
+2021-01-19 09:16:24.996+0000 [id=273]	INFO	jenkins.InitReactorRunner$1#onAttained: Configuration for all jobs updated
+2021-01-19 09:16:24.997+0000 [id=273]	INFO	jenkins.InitReactorRunner$1#onAttained: Completed initialization
+2021-01-19 09:16:25.000+0000 [id=235]	INFO	h.m.UpdateCenter$CompleteBatchJob#run: Completed installation of 0 plugins in 8.4 sec
+2021-01-19 09:16:25.021+0000 [id=280]	INFO	jenkins.model.Jenkins$23#run: Restart in 10 seconds
+2021-01-19 09:16:35.023+0000 [id=280]	INFO	jenkins.model.Jenkins$23#run: Restarting VM as requested by admin
+2021-01-19 09:16:35.023+0000 [id=280]	INFO	jenkins.model.Jenkins#cleanUp: Stopping Jenkins
+2021-01-19 09:16:35.039+0000 [id=280]	INFO	jenkins.model.Jenkins$18#onAttained: Started termination
+2021-01-19 09:16:35.060+0000 [id=280]	INFO	jenkins.model.Jenkins$18#onAttained: Completed termination
+2021-01-19 09:16:35.060+0000 [id=280]	INFO	jenkins.model.Jenkins#_cleanUpDisconnectComputers: Starting node disconnection
+2021-01-19 09:16:35.360+0000 [id=280]	INFO	jenkins.model.Jenkins#_cleanUpShutdownPluginManager: Stopping plugin manager
+2021-01-19 09:16:35.385+0000 [id=280]	INFO	jenkins.model.Jenkins#_cleanUpPersistQueue: Persisting build queue
+2021-01-19 09:16:35.397+0000 [id=280]	INFO	jenkins.model.Jenkins#_cleanUpAwaitDisconnects: Waiting for node disconnection completion
+2021-01-19 09:16:35.397+0000 [id=280]	INFO	jenkins.model.Jenkins#cleanUp: Jenkins stopped
+Running from: /usr/share/jenkins/jenkins.war
+webroot: EnvVars.masterEnvVars.get("JENKINS_HOME")
+2021-01-19 09:16:41.021+0000 [id=1]	INFO	org.eclipse.jetty.util.log.Log#initialized: Logging initialized @4137ms to org.eclipse.jetty.util.log.JavaUtilLog
+2021-01-19 09:16:41.341+0000 [id=1]	INFO	winstone.Logger#logInternal: Beginning extraction from war file
+2021-01-19 09:16:41.425+0000 [id=1]	WARNING	o.e.j.s.handler.ContextHandler#setContextPath: Empty contextPath
+2021-01-19 09:16:41.584+0000 [id=1]	INFO	org.eclipse.jetty.server.Server#doStart: jetty-9.4.30.v20200611; built: 2020-06-11T12:34:51.929Z; git: 271836e4c1f4612f12b7bb13ef5a92a927634b0d; jvm 1.8.0_275-8u275-b01-0ubuntu1~18.04-b01
+2021-01-19 09:16:42.179+0000 [id=1]	INFO	o.e.j.w.StandardDescriptorProcessor#visitServlet: NO JSP Support for /, did not find org.eclipse.jetty.jsp.JettyJspServlet
+2021-01-19 09:16:42.313+0000 [id=1]	INFO	o.e.j.s.s.DefaultSessionIdManager#doStart: DefaultSessionIdManager workerName=node0
+2021-01-19 09:16:42.313+0000 [id=1]	INFO	o.e.j.s.s.DefaultSessionIdManager#doStart: No SessionScavenger set, using defaults
+2021-01-19 09:16:42.335+0000 [id=1]	INFO	o.e.j.server.session.HouseKeeper#startScavenging: node0 Scavenging every 600000ms
+2021-01-19 09:16:43.341+0000 [id=1]	INFO	hudson.WebAppMain#contextInitialized: Jenkins home directory: /var/jenkins_home found at: EnvVars.masterEnvVars.get("JENKINS_HOME")
+2021-01-19 09:16:43.714+0000 [id=1]	INFO	o.e.j.s.handler.ContextHandler#doStart: Started w.@456d6c1e{Jenkins v2.249.2,/,file:///var/jenkins_home/war/,AVAILABLE}{/var/jenkins_home/war}
+2021-01-19 09:16:43.840+0000 [id=1]	INFO	o.e.j.server.AbstractConnector#doStart: Started ServerConnector@66d2e7d9{HTTP/1.1, (http/1.1)}{0.0.0.0:8080}
+2021-01-19 09:16:43.841+0000 [id=1]	INFO	org.eclipse.jetty.server.Server#doStart: Started @6958ms
+2021-01-19 09:16:43.850+0000 [id=27]	INFO	winstone.Logger#logInternal: Winstone Servlet Engine running: controlPort=disabled
+2021-01-19 09:16:46.030+0000 [id=33]	INFO	jenkins.InitReactorRunner$1#onAttained: Started initialization
+2021-01-19 09:16:46.496+0000 [id=39]	INFO	jenkins.InitReactorRunner$1#onAttained: Listed all plugins
+2021-01-19 09:16:46.597+0000 [id=36]	SEVERE	jenkins.InitReactorRunner$1#onTaskFailed: Failed Loading plugin GitHub Branch Source Plugin v2.5.8 (github-branch-source)
+java.io.IOException: Failed to load: GitHub Branch Source Plugin (2.5.8)
+ - Plugin is missing: github (1.29.3)
+ - Plugin is missing: github-api (1.95)
+	at hudson.PluginWrapper.resolvePluginDependencies(PluginWrapper.java:952)
+	at hudson.PluginManager$2$1$1.run(PluginManager.java:549)
+	at org.jvnet.hudson.reactor.TaskGraphBuilder$TaskImpl.run(TaskGraphBuilder.java:169)
+	at org.jvnet.hudson.reactor.Reactor.runTask(Reactor.java:296)
+	at jenkins.model.Jenkins$5.runTask(Jenkins.java:1131)
+	at org.jvnet.hudson.reactor.Reactor$2.run(Reactor.java:214)
+	at org.jvnet.hudson.reactor.Reactor$Node.run(Reactor.java:117)
+	at jenkins.security.ImpersonatingExecutorService$1.run(ImpersonatingExecutorService.java:59)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2021-01-19 09:16:47.300+0000 [id=35]	SEVERE	jenkins.InitReactorRunner$1#onTaskFailed: Failed Loading plugin Google OAuth Credentials plugin v1.0.0 (google-oauth-plugin)
+java.io.IOException: Failed to load: Google OAuth Credentials plugin (1.0.0)
+ - Plugin is missing: oauth-credentials (0.3)
+	at hudson.PluginWrapper.resolvePluginDependencies(PluginWrapper.java:952)
+	at hudson.PluginManager$2$1$1.run(PluginManager.java:549)
+	at org.jvnet.hudson.reactor.TaskGraphBuilder$TaskImpl.run(TaskGraphBuilder.java:169)
+	at org.jvnet.hudson.reactor.Reactor.runTask(Reactor.java:296)
+	at jenkins.model.Jenkins$5.runTask(Jenkins.java:1131)
+	at org.jvnet.hudson.reactor.Reactor$2.run(Reactor.java:214)
+	at org.jvnet.hudson.reactor.Reactor$Node.run(Reactor.java:117)
+	at jenkins.security.ImpersonatingExecutorService$1.run(ImpersonatingExecutorService.java:59)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2021-01-19 09:16:47.301+0000 [id=35]	SEVERE	jenkins.InitReactorRunner$1#onTaskFailed: Failed Loading plugin Google Authenticated Source plugin v0.4 (google-source-plugin)
+java.io.IOException: Failed to load: Google Authenticated Source plugin (0.4)
+ - Failed to load: Google OAuth Credentials plugin (1.0.0)
+ - Plugin is missing: google-metadata-plugin (0.2)
+	at hudson.PluginWrapper.resolvePluginDependencies(PluginWrapper.java:952)
+	at hudson.PluginManager$2$1$1.run(PluginManager.java:549)
+	at org.jvnet.hudson.reactor.TaskGraphBuilder$TaskImpl.run(TaskGraphBuilder.java:169)
+	at org.jvnet.hudson.reactor.Reactor.runTask(Reactor.java:296)
+	at jenkins.model.Jenkins$5.runTask(Jenkins.java:1131)
+	at org.jvnet.hudson.reactor.Reactor$2.run(Reactor.java:214)
+	at org.jvnet.hudson.reactor.Reactor$Node.run(Reactor.java:117)
+	at jenkins.security.ImpersonatingExecutorService$1.run(ImpersonatingExecutorService.java:59)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2021-01-19 09:16:47.367+0000 [id=34]	SEVERE	jenkins.InitReactorRunner$1#onTaskFailed: Failed Loading plugin Jenkins Workspace Cleanup Plugin v0.38 (ws-cleanup)
+java.io.IOException: Failed to load: Jenkins Workspace Cleanup Plugin (0.38)
+ - Plugin is missing: resource-disposer (0.3)
+	at hudson.PluginWrapper.resolvePluginDependencies(PluginWrapper.java:952)
+	at hudson.PluginManager$2$1$1.run(PluginManager.java:549)
+	at org.jvnet.hudson.reactor.TaskGraphBuilder$TaskImpl.run(TaskGraphBuilder.java:169)
+	at org.jvnet.hudson.reactor.Reactor.runTask(Reactor.java:296)
+	at jenkins.model.Jenkins$5.runTask(Jenkins.java:1131)
+	at org.jvnet.hudson.reactor.Reactor$2.run(Reactor.java:214)
+	at org.jvnet.hudson.reactor.Reactor$Node.run(Reactor.java:117)
+	at jenkins.security.ImpersonatingExecutorService$1.run(ImpersonatingExecutorService.java:59)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2021-01-19 09:16:58.390+0000 [id=34]	INFO	jenkins.InitReactorRunner$1#onAttained: Prepared all plugins
+2021-01-19 09:16:58.430+0000 [id=35]	INFO	jenkins.InitReactorRunner$1#onAttained: Started all plugins
+2021-01-19 09:17:01.191+0000 [id=37]	WARNING	o.j.p.d.DockerBuilder$DescriptorImpl#<init>: Docker URL is not set, docker client won't be initialized
+2021-01-19 09:17:01.492+0000 [id=36]	INFO	jenkins.InitReactorRunner$1#onAttained: Augmented all extensions
+2021-01-19 09:17:01.645+0000 [id=38]	INFO	jenkins.InitReactorRunner$1#onAttained: System config loaded
+2021-01-19 09:17:01.648+0000 [id=34]	INFO	jenkins.InitReactorRunner$1#onAttained: System config adapted
+2021-01-19 09:17:01.820+0000 [id=38]	INFO	jenkins.model.RunIdMigrator#migrate: Migrating build records in /var/jenkins_home/jobs/pipeline_with_gate/builds
+2021-01-19 09:17:01.826+0000 [id=33]	INFO	jenkins.model.RunIdMigrator#migrate: Migrating build records in /var/jenkins_home/jobs/pipeline/builds
+2021-01-19 09:17:01.828+0000 [id=38]	WARNING	jenkins.model.RunIdMigrator#migrate: Build record migration (https://jenkins.io/redirect/build-record-migration) is one-way. If you need to downgrade Jenkins, run: java -classpath "/var/jenkins_home/war/WEB-INF/lib/jenkins-core-2.249.2.jar:/var/jenkins_home/war/WEB-INF/lib/commons-io-2.6.jar:/var/jenkins_home/war/WEB-INF/lib/stapler-1.260.jar:/var/jenkins_home/war/WEB-INF/lib/ant-1.10.8.jar:/var/jenkins_home/war/WEB-INF/lib/commons-lang-2.6.jar" jenkins.model.RunIdMigrator "/var/jenkins_home"
+2021-01-19 09:17:01.834+0000 [id=39]	INFO	jenkins.model.RunIdMigrator#migrate: Migrating build records in /var/jenkins_home/jobs/pipeline_with_perf_Sign/builds
+2021-01-19 09:17:01.877+0000 [id=32]	INFO	jenkins.InitReactorRunner$1#onAttained: Loaded all jobs
+2021-01-19 09:17:01.885+0000 [id=38]	INFO	jenkins.InitReactorRunner$1#onAttained: Configuration for all jobs updated
+2021-01-19 09:17:01.920+0000 [id=33]	INFO	j.util.groovy.GroovyHookScript#execute: Executing /var/jenkins_home/init.groovy.d/tcp-slave-agent-port.groovy
+2021-01-19 09:17:02.021+0000 [id=53]	INFO	hudson.model.AsyncPeriodicWork#lambda$doRun$0: Started Download metadata
+2021-01-19 09:17:02.034+0000 [id=53]	INFO	hudson.model.AsyncPeriodicWork#lambda$doRun$0: Finished Download metadata. 9 ms
+2021-01-19 09:17:03.082+0000 [id=32]	INFO	o.s.c.s.AbstractApplicationContext#prepareRefresh: Refreshing org.springframework.web.context.support.StaticWebApplicationContext@21ea6fba: display name [Root WebApplicationContext]; startup date [Tue Jan 19 17:17:03 MYT 2021]; root of context hierarchy
+2021-01-19 09:17:03.083+0000 [id=32]	INFO	o.s.c.s.AbstractApplicationContext#obtainFreshBeanFactory: Bean factory for application context [org.springframework.web.context.support.StaticWebApplicationContext@21ea6fba]: org.springframework.beans.factory.support.DefaultListableBeanFactory@172f91a4
+2021-01-19 09:17:03.134+0000 [id=32]	INFO	o.s.b.f.s.DefaultListableBeanFactory#preInstantiateSingletons: Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@172f91a4: defining beans [authenticationManager]; root of factory hierarchy
+2021-01-19 09:17:03.713+0000 [id=32]	INFO	o.s.c.s.AbstractApplicationContext#prepareRefresh: Refreshing org.springframework.web.context.support.StaticWebApplicationContext@177ade38: display name [Root WebApplicationContext]; startup date [Tue Jan 19 17:17:03 MYT 2021]; root of context hierarchy
+2021-01-19 09:17:03.713+0000 [id=32]	INFO	o.s.c.s.AbstractApplicationContext#obtainFreshBeanFactory: Bean factory for application context [org.springframework.web.context.support.StaticWebApplicationContext@177ade38]: org.springframework.beans.factory.support.DefaultListableBeanFactory@1db20919
+2021-01-19 09:17:03.715+0000 [id=32]	INFO	o.s.b.f.s.DefaultListableBeanFactory#preInstantiateSingletons: Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1db20919: defining beans [filter,legacy]; root of factory hierarchy
+2021-01-19 09:17:03.895+0000 [id=39]	INFO	jenkins.InitReactorRunner$1#onAttained: Completed initialization
+2021-01-19 09:17:04.233+0000 [id=26]	INFO	hudson.WebAppMain$3#run: Jenkins is fully up and running
+--> setting agent port for jnlp
+--> setting agent port for jnlp... done
+2021-01-19 09:17:49.163+0000 [id=70]	INFO	hudson.model.AsyncPeriodicWork#lambda$doRun$0: Started DockerContainerWatchdog Asynchronous Periodic Work
+2021-01-19 09:17:49.164+0000 [id=70]	INFO	c.n.j.p.d.DockerContainerWatchdog#execute: Docker Container Watchdog has been triggered
+2021-01-19 09:17:49.167+0000 [id=70]	INFO	c.n.j.p.d.DockerContainerWatchdog$Statistics#writeStatisticsToLog: Watchdog Statistics: Number of overall executions: 0, Executions with processing timeout: 0, Containers removed gracefully: 0, Containers removed with force: 0, Containers removal failed: 0, Nodes removed successfully: 0, Nodes removal failed: 0, Container removal average duration (gracefully): 0 ms, Container removal average duration (force): 0 ms, Average overall runtime of watchdog: 0 ms, Average runtime of container retrieval: 0 ms
+2021-01-19 09:17:49.169+0000 [id=70]	INFO	c.n.j.p.d.DockerContainerWatchdog#loadNodeMap: We currently have 0 nodes assigned to this Jenkins instance, which we will check
+2021-01-19 09:17:49.170+0000 [id=70]	INFO	c.n.j.p.d.DockerContainerWatchdog#execute: Docker Container Watchdog check has been completed
+2021-01-19 09:17:49.170+0000 [id=70]	INFO	hudson.model.AsyncPeriodicWork#lambda$doRun$0: Finished DockerContainerWatchdog Asynchronous Periodic Work. 7 ms
+2021-01-19 09:19:11.182+0000 [id=110]	INFO	j.p.d.DockerComposeBuilder#perform: Executing Docker Compose build step
+2021-01-19 09:19:11.183+0000 [id=110]	INFO	j.p.d.StopAllServices#execute: Using Docker Compose file 'lab4/docker-compose.yaml'
+2021-01-19 09:19:11.184+0000 [id=110]	INFO	j.p.d.StopAllServices#execute: Stopping all services
+2021-01-19 09:19:12.742+0000 [id=110]	INFO	j.p.d.DockerComposeBuilder#perform: Exit code: 0
+2021-01-19 09:19:12.921+0000 [id=110]	INFO	j.p.d.DockerComposeBuilder#perform: Executing Docker Compose build step
+2021-01-19 09:19:12.922+0000 [id=110]	INFO	j.p.d.StartAllServices#execute: Using Docker Compose file 'lab4/docker-compose.yaml'
+2021-01-19 09:19:12.922+0000 [id=110]	INFO	j.p.d.StartAllServices#execute: Starting all services
+2021-01-19 09:19:14.521+0000 [id=110]	INFO	j.p.d.DockerComposeBuilder#perform: Exit code: 1
+2021-01-19 09:21:29.734+0000 [id=221]	INFO	o.j.p.workflow.job.WorkflowRun#finish: pipeline #2 completed: FAILURE
+2021-01-19 09:22:49.164+0000 [id=223]	INFO	hudson.model.AsyncPeriodicWork#lambda$doRun$0: Started DockerContainerWatchdog Asynchronous Periodic Work
+2021-01-19 09:22:49.164+0000 [id=223]	INFO	c.n.j.p.d.DockerContainerWatchdog#execute: Docker Container Watchdog has been triggered
+2021-01-19 09:22:49.164+0000 [id=223]	INFO	c.n.j.p.d.DockerContainerWatchdog$Statistics#writeStatisticsToLog: Watchdog Statistics: Number of overall executions: 1, Executions with processing timeout: 0, Containers removed gracefully: 0, Containers removed with force: 0, Containers removal failed: 0, Nodes removed successfully: 0, Nodes removal failed: 0, Container removal average duration (gracefully): 0 ms, Container removal average duration (force): 0 ms, Average overall runtime of watchdog: 1 ms, Average runtime of container retrieval: 0 ms
+2021-01-19 09:22:49.165+0000 [id=223]	INFO	c.n.j.p.d.DockerContainerWatchdog#loadNodeMap: We currently have 0 nodes assigned to this Jenkins instance, which we will check
+2021-01-19 09:22:49.165+0000 [id=223]	INFO	c.n.j.p.d.DockerContainerWatchdog#execute: Docker Container Watchdog check has been completed
+2021-01-19 09:22:49.165+0000 [id=223]	INFO	hudson.model.AsyncPeriodicWork#lambda$doRun$0: Finished DockerContainerWatchdog Asynchronous Periodic Work. 1 ms
+2021-01-19 09:25:24.147+0000 [id=236]	INFO	hudson.model.AsyncPeriodicWork#lambda$doRun$0: Started Periodic background build discarder
+2021-01-19 09:25:24.150+0000 [id=236]	INFO	hudson.model.AsyncPeriodicWork#lambda$doRun$0: Finished Periodic background build discarder. 2 ms
+2021-01-19 09:27:49.162+0000 [id=237]	INFO	hudson.model.AsyncPeriodicWork#lambda$doRun$0: Started DockerContainerWatchdog Asynchronous Periodic Work
+2021-01-19 09:27:49.163+0000 [id=237]	INFO	c.n.j.p.d.DockerContainerWatchdog#execute: Docker Container Watchdog has been triggered
+2021-01-19 09:27:49.163+0000 [id=237]	INFO	c.n.j.p.d.DockerContainerWatchdog$Statistics#writeStatisticsToLog: Watchdog Statistics: Number of overall executions: 2, Executions with processing timeout: 0, Containers removed gracefully: 0, Containers removed with force: 0, Containers removal failed: 0, Nodes removed successfully: 0, Nodes removal failed: 0, Container removal average duration (gracefully): 0 ms, Container removal average duration (force): 0 ms, Average overall runtime of watchdog: 1 ms, Average runtime of container retrieval: 0 ms
+2021-01-19 09:27:49.163+0000 [id=237]	INFO	c.n.j.p.d.DockerContainerWatchdog#loadNodeMap: We currently have 0 nodes assigned to this Jenkins instance, which we will check
+2021-01-19 09:27:49.163+0000 [id=237]	INFO	c.n.j.p.d.DockerContainerWatchdog#execute: Docker Container Watchdog check has been completed
+2021-01-19 09:27:49.163+0000 [id=237]	INFO	hudson.model.AsyncPeriodicWork#lambda$doRun$0: Finished DockerContainerWatchdog Asynchronous Periodic Work. 0 ms
+2021-01-19 09:28:12.941+0000 [id=263]	INFO	j.p.d.DockerComposeBuilder#perform: Executing Docker Compose build step
+2021-01-19 09:28:12.942+0000 [id=263]	INFO	j.p.d.StopAllServices#execute: Using Docker Compose file 'lab4/docker-compose.yaml'
+2021-01-19 09:28:12.942+0000 [id=263]	INFO	j.p.d.StopAllServices#execute: Stopping all services
+2021-01-19 09:28:13.366+0000 [id=263]	INFO	j.p.d.DockerComposeBuilder#perform: Exit code: 0
+2021-01-19 09:28:13.544+0000 [id=263]	INFO	j.p.d.DockerComposeBuilder#perform: Executing Docker Compose build step
+2021-01-19 09:28:13.544+0000 [id=263]	INFO	j.p.d.StartAllServices#execute: Using Docker Compose file 'lab4/docker-compose.yaml'
+2021-01-19 09:28:13.544+0000 [id=263]	INFO	j.p.d.StartAllServices#execute: Starting all services
+2021-01-19 09:28:18.927+0000 [id=263]	INFO	j.p.d.DockerComposeBuilder#perform: Exit code: 0
+2021-01-19 09:31:57.208+0000 [id=385]	INFO	o.j.p.workflow.job.WorkflowRun#finish: pipeline #3 completed: SUCCESS
+2021-01-19 09:32:49.162+0000 [id=393]	INFO	hudson.model.AsyncPeriodicWork#lambda$doRun$0: Started DockerContainerWatchdog Asynchronous Periodic Work
+2021-01-19 09:32:49.164+0000 [id=393]	INFO	c.n.j.p.d.DockerContainerWatchdog#execute: Docker Container Watchdog has been triggered
+2021-01-19 09:32:49.165+0000 [id=393]	INFO	c.n.j.p.d.DockerContainerWatchdog$Statistics#writeStatisticsToLog: Watchdog Statistics: Number of overall executions: 3, Executions with processing timeout: 0, Containers removed gracefully: 0, Containers removed with force: 0, Containers removal failed: 0, Nodes removed successfully: 0, Nodes removal failed: 0, Container removal average duration (gracefully): 0 ms, Container removal average duration (force): 0 ms, Average overall runtime of watchdog: 0 ms, Average runtime of container retrieval: 0 ms
+2021-01-19 09:32:49.165+0000 [id=393]	INFO	c.n.j.p.d.DockerContainerWatchdog#loadNodeMap: We currently have 0 nodes assigned to this Jenkins instance, which we will check
+2021-01-19 09:32:49.166+0000 [id=393]	INFO	c.n.j.p.d.DockerContainerWatchdog#execute: Docker Container Watchdog check has been completed
+2021-01-19 09:32:49.166+0000 [id=393]	INFO	hudson.model.AsyncPeriodicWork#lambda$doRun$0: Finished DockerContainerWatchdog Asynchronous Periodic Work. 3 ms
+2021-01-19 09:34:01.737+0000 [id=419]	INFO	j.p.d.DockerComposeBuilder#perform: Executing Docker Compose build step
+2021-01-19 09:34:01.737+0000 [id=419]	INFO	j.p.d.StopAllServices#execute: Using Docker Compose file 'lab4/docker-compose.yaml'
+2021-01-19 09:34:01.737+0000 [id=419]	INFO	j.p.d.StopAllServices#execute: Stopping all services
+2021-01-19 09:34:04.052+0000 [id=419]	INFO	j.p.d.DockerComposeBuilder#perform: Exit code: 0
+2021-01-19 09:34:04.168+0000 [id=419]	INFO	j.p.d.DockerComposeBuilder#perform: Executing Docker Compose build step
+2021-01-19 09:34:04.168+0000 [id=419]	INFO	j.p.d.StartAllServices#execute: Using Docker Compose file 'lab4/docker-compose.yaml'
+2021-01-19 09:34:04.168+0000 [id=419]	INFO	j.p.d.StartAllServices#execute: Starting all services
+2021-01-19 09:34:09.138+0000 [id=419]	INFO	j.p.d.DockerComposeBuilder#perform: Exit code: 0
+2021-01-19 09:37:31.825+0000 [id=542]	INFO	o.j.p.workflow.job.WorkflowRun#finish: pipeline_with_gate #1 completed: FAILURE
+2021-01-19 09:37:49.163+0000 [id=554]	INFO	hudson.model.AsyncPeriodicWork#lambda$doRun$0: Started DockerContainerWatchdog Asynchronous Periodic Work
+2021-01-19 09:37:49.164+0000 [id=554]	INFO	c.n.j.p.d.DockerContainerWatchdog#execute: Docker Container Watchdog has been triggered
+2021-01-19 09:37:49.164+0000 [id=554]	INFO	c.n.j.p.d.DockerContainerWatchdog$Statistics#writeStatisticsToLog: Watchdog Statistics: Number of overall executions: 4, Executions with processing timeout: 0, Containers removed gracefully: 0, Containers removed with force: 0, Containers removal failed: 0, Nodes removed successfully: 0, Nodes removal failed: 0, Container removal average duration (gracefully): 0 ms, Container removal average duration (force): 0 ms, Average overall runtime of watchdog: 0 ms, Average runtime of container retrieval: 0 ms
+2021-01-19 09:37:49.164+0000 [id=554]	INFO	c.n.j.p.d.DockerContainerWatchdog#loadNodeMap: We currently have 0 nodes assigned to this Jenkins instance, which we will check
+2021-01-19 09:37:49.164+0000 [id=554]	INFO	c.n.j.p.d.DockerContainerWatchdog#execute: Docker Container Watchdog check has been completed
+2021-01-19 09:37:49.164+0000 [id=554]	INFO	hudson.model.AsyncPeriodicWork#lambda$doRun$0: Finished DockerContainerWatchdog Asynchronous Periodic Work. 1 ms
+2021-01-19 09:39:33.924+0000 [id=580]	INFO	j.p.d.DockerComposeBuilder#perform: Executing Docker Compose build step
+2021-01-19 09:39:33.924+0000 [id=580]	INFO	j.p.d.StopAllServices#execute: Using Docker Compose file 'lab4/docker-compose.yaml'
+2021-01-19 09:39:33.924+0000 [id=580]	INFO	j.p.d.StopAllServices#execute: Stopping all services
+2021-01-19 09:39:36.612+0000 [id=580]	INFO	j.p.d.DockerComposeBuilder#perform: Exit code: 0
+2021-01-19 09:39:36.722+0000 [id=580]	INFO	j.p.d.DockerComposeBuilder#perform: Executing Docker Compose build step
+2021-01-19 09:39:36.722+0000 [id=580]	INFO	j.p.d.StartAllServices#execute: Using Docker Compose file 'lab4/docker-compose.yaml'
+2021-01-19 09:39:36.722+0000 [id=580]	INFO	j.p.d.StartAllServices#execute: Starting all services
+2021-01-19 09:39:41.565+0000 [id=580]	INFO	j.p.d.DockerComposeBuilder#perform: Exit code: 0
+2021-01-19 09:42:49.162+0000 [id=684]	INFO	hudson.model.AsyncPeriodicWork#lambda$doRun$0: Started DockerContainerWatchdog Asynchronous Periodic Work
+2021-01-19 09:42:49.162+0000 [id=684]	INFO	c.n.j.p.d.DockerContainerWatchdog#execute: Docker Container Watchdog has been triggered
+2021-01-19 09:42:49.163+0000 [id=684]	INFO	c.n.j.p.d.DockerContainerWatchdog$Statistics#writeStatisticsToLog: Watchdog Statistics: Number of overall executions: 5, Executions with processing timeout: 0, Containers removed gracefully: 0, Containers removed with force: 0, Containers removal failed: 0, Nodes removed successfully: 0, Nodes removal failed: 0, Container removal average duration (gracefully): 0 ms, Container removal average duration (force): 0 ms, Average overall runtime of watchdog: 0 ms, Average runtime of container retrieval: 0 ms
+2021-01-19 09:42:49.163+0000 [id=684]	INFO	c.n.j.p.d.DockerContainerWatchdog#loadNodeMap: We currently have 0 nodes assigned to this Jenkins instance, which we will check
+2021-01-19 09:42:49.163+0000 [id=684]	INFO	c.n.j.p.d.DockerContainerWatchdog#execute: Docker Container Watchdog check has been completed
+2021-01-19 09:42:49.163+0000 [id=684]	INFO	hudson.model.AsyncPeriodicWork#lambda$doRun$0: Finished DockerContainerWatchdog Asynchronous Periodic Work. 1 ms
+2021-01-19 09:43:20.983+0000 [id=700]	INFO	o.j.p.workflow.job.WorkflowRun#finish: pipeline_with_gate #2 completed: FAILURE
+2021-01-19 09:47:49.163+0000 [id=712]	INFO	hudson.model.AsyncPeriodicWork#lambda$doRun$0: Started DockerContainerWatchdog Asynchronous Periodic Work
+2021-01-19 09:47:49.165+0000 [id=712]	INFO	c.n.j.p.d.DockerContainerWatchdog#execute: Docker Container Watchdog has been triggered
+2021-01-19 09:47:49.165+0000 [id=712]	INFO	c.n.j.p.d.DockerContainerWatchdog$Statistics#writeStatisticsToLog: Watchdog Statistics: Number of overall executions: 6, Executions with processing timeout: 0, Containers removed gracefully: 0, Containers removed with force: 0, Containers removal failed: 0, Nodes removed successfully: 0, Nodes removal failed: 0, Container removal average duration (gracefully): 0 ms, Container removal average duration (force): 0 ms, Average overall runtime of watchdog: 0 ms, Average runtime of container retrieval: 0 ms
+2021-01-19 09:47:49.166+0000 [id=712]	INFO	c.n.j.p.d.DockerContainerWatchdog#loadNodeMap: We currently have 0 nodes assigned to this Jenkins instance, which we will check
+2021-01-19 09:47:49.166+0000 [id=712]	INFO	c.n.j.p.d.DockerContainerWatchdog#execute: Docker Container Watchdog check has been completed
+2021-01-19 09:47:49.167+0000 [id=712]	INFO	hudson.model.AsyncPeriodicWork#lambda$doRun$0: Finished DockerContainerWatchdog Asynchronous Periodic Work. 3 ms
+2021-01-19 09:52:49.162+0000 [id=714]	INFO	hudson.model.AsyncPeriodicWork#lambda$doRun$0: Started DockerContainerWatchdog Asynchronous Periodic Work
+2021-01-19 09:52:49.163+0000 [id=714]	INFO	c.n.j.p.d.DockerContainerWatchdog#execute: Docker Container Watchdog has been triggered
+2021-01-19 09:52:49.164+0000 [id=714]	INFO	c.n.j.p.d.DockerContainerWatchdog$Statistics#writeStatisticsToLog: Watchdog Statistics: Number of overall executions: 7, Executions with processing timeout: 0, Containers removed gracefully: 0, Containers removed with force: 0, Containers removal failed: 0, Nodes removed successfully: 0, Nodes removal failed: 0, Container removal average duration (gracefully): 0 ms, Container removal average duration (force): 0 ms, Average overall runtime of watchdog: 0 ms, Average runtime of container retrieval: 0 ms
+2021-01-19 09:52:49.164+0000 [id=714]	INFO	c.n.j.p.d.DockerContainerWatchdog#loadNodeMap: We currently have 0 nodes assigned to this Jenkins instance, which we will check
+2021-01-19 09:52:49.164+0000 [id=714]	INFO	c.n.j.p.d.DockerContainerWatchdog#execute: Docker Container Watchdog check has been completed
+2021-01-19 09:52:49.165+0000 [id=714]	INFO	hudson.model.AsyncPeriodicWork#lambda$doRun$0: Finished DockerContainerWatchdog Asynchronous Periodic Work. 1 ms
+2021-01-19 09:57:49.161+0000 [id=717]	INFO	hudson.model.AsyncPeriodicWork#lambda$doRun$0: Started DockerContainerWatchdog Asynchronous Periodic Work
+2021-01-19 09:57:49.162+0000 [id=717]	INFO	c.n.j.p.d.DockerContainerWatchdog#execute: Docker Container Watchdog has been triggered
+2021-01-19 09:57:49.162+0000 [id=717]	INFO	c.n.j.p.d.DockerContainerWatchdog$Statistics#writeStatisticsToLog: Watchdog Statistics: Number of overall executions: 8, Executions with processing timeout: 0, Containers removed gracefully: 0, Containers removed with force: 0, Containers removal failed: 0, Nodes removed successfully: 0, Nodes removal failed: 0, Container removal average duration (gracefully): 0 ms, Container removal average duration (force): 0 ms, Average overall runtime of watchdog: 0 ms, Average runtime of container retrieval: 0 ms
+2021-01-19 09:57:49.162+0000 [id=717]	INFO	c.n.j.p.d.DockerContainerWatchdog#loadNodeMap: We currently have 0 nodes assigned to this Jenkins instance, which we will check
+2021-01-19 09:57:49.162+0000 [id=717]	INFO	c.n.j.p.d.DockerContainerWatchdog#execute: Docker Container Watchdog check has been completed
+2021-01-19 09:57:49.162+0000 [id=717]	INFO	hudson.model.AsyncPeriodicWork#lambda$doRun$0: Finished DockerContainerWatchdog Asynchronous Periodic Work. 0 ms
+2021-01-19 10:02:49.163+0000 [id=718]	INFO	hudson.model.AsyncPeriodicWork#lambda$doRun$0: Started DockerContainerWatchdog Asynchronous Periodic Work
+2021-01-19 10:02:49.163+0000 [id=718]	INFO	c.n.j.p.d.DockerContainerWatchdog#execute: Docker Container Watchdog has been triggered
+2021-01-19 10:02:49.163+0000 [id=718]	INFO	c.n.j.p.d.DockerContainerWatchdog$Statistics#writeStatisticsToLog: Watchdog Statistics: Number of overall executions: 9, Executions with processing timeout: 0, Containers removed gracefully: 0, Containers removed with force: 0, Containers removal failed: 0, Nodes removed successfully: 0, Nodes removal failed: 0, Container removal average duration (gracefully): 0 ms, Container removal average duration (force): 0 ms, Average overall runtime of watchdog: 0 ms, Average runtime of container retrieval: 0 ms
+2021-01-19 10:02:49.163+0000 [id=718]	INFO	c.n.j.p.d.DockerContainerWatchdog#loadNodeMap: We currently have 0 nodes assigned to this Jenkins instance, which we will check
+2021-01-19 10:02:49.164+0000 [id=718]	INFO	c.n.j.p.d.DockerContainerWatchdog#execute: Docker Container Watchdog check has been completed
+2021-01-19 10:02:49.164+0000 [id=718]	INFO	hudson.model.AsyncPeriodicWork#lambda$doRun$0: Finished DockerContainerWatchdog Asynchronous Periodic Work. 1 ms
+2021-01-19 10:04:59.940+0000 [id=744]	INFO	j.p.d.DockerComposeBuilder#perform: Executing Docker Compose build step
+2021-01-19 10:04:59.940+0000 [id=744]	INFO	j.p.d.StopAllServices#execute: Using Docker Compose file 'lab4/docker-compose.yaml'
+2021-01-19 10:04:59.940+0000 [id=744]	INFO	j.p.d.StopAllServices#execute: Stopping all services
+2021-01-19 10:05:03.194+0000 [id=744]	INFO	j.p.d.DockerComposeBuilder#perform: Exit code: 0
+2021-01-19 10:05:03.308+0000 [id=744]	INFO	j.p.d.DockerComposeBuilder#perform: Executing Docker Compose build step
+2021-01-19 10:05:03.308+0000 [id=744]	INFO	j.p.d.StartAllServices#execute: Using Docker Compose file 'lab4/docker-compose.yaml'
+2021-01-19 10:05:03.309+0000 [id=744]	INFO	j.p.d.StartAllServices#execute: Starting all services
+2021-01-19 10:05:08.017+0000 [id=744]	INFO	j.p.d.DockerComposeBuilder#perform: Exit code: 0
+2021-01-19 10:07:49.161+0000 [id=851]	INFO	hudson.model.AsyncPeriodicWork#lambda$doRun$0: Started DockerContainerWatchdog Asynchronous Periodic Work
+2021-01-19 10:07:49.162+0000 [id=851]	INFO	c.n.j.p.d.DockerContainerWatchdog#execute: Docker Container Watchdog has been triggered
+2021-01-19 10:07:49.162+0000 [id=851]	INFO	c.n.j.p.d.DockerContainerWatchdog$Statistics#writeStatisticsToLog: Watchdog Statistics: Number of overall executions: 10, Executions with processing timeout: 0, Containers removed gracefully: 0, Containers removed with force: 0, Containers removal failed: 0, Nodes removed successfully: 0, Nodes removal failed: 0, Container removal average duration (gracefully): 0 ms, Container removal average duration (force): 0 ms, Average overall runtime of watchdog: 0 ms, Average runtime of container retrieval: 0 ms
+2021-01-19 10:07:49.162+0000 [id=851]	INFO	c.n.j.p.d.DockerContainerWatchdog#loadNodeMap: We currently have 0 nodes assigned to this Jenkins instance, which we will check
+2021-01-19 10:07:49.162+0000 [id=851]	INFO	c.n.j.p.d.DockerContainerWatchdog#execute: Docker Container Watchdog check has been completed
+2021-01-19 10:07:49.162+0000 [id=851]	INFO	hudson.model.AsyncPeriodicWork#lambda$doRun$0: Finished DockerContainerWatchdog Asynchronous Periodic Work. 0 ms
+2021-01-19 10:08:52.338+0000 [id=775]	INFO	o.j.p.workflow.job.WorkflowRun#finish: pipeline_with_gate #3 completed: FAILURE
+2021-01-19 10:12:49.163+0000 [id=877]	INFO	hudson.model.AsyncPeriodicWork#lambda$doRun$0: Started DockerContainerWatchdog Asynchronous Periodic Work
+2021-01-19 10:12:49.164+0000 [id=877]	INFO	c.n.j.p.d.DockerContainerWatchdog#execute: Docker Container Watchdog has been triggered
+2021-01-19 10:12:49.164+0000 [id=877]	INFO	c.n.j.p.d.DockerContainerWatchdog$Statistics#writeStatisticsToLog: Watchdog Statistics: Number of overall executions: 11, Executions with processing timeout: 0, Containers removed gracefully: 0, Containers removed with force: 0, Containers removal failed: 0, Nodes removed successfully: 0, Nodes removal failed: 0, Container removal average duration (gracefully): 0 ms, Container removal average duration (force): 0 ms, Average overall runtime of watchdog: 0 ms, Average runtime of container retrieval: 0 ms
+2021-01-19 10:12:49.164+0000 [id=877]	INFO	c.n.j.p.d.DockerContainerWatchdog#loadNodeMap: We currently have 0 nodes assigned to this Jenkins instance, which we will check
+2021-01-19 10:12:49.164+0000 [id=877]	INFO	c.n.j.p.d.DockerContainerWatchdog#execute: Docker Container Watchdog check has been completed
+2021-01-19 10:12:49.164+0000 [id=877]	INFO	hudson.model.AsyncPeriodicWork#lambda$doRun$0: Finished DockerContainerWatchdog Asynchronous Periodic Work. 1 ms
+2021-01-19 10:14:50.156+0000 [id=904]	INFO	j.p.d.DockerComposeBuilder#perform: Executing Docker Compose build step
+2021-01-19 10:14:50.157+0000 [id=904]	INFO	j.p.d.StopAllServices#execute: Using Docker Compose file 'lab4/docker-compose.yaml'
+2021-01-19 10:14:50.157+0000 [id=904]	INFO	j.p.d.StopAllServices#execute: Stopping all services
+2021-01-19 10:14:52.523+0000 [id=904]	INFO	j.p.d.DockerComposeBuilder#perform: Exit code: 0
+2021-01-19 10:14:52.677+0000 [id=904]	INFO	j.p.d.DockerComposeBuilder#perform: Executing Docker Compose build step
+2021-01-19 10:14:52.677+0000 [id=904]	INFO	j.p.d.StartAllServices#execute: Using Docker Compose file 'lab4/docker-compose.yaml'
+2021-01-19 10:14:52.677+0000 [id=904]	INFO	j.p.d.StartAllServices#execute: Starting all services
+2021-01-19 10:14:57.901+0000 [id=904]	INFO	j.p.d.DockerComposeBuilder#perform: Exit code: 0
+2021-01-19 10:17:49.162+0000 [id=1011]	INFO	hudson.model.AsyncPeriodicWork#lambda$doRun$0: Started DockerContainerWatchdog Asynchronous Periodic Work
+2021-01-19 10:17:49.162+0000 [id=1011]	INFO	c.n.j.p.d.DockerContainerWatchdog#execute: Docker Container Watchdog has been triggered
+2021-01-19 10:17:49.162+0000 [id=1011]	INFO	c.n.j.p.d.DockerContainerWatchdog$Statistics#writeStatisticsToLog: Watchdog Statistics: Number of overall executions: 12, Executions with processing timeout: 0, Containers removed gracefully: 0, Containers removed with force: 0, Containers removal failed: 0, Nodes removed successfully: 0, Nodes removal failed: 0, Container removal average duration (gracefully): 0 ms, Container removal average duration (force): 0 ms, Average overall runtime of watchdog: 0 ms, Average runtime of container retrieval: 0 ms
+2021-01-19 10:17:49.162+0000 [id=1011]	INFO	c.n.j.p.d.DockerContainerWatchdog#loadNodeMap: We currently have 0 nodes assigned to this Jenkins instance, which we will check
+2021-01-19 10:17:49.162+0000 [id=1011]	INFO	c.n.j.p.d.DockerContainerWatchdog#execute: Docker Container Watchdog check has been completed
+2021-01-19 10:17:49.163+0000 [id=1011]	INFO	hudson.model.AsyncPeriodicWork#lambda$doRun$0: Finished DockerContainerWatchdog Asynchronous Periodic Work. 0 ms
