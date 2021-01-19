@@ -223,6 +223,27 @@ Additional details for charts can be found [here](https://www.dynatrace.com/supp
 
 Take some time to look through additional tiles.
 
+## Performance Signature Plugin
+
+1. Configure Dyantrace Performance Signature Plugin
+    Navigate to Manage Jenkins -> Configure System -> Performance Signature: Dynatrace SaaS/Managed
+    Enter name of the Server (ex. Dynatrace Demo Environment)
+    Your Tenant URL (https://xxxxxxxx.live.dynatrace.com) – SaaS, (https://asdfa.Dynatrace-managed.com/e/asdfafa) - Managed
+
+    <img src="images/add-dynatrace-perf-signature.png" >
+
+    Add API Token
+
+    <img src="images/add-dynatrace-api-token.png" >
+ 
+    Note: You many need to Save and exit this screen and come back for the “Add” dropdown to works, thanks to a bug in Jenkins, 
+    
+1. Test the Connection and Save
+
+1. Run the performance Signature
+
+    <img src="images/run-perform-sign-dt.png" >
+
 # Lab 4 Checklist
 
 In this lab, you should have completed the following:
